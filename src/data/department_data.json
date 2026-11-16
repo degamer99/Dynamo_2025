@@ -1,0 +1,521 @@
+{
+  "source": {
+    "filename": "remain.pdf",
+    "pdf_pages": 10,
+    "source_note": "Transcribed and cropped from the supplied PDF. Source page numbers below refer to the printed page numbers where present; cover is PDF page 1."
+  },
+  "department_identity": {
+    "university_as_printed": "ABUBAKAR TAFAWA BALEWA UNIVERSITY, BAUCHI",
+    "faculty_as_printed": "FACULTY OF ENGINEERING & ENGINEERING TECHNOLOGY",
+    "department_as_printed": "DEPARTMENT OF ELECTRICAL & ELECTRONICS ENGINEERING",
+    "magazine_title_as_printed": "BEYOND THE BLUE PRINT: Engineering Solutions to Nigeria’s Electrical, Energy, & Technological Challenges",
+    "magazine_brand_as_printed": "THE DYNAMOS",
+    "edition_as_printed": "Class of 2025, 1st Edition",
+    "cover_image": "images/department_identity/cover_page.png",
+    "university_logo_placeholder_source": "images/department_identity/atbu_logo_placeholder_source.png",
+    "source_pdf_page": 1
+  },
+  "department_overview": {
+    "vision": {
+      "text_as_printed": "To become a centre of excellence in Electrical and Electronics Engineering education, research and innovation, producing highly competent, creative and globally competitive engineers capable of addressing technological challenges and contributing to sustainable national development.",
+      "source_pdf_page": 2
+    },
+    "mission": {
+      "text_as_printed": "To provide quality engineering education through effective teaching, practical training, research and innovation; develop technically competent and ethically responsible graduates; and advance knowledge and technological solutions that meet industrial and societal needs.",
+      "source_pdf_page": 2
+    }
+  },
+  "anthems": {
+    "national_anthem": {
+      "text_as_printed": "Nigeria, we hail thee,\nOur own dear native land,\nThough tribe and tongue may differ,\nIn brotherhood we stand,\nNigerians all, are proud to serve\nOur sovereign Motherland.\nOur flag shall be a symbol\nThat truth and justice reign,\nIn peace or battle honour'd,\nAnd this we count as gain,\nTo hand on to our children\nA banner without stain.\nO God of all creation,\nGrant this our one request,\nHelp us to build a nation\nWhere no man is oppressed,\nAnd so with peace and plenty\nNigeria may be blessed.",
+      "source_pdf_page": 2
+    },
+    "university_anthem": {
+      "text_as_printed": "Hail ATBU,\nThe fountain of knowledge,\nThe citadel of hope,\nA cradle of opportunities,\nA bedrock of technology,\nWhere excellence is norm,\nIn unity of purpose,\nMy ATBU.\nCommitted to academic excellence,\nLeadership and freedom,\nEqual opportunity,\nAnd respect for diversity,\nWe are research leaders,\nProducing graduates,\nWho are worthy in character\nAnd learning.\nOn the way to excellence,\nYou stand as a sure guide,\nFor quality and greatness,\nAbubakar Tafawa Balewa University,\nMy ATBU.",
+      "source_pdf_page": 2
+    }
+  },
+  "leadership": [
+    {
+      "name_as_printed": "PROF. IBRAHIM HASSAN GARBA",
+      "role_as_printed": "VICE-CHANCELLOR",
+      "organization_as_printed": "ABUBAKAR TAFAWA BALEWA UNIVERSITY, BAUCHI",
+      "source_pdf_page": 3,
+      "photograph_file": "images/leadership/vice_chancellor.jpg"
+    },
+    {
+      "name_as_printed": "PROF. YA’U S. HARUNA",
+      "role_as_printed": "DEAN, FACULTY OF ENGINEERING & ENGINEERING TECHNOLOGY",
+      "organization_as_printed": "ABUBAKAR TAFAWA BALEWA UNIVERSITY, BAUCHI",
+      "source_pdf_page": 4,
+      "photograph_file": "images/leadership/dean.jpg"
+    },
+    {
+      "name_as_printed": "PROF. ABDULLAHI L. AMOO",
+      "role_as_printed": "HEAD OF DEPARTMENT, DEPARTMENT OF ELECTRICAL & ELECTRONICS ENGINEERING",
+      "organization_as_printed": "ABUBAKAR TAFAWA BALEWA UNIVERSITY, BAUCHI",
+      "source_pdf_page": 5,
+      "photograph_file": "images/leadership/hod.jpg"
+    }
+  ],
+  "staff": {
+    "academic": [
+      {
+        "name_as_printed": "PROF. A. L. AMOO",
+        "role_or_title_as_printed": "PROFESSOR",
+        "source_pdf_page": 6,
+        "photograph": {
+          "file": "images/staff/prof_a_l_amoo.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        },
+        "affiliation_or_unit_as_printed": "ELECTRICAL & ELECTRONICS ENGINEERING DEPARTMENT"
+      },
+      {
+        "name_as_printed": "PROF. J. D. JIYA",
+        "role_or_title_as_printed": "PROFESSOR",
+        "source_pdf_page": 6,
+        "photograph": {
+          "file": "images/staff/prof_j_d_jiya.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "PROF. G. A. BAKARE",
+        "role_or_title_as_printed": "PROFESSOR",
+        "source_pdf_page": 6,
+        "photograph": {
+          "file": "images/staff/prof_g_a_bakare.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "PROF. E. C. ANENE",
+        "role_or_title_as_printed": "PROFESSOR",
+        "source_pdf_page": 6,
+        "photograph": {
+          "file": "images/staff/prof_e_c_anene.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "PROF. Y. S. HARUNA",
+        "role_or_title_as_printed": "PROFESSOR / DEAN",
+        "source_pdf_page": 6,
+        "photograph": {
+          "file": "images/staff/prof_y_s_haruna.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        },
+        "affiliation_or_unit_as_printed": "FACULTY OF ENGINEERING & ENGINEERING TECHNOLOGY"
+      },
+      {
+        "name_as_printed": "DR. A. HASSAN",
+        "role_or_title_as_printed": "READER",
+        "source_pdf_page": 6,
+        "photograph": {
+          "file": "images/staff/dr_a_hassan.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "DR. B. H. MAMMAN",
+        "role_or_title_as_printed": "READER / HOD",
+        "source_pdf_page": 6,
+        "photograph": {
+          "file": "images/staff/dr_b_h_mamman.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        },
+        "affiliation_or_unit_as_printed": "BIOMEDICAL ENGINEERING DEPARTMENT"
+      },
+      {
+        "name_as_printed": "DR. H. S. MIYA",
+        "role_or_title_as_printed": "READER / HOD",
+        "source_pdf_page": 6,
+        "photograph": {
+          "file": "images/staff/dr_h_s_miya.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        },
+        "affiliation_or_unit_as_printed": "MECHATRONICS & SYSTEM ENGIEERING DEPARTMENT"
+      },
+      {
+        "name_as_printed": "DR. A. A. SADIQ",
+        "role_or_title_as_printed": "READER / PGD COORDINATOR",
+        "source_pdf_page": 6,
+        "photograph": {
+          "file": "images/staff/dr_a_a_sadiq.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        },
+        "affiliation_or_unit_as_printed": "ELECTRICAL & ELECTRONICS ENGINEERING DEPARTMENT"
+      },
+      {
+        "name_as_printed": "DR. M. AHMED",
+        "role_or_title_as_printed": "SENIOR LECTURER / SIWES OFFICER",
+        "source_pdf_page": 7,
+        "photograph": {
+          "file": "images/staff/dr_m_ahmed.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        },
+        "affiliation_or_unit_as_printed": "ELECTRICAL & ELECTRONICS ENGINEERING DEPARTMENT"
+      },
+      {
+        "name_as_printed": "ENGR. A. A. SALIHU",
+        "role_or_title_as_printed": "SENIOR LECTURER",
+        "source_pdf_page": 7,
+        "photograph": {
+          "file": "images/staff/engr_a_a_salihu.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      },
+      {
+        "name_as_printed": "ENGR, I. N. CHIROMA",
+        "role_or_title_as_printed": "SENIOR LECTURER",
+        "source_pdf_page": 7,
+        "photograph": {
+          "file": "images/staff/engr_i_n_chiroma.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      },
+      {
+        "name_as_printed": "DR. K. O. LAWAL",
+        "role_or_title_as_printed": "SENIOR LECTURER",
+        "source_pdf_page": 7,
+        "photograph": {
+          "file": "images/staff/dr_k_o_lawal.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      },
+      {
+        "name_as_printed": "DR. S. M. YARIMA",
+        "role_or_title_as_printed": "SENIOR LECTURER / REG. OFFICER",
+        "source_pdf_page": 7,
+        "photograph": {
+          "file": "images/staff/dr_s_m_yarima.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        },
+        "affiliation_or_unit_as_printed": "ELECTRICAL & ELECTRONICS ENGINEERING DEPARTMENT"
+      },
+      {
+        "name_as_printed": "DR. M. S. YAHYA",
+        "role_or_title_as_printed": "SENIOR LECTURER",
+        "source_pdf_page": 7,
+        "photograph": {
+          "file": "images/staff/dr_m_s_yahya.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "DR. S. ALIYU",
+        "role_or_title_as_printed": "VISITING / SENIOR LECTURER",
+        "source_pdf_page": 7,
+        "photograph": {
+          "file": "images/staff/dr_s_aliyu.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "DR. A. J. HALILU",
+        "role_or_title_as_printed": "VISITING / SENIOR LECTURER",
+        "source_pdf_page": 7,
+        "photograph": {
+          "file": "images/staff/dr_a_j_halilu.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "DR. A. M. JUMBA",
+        "role_or_title_as_printed": "PRO BONO LECTURER",
+        "source_pdf_page": 7,
+        "photograph": {
+          "file": "images/staff/dr_a_m_jumba.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "DR. M. D. BUHARI",
+        "role_or_title_as_printed": "LECTURER I",
+        "source_pdf_page": 8,
+        "photograph": {
+          "file": "images/staff/dr_m_d_buhari.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "DR. SANI SABO",
+        "role_or_title_as_printed": "LECTURER I / PROECT COORD.",
+        "source_pdf_page": 8,
+        "photograph": {
+          "file": "images/staff/dr_sani_sabo.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        },
+        "affiliation_or_unit_as_printed": "ELECTRICAL & ELECTRONICS ENGINEERING DEPARTMENT"
+      },
+      {
+        "name_as_printed": "DR. I. T. BALAMI",
+        "role_or_title_as_printed": "LECTURER I / EXAMS OFFICER",
+        "source_pdf_page": 8,
+        "photograph": {
+          "file": "images/staff/dr_i_t_balami.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        },
+        "affiliation_or_unit_as_printed": "ELECTRICAL & ELECTRONICS ENGINEERING DEPARTMENT"
+      },
+      {
+        "name_as_printed": "ENGR. A. I. DALYOP",
+        "role_or_title_as_printed": "LECTURER I / SEMINAR COORD.",
+        "source_pdf_page": 8,
+        "photograph": {
+          "file": "images/staff/engr_a_i_dalyop.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        },
+        "affiliation_or_unit_as_printed": "ELECTRICAL & ELECTRONICS ENGINEERING DEPARTMENT"
+      },
+      {
+        "name_as_printed": "ENGR. M. ABDULHAMID",
+        "role_or_title_as_printed": "LECTURER I",
+        "source_pdf_page": 8,
+        "photograph": {
+          "file": "images/staff/engr_m_abdulhamid.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "ENGR. HALLIRU LIMAN",
+        "role_or_title_as_printed": "LECTURER I",
+        "source_pdf_page": 8,
+        "photograph": {
+          "file": "images/staff/engr_halliru_liman.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      },
+      {
+        "name_as_printed": "ENGR. A. SABO",
+        "role_or_title_as_printed": "LECTURER II",
+        "source_pdf_page": 8,
+        "photograph": {
+          "file": "images/staff/engr_a_sabo.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      },
+      {
+        "name_as_printed": "ENGR. YUSUF SALEH",
+        "role_or_title_as_printed": "LECTURER / ASST. SIWES OFF.",
+        "source_pdf_page": 8,
+        "photograph": {
+          "file": "images/staff/engr_yusuf_saleh.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      },
+      {
+        "name_as_printed": "ENGR. RUQAYYA A. TILDE",
+        "role_or_title_as_printed": "G. ASSITANT / RECORD OFFICER",
+        "source_pdf_page": 8,
+        "photograph": {
+          "file": "images/staff/engr_ruqayya_a_tilde.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      }
+    ],
+    "technical": [
+      {
+        "name_as_printed": "ENGR. ALIYU MAHMOOD",
+        "role_or_title_as_printed": "SENIOR CHIEF LAB TECH",
+        "source_pdf_page": 9,
+        "photograph": {
+          "file": "images/staff/engr_aliyu_mahmood.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      },
+      {
+        "name_as_printed": "MUFTAHU B. MOH’D",
+        "role_or_title_as_printed": "CHIEF LAB TECHNOLOGIST",
+        "source_pdf_page": 9,
+        "photograph": {
+          "file": "images/staff/muftahu_b_moh_d.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "ENGR. B. I. ZWALL",
+        "role_or_title_as_printed": "CHIEF LAB TECHNOLOGIST",
+        "source_pdf_page": 9,
+        "photograph": {
+          "file": "images/staff/engr_b_i_zwall.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "ENGR. BASHIR MUH’D",
+        "role_or_title_as_printed": "PRINCIPAL LAB TECH",
+        "source_pdf_page": 9,
+        "photograph": {
+          "file": "images/staff/engr_bashir_muh_d.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      },
+      {
+        "name_as_printed": "RAJAU IBRAHIM",
+        "role_or_title_as_printed": "PRINCIPAL TECH. OFFICER",
+        "source_pdf_page": 9,
+        "photograph": {
+          "file": "images/staff/rajau_ibrahim.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "ADAMU A. SADIQ",
+        "role_or_title_as_printed": "TECHNOLOGIST II",
+        "source_pdf_page": 9,
+        "photograph": {
+          "file": "images/staff/adamu_a_sadiq.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "HAMZA SULAIMAN",
+        "role_or_title_as_printed": "TECHNOLOGIST II",
+        "source_pdf_page": 9,
+        "photograph": {
+          "file": "images/staff/hamza_sulaiman.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      },
+      {
+        "name_as_printed": "MOHAMMED A. ZAIYUL",
+        "role_or_title_as_printed": "TECHNICAL OFFICER",
+        "source_pdf_page": 9,
+        "photograph": {
+          "file": "images/staff/mohammed_a_zaiyul.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      },
+      {
+        "name_as_printed": "AREMU O. MOSES",
+        "role_or_title_as_printed": "Faculty Librarian",
+        "source_pdf_page": 9,
+        "photograph": {
+          "file": "images/staff/aremu_o_moses.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the staff directory card."
+        }
+      }
+    ],
+    "hod_office": [
+      {
+        "name_as_printed": "LUKMAN ADAMU",
+        "role_or_title_as_printed": "SECRETARY",
+        "source_pdf_page": 10,
+        "photograph": {
+          "file": "images/staff/lukman_adamu.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the HOD office staff card."
+        }
+      },
+      {
+        "name_as_printed": "LAMI B. MAGAJI",
+        "role_or_title_as_printed": "CHIEF CON. SEC",
+        "source_pdf_page": 10,
+        "photograph": {
+          "file": "images/staff/lami_b_magaji.jpg",
+          "status": "atbu_logo_placeholder",
+          "note": "ATBU logo used as a placeholder; this is not an individual photograph."
+        }
+      },
+      {
+        "name_as_printed": "HASSAN AUWALU",
+        "role_or_title_as_printed": "CARE-TAKER",
+        "source_pdf_page": 10,
+        "photograph": {
+          "file": "images/staff/hassan_auwalu.jpg",
+          "status": "individual_photo",
+          "note": "Portrait cropped from the HOD office staff card."
+        }
+      }
+    ]
+  },
+  "student_profile": {
+    "name_as_printed": "Abduliadi Abdulbaki",
+    "designation_as_printed": "Overall Best Graduating Student of the Faculty of Engineering",
+    "source_pdf_page": 10,
+    "photograph_file": "images/other_profiles/abduliadi_abdulbaki.jpg",
+    "message_as_printed": "Assalamu alaikum warahmatullahi wabarakatuh.\nFirst and foremost, all glory and gratitude belong to Almighty Allah, whose grace and mercy made this achievement possible. Being named the Overall Best Graduating Student of the Faculty of Engineering is a privilege I do not take for granted.\nI dedicate this achievement to my late parents, whose discipline, values, and sacrifices continue to shape my life. I pray that Allah grants them Jannatul Firdaus.\nMy heartfelt appreciation also goes to my brothers for their unwavering financial and moral support, and to Alhaji Aliu Abdulkabir, CEO of Matrix Oil and Gas, whose scholarship foundation played a significant role in my academic journey.\nI sincerely appreciate our lecturers for their dedication, guidance, and commitment to shaping us into better engineers and individuals. To my friends and course mates, thank you for the encouragement, shared experiences, late-night studies, and support throughout the five-year journey. You made the challenges of engineering more bearable, and I will forever cherish the friendships we have built.\nFinally, to my fellow graduands, Class of 2025, congratulations on this remarkable achievement. May Almighty Allah guide our paths, make our future endeavours successful, and grant us greater opportunities to make meaningful contributions to society.\nThank you."
+  },
+  "goodwill_message": {
+    "author_as_printed": "Engr Saliu Abdulgafar GMNSE",
+    "role_as_printed": "Provost Marshal",
+    "committee_as_printed": "43rd EEE Balewite Dynamo Final Year Committee",
+    "source_pdf_page": 10,
+    "photograph_file": "images/other_profiles/saliu_abdulgafar.jpg",
+    "text_as_printed": "It is with joy and gratitude that I congratulate the 43rd EEE Balewite Dynamos on reaching the end of this journey.\nAs Provost Marshal of the Final Year Committee, my work was to help things run: raising funds, coordinating, writing letters, and encouraging others to keep going. None of it would have meant anything without the people who showed up.\nOur Final Year Week showed what this class can do. We moved from Corporate Day to Costume Day, to Sports Day, to Garri Day, and ended with the Mega Hiking. Each day tested our energy and our unity, and each time we came through..\nTo the Executive leadership and every member of the Final Year Committee, thank you for your time, patience and support. To our lecturers, thank you for the knowledge and discipline that shaped us.\nAs we leave ATBU for new roads, I wish every Dynamo good health, success and good character. Wherever we go, let us carry this department's name with pride and keep the bonds we built here.\nCongratulations, Dynamos."
+  },
+  "review_flags": [
+    {
+      "source_pdf_page": 6,
+      "text_as_printed": "MECHATRONICS & SYSTEM ENGIEERING DEPARTMENT",
+      "issue": "The source spells 'ENGIEERING'; retained exactly. Confirm whether this is a typographical error before normalizing."
+    },
+    {
+      "source_pdf_page": 7,
+      "text_as_printed": "ENGR, I. N. CHIROMA",
+      "issue": "Comma appears after ENGR rather than a period; retained exactly."
+    },
+    {
+      "source_pdf_page": 8,
+      "text_as_printed": "LECTURER I / PROECT COORD.",
+      "issue": "The word 'PROECT' appears as printed; intended wording is not assumed."
+    },
+    {
+      "source_pdf_page": 8,
+      "text_as_printed": "G. ASSITANT / RECORD OFFICER",
+      "issue": "The source prints 'ASSITANT'; retained exactly. Confirm whether this is intended to read 'ASSISTANT'."
+    },
+    {
+      "source_pdf_page": 9,
+      "text_as_printed": "Faculty Librarian",
+      "issue": "Capitalization differs from most staff titles; retained exactly."
+    },
+    {
+      "source_pdf_page": 10,
+      "text_as_printed": "Each day tested our energy and our unity, and each time we came through..",
+      "issue": "Double full stop retained exactly."
+    }
+  ],
+  "extraction_notes": {
+    "staff_handling": "Staff are separated into academic, technical and HOD office categories. Names and roles are reproduced as printed; no initials have been expanded and no external identity matching has been attempted.",
+    "photograph_handling": "Portrait crops are provided for entries with visible individual portraits. Where the source page uses the ATBU crest instead of a portrait, the same crest is used as a placeholder and explicitly labelled in each record.",
+    "scope": "Includes all useful content identified in the 10-page PDF, including HOD office staff, student profile and goodwill message."
+  }
+}

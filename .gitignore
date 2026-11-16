@@ -1,0 +1,14 @@
+# Dependencies & Build Output
+node_modules/
+dist/
+.vite/
+
+# Raw extraction source folder (all compiled data & assets live in src/data/ and public/)
+content/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*

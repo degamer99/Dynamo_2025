@@ -1,0 +1,480 @@
+{
+  "source_document": {
+    "filename": "last_remain.pdf",
+    "page_count": 6
+  },
+  "cover": {
+    "id": "cover_001",
+    "record_type": "cover",
+    "university_as_printed": "ABUBAKAR TAFAWA BALEWA UNIVERSITY, BAUCHI",
+    "faculty_as_printed": "FACULTY OF ENGINEERING & ENGINEERING TECHNOLOGY",
+    "department_as_printed": "DEPARTMENT OF ELECTRICAL & ELECTRONICS ENGINEERING",
+    "magazine_title_as_printed": "BEYOND THE BLUE PRINT",
+    "subtitle_as_printed": "Engineering Solutions to Nigeria’s Electrical, Energy, & Technological Challenges",
+    "publication_name_as_printed": "THE 43RD EEE BALEWITE DYNAMO",
+    "sections_as_printed": [
+      "PROFILES",
+      "INTERVIEWS",
+      "ARTICLES",
+      "PROJECT EXHIBITION",
+      "ALBUMS"
+    ],
+    "class_as_printed": "CLASS OF 2025",
+    "edition_as_printed": "1st Edition",
+    "source_page": 1,
+    "image": "images/cover/page_001_cover.jpg"
+  },
+  "people": [
+    {
+      "id": "person_cwc_001",
+      "record_type": "person",
+      "name_as_printed": "MUHAMMAD S. SAMINU",
+      "committee_as_printed": "CENTRAL WORKING COMMITTEE",
+      "role_as_printed": "Chairman, CWC",
+      "source_page": 2,
+      "image": "images/people/person_cwc_001.jpg"
+    },
+    {
+      "id": "person_cwc_002",
+      "record_type": "person",
+      "name_as_printed": "PLANGI KUMDET VICTOR",
+      "committee_as_printed": "CENTRAL WORKING COMMITTEE",
+      "role_as_printed": "Vice-Chairman",
+      "source_page": 2,
+      "image": "images/people/person_cwc_002.jpg"
+    },
+    {
+      "id": "person_cwc_003",
+      "record_type": "person",
+      "name_as_printed": "ABDULHAQ ADDULAZEEZ",
+      "committee_as_printed": "CENTRAL WORKING COMMITTEE",
+      "role_as_printed": "Secretary",
+      "source_page": 2,
+      "image": "images/people/person_cwc_003.jpg"
+    },
+    {
+      "id": "person_cwc_004",
+      "record_type": "person",
+      "name_as_printed": "HAFSAT ABDULRAZAK",
+      "committee_as_printed": "CENTRAL WORKING COMMITTEE",
+      "role_as_printed": "Treasurer",
+      "source_page": 2,
+      "image": "images/people/person_cwc_004.jpg"
+    },
+    {
+      "id": "person_cwc_005",
+      "record_type": "person",
+      "name_as_printed": "SAEED MUBARAK HUSSAINI",
+      "committee_as_printed": "CENTRAL WORKING COMMITTEE",
+      "role_as_printed": "P.R.O",
+      "source_page": 2,
+      "image": "images/people/person_cwc_005.jpg"
+    },
+    {
+      "id": "person_cwc_006",
+      "record_type": "person",
+      "name_as_printed": "BILAL OLAYIWOLA",
+      "committee_as_printed": "CENTRAL WORKING COMMITTEE",
+      "role_as_printed": "Sport Director",
+      "source_page": 2,
+      "image": "images/people/person_cwc_006.jpg"
+    },
+    {
+      "id": "person_cwc_007",
+      "record_type": "person",
+      "name_as_printed": "MARYAM YAKUBU",
+      "committee_as_printed": "CENTRAL WORKING COMMITTEE",
+      "role_as_printed": "Welfare",
+      "source_page": 2,
+      "image": "images/people/person_cwc_007.jpg"
+    },
+    {
+      "id": "person_cwc_008",
+      "record_type": "person",
+      "name_as_printed": "OLIVER OLIVIA",
+      "committee_as_printed": "CENTRAL WORKING COMMITTEE",
+      "role_as_printed": "Event & Planning",
+      "source_page": 2,
+      "image": "images/people/person_cwc_008.jpg"
+    },
+    {
+      "id": "person_cwc_009",
+      "record_type": "person",
+      "name_as_printed": "SALIU ABDULGAFAR",
+      "committee_as_printed": "CENTRAL WORKING COMMITTEE",
+      "role_as_printed": "Provost Marshal",
+      "source_page": 2,
+      "image": "images/people/person_cwc_009.jpg"
+    },
+    {
+      "id": "person_sub_001",
+      "record_type": "person",
+      "name_as_printed": "UMAR FARUK MUSTAPHA",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Chairman",
+      "source_page": 3,
+      "image": "images/people/person_sub_001.jpg",
+      "subcommittee_as_printed": "DINNER & AWARD NIGHT"
+    },
+    {
+      "id": "person_sub_002",
+      "record_type": "person",
+      "name_as_printed": "FARUK WAZIRI",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Secretary",
+      "source_page": 3,
+      "image": "images/people/person_sub_002.jpg",
+      "subcommittee_as_printed": "DINNER & AWARD NIGHT"
+    },
+    {
+      "id": "person_sub_003",
+      "record_type": "person",
+      "name_as_printed": "SAEED MUBARAK HUSSAINI",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Chairman",
+      "source_page": 3,
+      "image": "images/people/person_sub_003.jpg",
+      "subcommittee_as_printed": "PUBLICITY"
+    },
+    {
+      "id": "person_sub_004",
+      "record_type": "person",
+      "name_as_printed": "TAJUDEEN ABIOLA YAHYA",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Secretary",
+      "source_page": 3,
+      "image": "images/people/person_sub_004.jpg",
+      "subcommittee_as_printed": "PUBLICITY"
+    },
+    {
+      "id": "person_sub_005",
+      "record_type": "person",
+      "name_as_printed": "ABDUL KAREEM BILAL OLAYIWOLA",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Chairman",
+      "source_page": 3,
+      "image": "images/people/person_sub_005.jpg",
+      "subcommittee_as_printed": "SPORT"
+    },
+    {
+      "id": "person_sub_006",
+      "record_type": "person",
+      "name_as_printed": "SAMUEL SARKI DAVID",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Secretary",
+      "source_page": 3,
+      "image": "images/people/person_sub_006.jpg",
+      "subcommittee_as_printed": "SPORT"
+    },
+    {
+      "id": "person_sub_007",
+      "record_type": "person",
+      "name_as_printed": "MARYAM YAKUBU",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Chairman",
+      "source_page": 3,
+      "image": "images/people/person_sub_007.jpg",
+      "subcommittee_as_printed": "WELFARE & EVENT PLANNING"
+    },
+    {
+      "id": "person_sub_008",
+      "record_type": "person",
+      "name_as_printed": "HIKMAT YUSUF",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Secretary",
+      "source_page": 3,
+      "image": "images/people/person_sub_008.jpg",
+      "subcommittee_as_printed": "WELFARE & EVENT PLANNING"
+    },
+    {
+      "id": "person_sub_009",
+      "record_type": "person",
+      "name_as_printed": "HALIM ONUJABE",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Chairman",
+      "source_page": 3,
+      "image": "images/people/person_sub_009.jpg",
+      "subcommittee_as_printed": "NIEEE WEEK, T-SHIRT & ACCESSORIES"
+    },
+    {
+      "id": "person_sub_010",
+      "record_type": "person",
+      "name_as_printed": "FARUK OLABISI",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Secretary",
+      "source_page": 3,
+      "image": "images/people/person_sub_010.jpg",
+      "subcommittee_as_printed": "NIEEE WEEK, T-SHIRT & ACCESSORIES"
+    },
+    {
+      "id": "person_sub_011",
+      "record_type": "person",
+      "name_as_printed": "HAFSAT ABDULRAZAK",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Chairman",
+      "source_page": 3,
+      "image": "images/people/person_sub_011.jpg",
+      "subcommittee_as_printed": "TREASURY & FINANCE"
+    },
+    {
+      "id": "person_sub_012",
+      "record_type": "person",
+      "name_as_printed": "YAHAYA MUHAMMAD SALIS",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Secretary",
+      "source_page": 3,
+      "image": "images/people/person_sub_012.jpg",
+      "subcommittee_as_printed": "TREASURY & FINANCE"
+    },
+    {
+      "id": "person_sub_013",
+      "record_type": "person",
+      "name_as_printed": "FARUK ABDULKADIR WAZIRI",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Chairman",
+      "source_page": 3,
+      "image": "images/people/person_sub_013.jpg",
+      "subcommittee_as_printed": "MAGAZINE EDITORIAL"
+    },
+    {
+      "id": "person_sub_014",
+      "record_type": "person",
+      "name_as_printed": "YUSUF SALEH",
+      "committee_as_printed": "SUB-COMMITTEES",
+      "role_as_printed": "Secretary",
+      "source_page": 3,
+      "image": "images/people/person_sub_014.jpg",
+      "subcommittee_as_printed": "MAGAZINE EDITORIAL"
+    },
+    {
+      "id": "person_editorial_001",
+      "record_type": "person",
+      "name_as_printed": "FARUK ABDULKADIR WAZIRI",
+      "committee_as_printed": "THE EDITORIAL CREW",
+      "role_as_printed": "Editor-in-Chief",
+      "source_page": 6,
+      "image": "images/people/person_editorial_001.jpg"
+    },
+    {
+      "id": "person_editorial_002",
+      "record_type": "person",
+      "name_as_printed": "YUSUF SALEH",
+      "committee_as_printed": "THE EDITORIAL CREW",
+      "role_as_printed": "Secretary",
+      "source_page": 6,
+      "image": "images/people/person_editorial_002.jpg"
+    },
+    {
+      "id": "person_editorial_003",
+      "record_type": "person",
+      "name_as_printed": "ABDULRAHID NASIR MAITABARMI",
+      "committee_as_printed": "THE EDITORIAL CREW",
+      "role_as_printed": "Member",
+      "source_page": 6,
+      "image": "images/people/person_editorial_003.jpg"
+    },
+    {
+      "id": "person_editorial_004",
+      "record_type": "person",
+      "name_as_printed": "ABDULHAFIZ MUHIDEEN",
+      "committee_as_printed": "THE EDITORIAL CREW",
+      "role_as_printed": "Member",
+      "source_page": 6,
+      "image": "images/people/person_editorial_004.jpg"
+    },
+    {
+      "id": "person_editorial_005",
+      "record_type": "person",
+      "name_as_printed": "ABDULARAZAQ ABDULHAFIS",
+      "committee_as_printed": "THE EDITORIAL CREW",
+      "role_as_printed": "Member",
+      "source_page": 6,
+      "image": "images/people/person_editorial_005.jpg"
+    }
+  ],
+  "event_photos": [
+    {
+      "id": "event_001",
+      "record_type": "event_photo",
+      "caption_as_printed": "INDUCTION / OATH TAKING CEREMONY",
+      "source_page": 4,
+      "image": "images/events/event_001.jpg",
+      "date_or_location_as_printed": "24TH OCT. 2026 • ICC BAUCHI"
+    },
+    {
+      "id": "event_002",
+      "record_type": "event_photo",
+      "caption_as_printed": "SIGN-OUT",
+      "source_page": 4,
+      "image": "images/events/event_002.jpg"
+    },
+    {
+      "id": "event_003",
+      "record_type": "event_photo",
+      "caption_as_printed": "MEGA RALLY",
+      "source_page": 4,
+      "image": "images/events/event_003.jpg"
+    },
+    {
+      "id": "event_004",
+      "record_type": "event_photo",
+      "caption_as_printed": "CORPORATE DAY",
+      "source_page": 4,
+      "image": "images/events/event_004.jpg"
+    },
+    {
+      "id": "event_005",
+      "record_type": "event_photo",
+      "caption_as_printed": "COSTUME DAY",
+      "source_page": 4,
+      "image": "images/events/event_005.jpg"
+    },
+    {
+      "id": "event_006",
+      "record_type": "event_photo",
+      "caption_as_printed": "CULTURAL DISPLAY",
+      "source_page": 5,
+      "image": "images/events/event_006.jpg"
+    },
+    {
+      "id": "event_007",
+      "record_type": "event_photo",
+      "caption_as_printed": "CULTURAL DISPLAY",
+      "source_page": 5,
+      "image": "images/events/event_007.jpg"
+    },
+    {
+      "id": "event_008",
+      "record_type": "event_photo",
+      "caption_as_printed": "CORPORATE DAY",
+      "source_page": 5,
+      "image": "images/events/event_008.jpg"
+    },
+    {
+      "id": "event_009",
+      "record_type": "event_photo",
+      "caption_as_printed": "JERSEY CARNIVAL",
+      "source_page": 5,
+      "image": "images/events/event_009.jpg"
+    },
+    {
+      "id": "event_010",
+      "record_type": "event_photo",
+      "caption_as_printed": "MEGA RALLY",
+      "source_page": 5,
+      "image": "images/events/event_010.jpg"
+    },
+    {
+      "id": "event_011",
+      "record_type": "event_photo",
+      "caption_as_printed": "CORPORATE DAY",
+      "source_page": 5,
+      "image": "images/events/event_011.jpg"
+    }
+  ],
+  "committee_summary": [
+    {
+      "name_as_printed": "CENTRAL WORKING COMMITTEE",
+      "source_page": 2,
+      "member_record_ids": [
+        "person_cwc_001",
+        "person_cwc_002",
+        "person_cwc_003",
+        "person_cwc_004",
+        "person_cwc_005",
+        "person_cwc_006",
+        "person_cwc_007",
+        "person_cwc_008",
+        "person_cwc_009"
+      ]
+    },
+    {
+      "name_as_printed": "DINNER & AWARD NIGHT",
+      "source_page": 3,
+      "member_record_ids": [
+        "person_sub_001",
+        "person_sub_002"
+      ]
+    },
+    {
+      "name_as_printed": "PUBLICITY",
+      "source_page": 3,
+      "member_record_ids": [
+        "person_sub_003",
+        "person_sub_004"
+      ]
+    },
+    {
+      "name_as_printed": "SPORT",
+      "source_page": 3,
+      "member_record_ids": [
+        "person_sub_005",
+        "person_sub_006"
+      ]
+    },
+    {
+      "name_as_printed": "WELFARE & EVENT PLANNING",
+      "source_page": 3,
+      "member_record_ids": [
+        "person_sub_007",
+        "person_sub_008"
+      ]
+    },
+    {
+      "name_as_printed": "NIEEE WEEK, T-SHIRT & ACCESSORIES",
+      "source_page": 3,
+      "member_record_ids": [
+        "person_sub_009",
+        "person_sub_010"
+      ]
+    },
+    {
+      "name_as_printed": "TREASURY & FINANCE",
+      "source_page": 3,
+      "member_record_ids": [
+        "person_sub_011",
+        "person_sub_012"
+      ]
+    },
+    {
+      "name_as_printed": "MAGAZINE EDITORIAL",
+      "source_page": 3,
+      "member_record_ids": [
+        "person_sub_013",
+        "person_sub_014"
+      ]
+    }
+  ],
+  "review_flags": [
+    {
+      "source_page": 2,
+      "text_as_printed": "PLANGI KUMDET VICTOR",
+      "issue": "Name reproduced as printed; spelling should be checked against the person or an authoritative class list if normalization is required."
+    },
+    {
+      "source_page": 2,
+      "text_as_printed": "ABDULHAQ ADDULAZEEZ",
+      "issue": "The printed spelling includes 'ADDULAZEEZ'; retained without correction."
+    },
+    {
+      "source_page": 3,
+      "text_as_printed": "NIEEE WEEK, T-SHIRT & ACCESSORIES",
+      "issue": "Acronym is reproduced exactly as printed; its intended expansion is not inferred."
+    },
+    {
+      "source_page": 6,
+      "text_as_printed": "ABDULARAZAQ ABDULHAFIS",
+      "issue": "Name reproduced as printed; spelling may warrant confirmation."
+    },
+    {
+      "source_page": 4,
+      "text_as_printed": "24TH OCT. 2026 • ICC BAUCHI",
+      "issue": "Date and venue retained as printed; not independently verified."
+    }
+  ],
+  "extraction_notes": {
+    "image_matching": "Individual portraits are cropped from their corresponding portrait frames on pages 2, 3 and 6. Event photographs are cropped separately from their captioned frames on pages 4 and 5.",
+    "group_photo_policy": "People visible in group/event photographs are not individually named unless the publication explicitly names them.",
+    "text_policy": "Names, capitalization, roles and captions are preserved as printed. Uncertain spellings are listed in review_flags."
+  }
+}

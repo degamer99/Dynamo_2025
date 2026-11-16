@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #FAF8F4;
+    color: #1c1917;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C67145;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #944222;
+}
+
+/* Metallic Copper Foil Gradient */
+.copper-gradient-text {
+  background: linear-gradient(135deg, #E7B59D 0%, #C67145 50%, #944222 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.copper-gradient-bg {
+  background: linear-gradient(135deg, #D8916E 0%, #C67145 50%, #944222 100%);
+}
+
+.copper-border-gradient {
+  border-image: linear-gradient(to right, #C67145, #E7B59D, #944222) 1;
+}
+
+/* Subtle Paper Texture */
+.paper-pattern {
+  background-color: #FAF8F4;
+  background-image: radial-gradient(#d8cebc 0.6px, transparent 0.6px);
+  background-size: 20px 20px;
+}
+
+/* 3D Flipbook & Perspective styling */
+.perspective-1500 {
+  perspective: 1600px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Realistic 3D Book Page Turn Keyframes */
+@keyframes pageTurnNext {
+  0% {
+    transform: perspective(1600px) rotateY(0deg) scale(1);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.35);
+  }
+  45% {
+    transform: perspective(1600px) rotateY(-14deg) translateX(-8px) scale(0.985);
+    box-shadow: 25px 20px 50px -10px rgba(0, 0, 0, 0.55);
+  }
+  100% {
+    transform: perspective(1600px) rotateY(0deg) scale(1);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes pageTurnPrev {
+  0% {
+    transform: perspective(1600px) rotateY(0deg) scale(1);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.35);
+  }
+  45% {
+    transform: perspective(1600px) rotateY(14deg) translateX(8px) scale(0.985);
+    box-shadow: -25px 20px 50px -10px rgba(0, 0, 0, 0.55);
+  }
+  100% {
+    transform: perspective(1600px) rotateY(0deg) scale(1);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.animate-page-next {
+  animation: pageTurnNext 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: center left;
+}
+
+.animate-page-prev {
+  animation: pageTurnPrev 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: center right;
+}
