@@ -7,7 +7,7 @@ export default function GraduandsWall() {
   const [activeGraduand, setActiveGraduand] = useState(null);
   const [copiedType, setCopiedType] = useState(null);
 
-  // Curated 11 specific graduands requested by user (+ 12th Explore card = complete 12-item grid)
+  // Curated 11 specific graduands (+ 12th Explore card = complete 12-item grid)
   const curatedIds = [
     'graduand_001', // ABDULLIADI ABDULBAKI (Best Graduating Student)
     'graduand_083', // AFOLABI WASIU OPEYEMI (Abdul Wasiu Afolabi)
@@ -61,15 +61,15 @@ export default function GraduandsWall() {
           </Link>
         </div>
 
-        {/* Complete 12-Slot Grid (2x6 on mobile, 3x4 on tablet, 4x3 on desktop — zero incomplete rows) */}
+        {/* Complete 12-Slot Grid — Every card has the exact same aspect-[4/5] + footer structure */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
-          {spotlightGraduands.map((g, idx) => {
+          {spotlightGraduands.map((g) => {
             const isValedictorian = g.id === 'graduand_001';
             return (
               <div
                 key={g.id}
                 onClick={() => setActiveGraduand(g)}
-                className={`group cursor-pointer bg-cream-50 rounded-xl overflow-hidden border shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1 ${
+                className={`group cursor-pointer bg-cream-50 rounded-xl overflow-hidden border shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1 flex flex-col justify-between ${
                   isValedictorian
                     ? 'border-copper-500 ring-1 ring-copper-400/50'
                     : 'border-stone-200/90 hover:border-copper-400'
@@ -104,7 +104,7 @@ export default function GraduandsWall() {
                   <h4 className="text-xs sm:text-sm font-bold text-emerald-950 truncate uppercase group-hover:text-copper-700 transition-colors">
                     {g.name}
                   </h4>
-                  <div className="text-[10px] text-copper-600 font-mono mt-0.5">
+                  <div className="text-[10px] text-copper-600 font-mono mt-0.5 truncate">
                     {isValedictorian ? 'Valedictorian • EEE ’25' : `EEE ’25 • p.${g.source_page || 1}`}
                   </div>
                 </div>
@@ -112,30 +112,31 @@ export default function GraduandsWall() {
             );
           })}
 
-          {/* 12th Slot: Interactive Call-to-Action Card */}
+          {/* 12th Slot: Exact Same Card Structure (aspect-[4/5] top + identical p-3.5 footer) so height is 100% uniform */}
           <Link
             to="/graduands"
-            className="group rounded-xl overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 text-white p-6 flex flex-col justify-between border border-copper-400/50 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1"
+            className="group rounded-xl overflow-hidden border border-copper-400/60 shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1 flex flex-col justify-between bg-emerald-950"
           >
-            <div className="w-11 h-11 rounded-xl bg-copper-500/20 border border-copper-400/40 flex items-center justify-center text-copper-300">
-              <Users className="w-5 h-5" />
-            </div>
-
-            <div className="my-4 space-y-1.5">
+            <div className="aspect-[4/5] bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 p-4 sm:p-6 flex flex-col items-center justify-center text-center relative overflow-hidden">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-copper-500/20 border border-copper-400/40 flex items-center justify-center text-copper-300 mb-3">
+                <Users className="w-5 h-5 sm:w-6 sm:h-6" />
+              </div>
               <div className="text-3xl sm:text-4xl font-serif font-black text-copper-300">
                 +143
               </div>
-              <h4 className="text-sm sm:text-base font-serif font-bold text-white leading-snug">
+              <p className="text-xs sm:text-sm font-serif font-bold text-white mt-1.5 leading-snug">
                 Explore All 154 Graduating Engineers
-              </h4>
-              <p className="text-xs text-stone-300 font-sans leading-relaxed">
-                Search by name, phone, or email in the complete Class of 2025 photo wall.
               </p>
             </div>
 
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-copper-300 group-hover:text-copper-200">
-              <span>Open Full Roster</span>
-              <ArrowRight className="w-3.5 h-3.5 transform transition-transform group-hover:translate-x-1" />
+            <div className="p-3.5 bg-emerald-900/90 border-t border-emerald-800">
+              <h4 className="text-xs sm:text-sm font-bold text-copper-300 truncate uppercase flex items-center justify-between">
+                <span>Open Full Roster</span>
+                <ArrowRight className="w-3.5 h-3.5 shrink-0 transform transition-transform group-hover:translate-x-1" />
+              </h4>
+              <div className="text-[10px] text-stone-300 font-mono mt-0.5 truncate">
+                Class of 2025 Directory
+              </div>
             </div>
           </Link>
         </div>

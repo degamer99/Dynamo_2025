@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
-import { Camera, Calendar, MapPin, ExternalLink, X, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Camera, ExternalLink, X, ChevronLeft, ChevronRight, Sparkles, Maximize2 } from 'lucide-react';
 import records from '../data/records.json';
 
 export default function GallerySection() {
   const [activeTab, setActiveTab] = useState('events');
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+
   const eventPhotos = records.event_photos.map((e) => ({
     ...e,
     src: `/${e.image}`,
     title: e.caption_as_printed,
-    meta: e.date_or_location_as_printed || `Page ${e.source_page} Archive`
+    meta: e.date_or_location_as_printed || `Milestone Event Archive`
   }));
 
   const dinnerHighlights = [
@@ -54,6 +57,41 @@ export default function GallerySection() {
 
   const currentGalleryList = activeTab === 'events' ? eventPhotos : dinnerHighlights;
 
+  const goToPrev = () => {
+    setLightboxIndex((prev) => (prev - 1 + currentGalleryList.length) % currentGalleryList.length);
+  };
+
+  const goToNext = () => {
+    setLightboxIndex((prev) => (prev + 1) % currentGalleryList.length);
+  };
+
+  // Keyboard navigation in Lightbox
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (lightboxIndex === null) return;
+      if (e.key === 'Escape') setLightboxIndex(null);
+      if (e.key === 'ArrowRight') goToNext();
+      if (e.key === 'ArrowLeft') goToPrev();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [lightboxIndex, currentGalleryList.length]);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    const diff = touchStartX.current - touchEndX.current;
+    if (Math.abs(diff) > 45) {
+      if (diff > 0) goToNext();
+      else goToPrev();
+    }
+  };
+
+  const activePhoto = lightboxIndex !== null ? currentGalleryList[lightboxIndex] : null;
+
   return (
     <section id="gallery" className="py-16 md:py-24 bg-cream-100 border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,7 +115,7 @@ export default function GallerySection() {
           <div className="inline-flex rounded-xl bg-cream-200 p-1.5 border border-stone-300">
             <button
               onClick={() => setActiveTab('events')}
-              className={`px-5 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all ${
+              className={`px-4 sm:px-5 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all ${
                 activeTab === 'events'
                   ? 'bg-emerald-950 text-white shadow-sm'
                   : 'text-stone-700 hover:text-emerald-950'
@@ -87,7 +125,7 @@ export default function GallerySection() {
             </button>
             <button
               onClick={() => setActiveTab('dinner')}
-              className={`px-5 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all ${
+              className={`px-4 sm:px-5 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all ${
                 activeTab === 'dinner'
                   ? 'bg-copper-500 text-white shadow-sm'
                   : 'text-stone-700 hover:text-emerald-950'
@@ -125,7 +163,7 @@ export default function GallerySection() {
           </div>
         )}
 
-        {/* Gallery Masonry / Grid */}
+        {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {currentGalleryList.map((item, idx) => (
             <div
@@ -133,7 +171,7 @@ export default function GallerySection() {
               onClick={() => setLightboxIndex(idx)}
               className="group cursor-pointer bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-lg transition-all transform hover:-translate-y-1"
             >
-              <div className="h-64 sm:h-72 w-full bg-stone-900 overflow-hidden relative">
+              <div className="aspect-[4/3] w-full bg-stone-900 overflow-hidden relative">
                 <img
                   src={item.src}
                   alt={item.title}
@@ -145,11 +183,15 @@ export default function GallerySection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity" />
 
+                <div className="absolute top-3 right-3 p-2 rounded-full bg-black/40 text-white/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                  <Maximize2 className="w-3.5 h-3.5" />
+                </div>
+
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <span className="text-[10px] font-mono tracking-widest uppercase text-copper-300 font-bold block">
                     {item.meta}
                   </span>
-                  <h4 className="text-base font-serif font-bold tracking-wide mt-1">
+                  <h4 className="text-base font-serif font-bold tracking-wide mt-0.5">
                     {item.title}
                   </h4>
                 </div>
@@ -158,59 +200,98 @@ export default function GallerySection() {
           ))}
         </div>
 
-        {/* Lightbox Modal */}
-        {lightboxIndex !== null && (
+        {/* Redesigned Exhibition Lightbox Viewer (Full-Bleed Card Frame, Swipeable, Thumbnail Strip) */}
+        {activePhoto && (
           <div
-            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 bg-emerald-950/95 backdrop-blur-xl flex items-center justify-center p-2 sm:p-6"
             onClick={() => setLightboxIndex(null)}
           >
             <div
-              className="relative max-w-4xl max-h-[90vh] flex flex-col items-center"
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+              className="w-full max-w-4xl bg-stone-900 rounded-2xl overflow-hidden border border-copper-400/40 shadow-2xl flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Close Button */}
-              <button
-                onClick={() => setLightboxIndex(null)}
-                className="absolute -top-12 right-0 p-2 text-white hover:text-copper-400"
-              >
-                <X className="w-6 h-6" />
-              </button>
+              {/* Viewer Top Header Bar */}
+              <div className="px-4 sm:px-6 py-3.5 bg-stone-950 border-b border-stone-800 flex items-center justify-between">
+                <div className="flex items-center gap-2.5">
+                  <span className="px-2.5 py-0.5 rounded-md bg-copper-500/20 text-copper-300 border border-copper-400/30 text-[10px] font-mono font-bold uppercase">
+                    {lightboxIndex + 1} / {currentGalleryList.length}
+                  </span>
+                  <span className="text-xs text-stone-400 font-sans truncate max-w-[180px] sm:max-w-sm">
+                    {activePhoto.meta}
+                  </span>
+                </div>
 
-              {/* Prev / Next */}
-              <button
-                onClick={() =>
-                  setLightboxIndex(
-                    (prev) => (prev - 1 + currentGalleryList.length) % currentGalleryList.length
-                  )
-                }
-                className="absolute left-2 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/50 text-white hover:bg-black/80"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              <button
-                onClick={() =>
-                  setLightboxIndex((prev) => (prev + 1) % currentGalleryList.length)
-                }
-                className="absolute right-2 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/50 text-white hover:bg-black/80"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
+                <button
+                  onClick={() => setLightboxIndex(null)}
+                  className="p-1.5 rounded-lg bg-stone-800 text-stone-300 hover:bg-copper-500 hover:text-white transition-colors"
+                  aria-label="Close gallery viewer"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
 
-              {/* Image Frame */}
-              <img
-                src={currentGalleryList[lightboxIndex].src}
-                alt={currentGalleryList[lightboxIndex].title}
-                className="max-h-[75vh] w-auto max-w-full rounded-xl object-contain shadow-2xl"
-              />
+              {/* Main Photo Stage — Edge-to-Edge Container */}
+              <div className="relative w-full h-[54vh] sm:h-[62vh] bg-stone-950 flex items-center justify-center overflow-hidden select-none">
+                <img
+                  src={activePhoto.src}
+                  alt={activePhoto.title}
+                  className="w-full h-full object-contain"
+                />
+              </div>
 
-              {/* Caption */}
-              <div className="mt-4 text-center text-white space-y-1">
-                <h4 className="text-lg font-serif font-bold">
-                  {currentGalleryList[lightboxIndex].title}
-                </h4>
-                <p className="text-xs text-stone-300 font-sans">
-                  {currentGalleryList[lightboxIndex].meta}
-                </p>
+              {/* Viewer Bottom Caption & Controls Bar */}
+              <div className="p-4 sm:px-6 sm:py-4 bg-stone-900 border-t border-stone-800 flex flex-col gap-3">
+                <div className="flex items-center justify-between gap-3">
+                  <div className="min-w-0">
+                    <h4 className="text-sm sm:text-lg font-serif font-bold text-white truncate">
+                      {activePhoto.title}
+                    </h4>
+                    <p className="text-[11px] text-copper-300 font-sans">
+                      Swipe or tap arrows to browse moments
+                    </p>
+                  </div>
+
+                  {/* Dedicated Prev / Next Buttons */}
+                  <div className="flex items-center gap-2 shrink-0">
+                    <button
+                      onClick={goToPrev}
+                      className="p-2.5 rounded-xl bg-stone-800 hover:bg-copper-500 text-white border border-stone-700 transition-colors"
+                      aria-label="Previous photo"
+                    >
+                      <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+                    </button>
+                    <button
+                      onClick={goToNext}
+                      className="p-2.5 rounded-xl bg-copper-500 hover:bg-copper-600 text-white shadow-sm transition-colors"
+                      aria-label="Next photo"
+                    >
+                      <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                    </button>
+                  </div>
+                </div>
+
+                {/* Filmstrip Thumbnail Bar */}
+                <div className="flex items-center gap-2 overflow-x-auto pb-1 pt-1">
+                  {currentGalleryList.map((thumb, tIdx) => (
+                    <button
+                      key={thumb.id || tIdx}
+                      onClick={() => setLightboxIndex(tIdx)}
+                      className={`w-12 h-10 sm:w-14 sm:h-11 rounded-lg overflow-hidden shrink-0 border-2 transition-all ${
+                        lightboxIndex === tIdx
+                          ? 'border-copper-400 scale-105 opacity-100'
+                          : 'border-transparent opacity-45 hover:opacity-80'
+                      }`}
+                    >
+                      <img
+                        src={thumb.src}
+                        alt=""
+                        className="w-full h-full object-cover"
+                      />
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

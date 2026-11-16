@@ -10,49 +10,17 @@ export default function CommitteesPage() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
-  const { people, committee_summary } = records;
+  const { people } = records;
 
-  // Map every person ID to their exact specific subcommittee name from committee_summary
-  const personToSpecificCommittee = {};
-  committee_summary.forEach((comm) => {
-    (comm.member_record_ids || []).forEach((id) => {
-      personToSpecificCommittee[id] = comm.name_as_printed;
-    });
-  });
-
-  // Enrich each person with their resolved specific committee label
-  const enrichedPeople = people.map((p) => ({
-    ...p,
-    resolvedCommittee: personToSpecificCommittee[p.id] || p.committee_as_printed
-  }));
-
-  // Clean, focused filter tabs as requested by user:
-  // 1. All Members (28)
-  // 2. Central Working Committee (9)
-  // 3. Dinner & Award Night Committee
-  // 4. Other Subcommittees & Editorial Crew
+  // Strictly 2 clean filter tabs: All Members and Central Working Committee
   const filterTabs = [
-    { id: 'ALL', label: `All Members (${enrichedPeople.length})` },
+    { id: 'ALL', label: `All Committee Members (${people.length})` },
     { id: 'CENTRAL WORKING COMMITTEE', label: 'Central Working Committee (9)' },
-    { id: 'DINNER & AWARD NIGHT', label: 'Dinner & Award Night Committee' },
-    { id: 'OTHER', label: 'Editorial & Subcommittees' },
   ];
 
-  const filteredPeople = enrichedPeople.filter((p) => {
+  const filteredPeople = people.filter((p) => {
     if (selectedTab === 'ALL') return true;
-    if (selectedTab === 'CENTRAL WORKING COMMITTEE') {
-      return p.resolvedCommittee === 'CENTRAL WORKING COMMITTEE';
-    }
-    if (selectedTab === 'DINNER & AWARD NIGHT') {
-      return p.resolvedCommittee === 'DINNER & AWARD NIGHT';
-    }
-    if (selectedTab === 'OTHER') {
-      return (
-        p.resolvedCommittee !== 'CENTRAL WORKING COMMITTEE' &&
-        p.resolvedCommittee !== 'DINNER & AWARD NIGHT'
-      );
-    }
-    return true;
+    return p.committee_as_printed === 'CENTRAL WORKING COMMITTEE';
   });
 
   return (
@@ -71,12 +39,12 @@ export default function CommitteesPage() {
             ORGANIZING <span className="copper-gradient-text">COMMITTEES</span>
           </h1>
           <p className="text-stone-600 text-sm sm:text-base font-sans mt-1 max-w-2xl">
-            Honoring the Central Working Committee, the Dinner & Award Night Committee, the Editorial Crew, and specialized subcommittees of the Class of 2025.
+            Honoring the Central Working Committee and organizing teams whose dedication brought the Class of 2025 magazine, dinner gala, and milestone events to life.
           </p>
         </div>
 
-        {/* Clean 4-Tab Filter Bar */}
-        <div className="flex flex-wrap items-center gap-2 mb-10">
+        {/* Clean 2-Tab Filter Bar */}
+        <div className="flex flex-wrap items-center gap-2.5 mb-10">
           {filterTabs.map((tab) => (
             <button
               key={tab.id}
@@ -97,7 +65,7 @@ export default function CommitteesPage() {
           {filteredPeople.map((person) => (
             <div
               key={person.id}
-              className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-md hover:border-copper-400 transition-all flex flex-col justify-between group"
+              className="bg-white rounded-xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-md hover:border-copper-400 transition-all flex flex-col justify-between group"
             >
               <div className="aspect-[4/5] bg-stone-100 overflow-hidden relative">
                 <img
@@ -112,15 +80,17 @@ export default function CommitteesPage() {
                 />
               </div>
 
-              <div className="p-3.5 bg-white space-y-1">
+              <div className="p-3.5 bg-white border-t border-stone-100">
                 <span className="text-[10px] font-bold text-copper-600 uppercase tracking-wider block truncate">
                   {person.role_as_printed}
                 </span>
-                <h4 className="text-xs sm:text-sm font-serif font-bold text-emerald-950 leading-tight truncate">
+                <h4 className="text-xs sm:text-sm font-serif font-bold text-emerald-950 leading-tight truncate mt-0.5">
                   {person.name_as_printed}
                 </h4>
-                <div className="text-[10px] font-semibold text-emerald-900/80 truncate uppercase pt-1.5 border-t border-stone-100">
-                  {person.resolvedCommittee}
+                <div className="text-[10px] text-stone-500 truncate uppercase pt-1 mt-1 border-t border-stone-100">
+                  {person.committee_as_printed === 'CENTRAL WORKING COMMITTEE'
+                    ? 'Central Working Committee'
+                    : 'Organizing Committee'}
                 </div>
               </div>
             </div>
