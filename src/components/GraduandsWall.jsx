@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, Copy, Check, X, User, ArrowRight, Users, Award } from 'lucide-react';
+import { Phone, Mail, Copy, Check, X, User, ArrowRight, Users, Award, Trophy } from 'lucide-react';
 import graduands from '../data/graduands.json';
+import awardsData from '../data/awards.json';
 
 export default function GraduandsWall() {
   const [activeGraduand, setActiveGraduand] = useState(null);
   const [copiedType, setCopiedType] = useState(null);
+
+  // Top 4 Academic Distinction Podium Honorees
+  const topDistinctions = awardsData.academic_distinction.slice(0, 4);
 
   // Curated 11 specific graduands (+ 12th Explore card = complete 12-item grid)
   const curatedIds = [
@@ -37,7 +41,65 @@ export default function GraduandsWall() {
     <section id="graduands" className="py-20 md:py-28 bg-white border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header */}
+        {/* PART 1: Academic Distinction & Class Honors Podium Banner */}
+        <div className="mb-16 bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 rounded-3xl p-6 sm:p-8 md:p-10 text-white border border-copper-400/40 shadow-xl">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-copper-500/20 border border-copper-400/40 text-copper-300 text-xs font-bold uppercase tracking-wider mb-2">
+                <Trophy className="w-3.5 h-3.5 text-copper-400" />
+                <span>Academic Distinction & Framed Honors</span>
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-serif font-black text-white tracking-tight">
+                ROLL OF <span className="copper-gradient-text">DISTINCTION</span>
+              </h3>
+              <p className="text-stone-300 text-xs sm:text-sm font-sans mt-1 max-w-xl">
+                Celebrating the top graduating scholars of the 43rd EEE Balewite Dynamo Class of 2025.
+              </p>
+            </div>
+
+            <Link
+              to="/awards"
+              className="self-start md:self-auto inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-copper-500 hover:bg-copper-600 text-white text-xs sm:text-sm font-bold shadow-copper transition-all whitespace-nowrap"
+            >
+              <Trophy className="w-4 h-4" />
+              <span>Explore All 40 Class Awards</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          {/* 4 Academic Distinction Cards */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-5">
+            {topDistinctions.map((honoree) => (
+              <div
+                key={honoree.id}
+                className="bg-emerald-900/60 backdrop-blur-sm rounded-2xl overflow-hidden border border-copper-400/30 hover:border-copper-400 transition-all flex flex-col justify-between group"
+              >
+                <div className="aspect-[4/5] bg-stone-900 overflow-hidden relative">
+                  <img
+                    src={honoree.image}
+                    alt={honoree.recipient}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-emerald-950/90 text-copper-300 border border-copper-400/50 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 backdrop-blur-sm">
+                    <Award className="w-3 h-3 text-copper-400 shrink-0" />
+                    <span className="truncate">{honoree.rank}</span>
+                  </div>
+                </div>
+                <div className="p-3.5 bg-emerald-950/80 border-t border-emerald-800/80">
+                  <span className="text-[10px] font-bold text-copper-400 uppercase tracking-wider block truncate">
+                    {honoree.title}
+                  </span>
+                  <h4 className="text-xs sm:text-sm font-serif font-bold text-white truncate mt-0.5">
+                    {honoree.recipient}
+                  </h4>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* PART 2: Section Header for the 154 Graduands */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <p className="text-xs font-sans font-bold uppercase tracking-[0.2em] text-copper-600 mb-2">

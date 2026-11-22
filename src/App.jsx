@@ -7,6 +7,7 @@ import MagazinePage from './pages/MagazinePage';
 import GraduandsPage from './pages/GraduandsPage';
 import StaffPage from './pages/StaffPage';
 import CommitteesPage from './pages/CommitteesPage';
+import AwardsPage from './pages/AwardsPage';
 import { WifiOff, Smartphone, X } from 'lucide-react';
 
 export default function App() {
@@ -102,6 +103,7 @@ export default function App() {
             <Route path="/graduands" element={<GraduandsPage />} />
             <Route path="/staff" element={<StaffPage />} />
             <Route path="/committees" element={<CommitteesPage />} />
+            <Route path="/awards" element={<AwardsPage />} />
           </Routes>
         </main>
 

@@ -208,6 +208,12 @@ export default function Navbar({ deferredPrompt, onInstallPwa }) {
               )
             )}
             <Link
+              to="/awards"
+              className="px-3 py-2.5 text-sm font-medium text-stone-700 hover:bg-cream-200 rounded-lg"
+            >
+              Class Honors & Awards
+            </Link>
+            <Link
               to="/committees"
               className="px-3 py-2.5 text-sm font-medium text-stone-700 hover:bg-cream-200 rounded-lg"
             >
