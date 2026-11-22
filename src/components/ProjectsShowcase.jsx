@@ -11,7 +11,7 @@ export default function ProjectsShowcase() {
       title: 'Examination Countdown Timer Management System',
       description:
         'A dedicated digital control system designed to automate exam timing intervals, providing accurate visual and acoustic countdown cues for examination halls to minimize human oversight.',
-      students: ['Abdulhyyu Muhd', 'Levi Dashe', 'Idris A. Shuaib', 'Caeb Ponsak Philip', 'Sani Philip Friday'],
+      students: ['Abdulhyyu Muhd', 'Levi Dashe', 'Idris A. Shuaib', 'Caeb Ponsak Philip', 'Sani Philip Friday', 'Abdulgafar Saliu'],
       supervisor: 'Engr. Yusuf Saleh',
       image: '/images/text/project_examination_countdown_timer.jpg',
       tags: ['Embedded Systems', 'Digital Logic', 'Microcontrollers']

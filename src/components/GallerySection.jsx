@@ -3,59 +3,382 @@ import { Camera, ExternalLink, X, ChevronLeft, ChevronRight, Sparkles, Maximize2
 import records from '../data/records.json';
 
 export default function GallerySection() {
-  const [activeTab, setActiveTab] = useState('events');
+  const [selectedCategory, setSelectedCategory] = useState('ALL');
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
-  const eventPhotos = records.event_photos.map((e) => ({
-    ...e,
+  // Original magazine printed event photos
+  const printedEventPhotos = records.event_photos.map((e) => ({
+    id: e.id,
     src: `/${e.image}`,
     title: e.caption_as_printed,
-    meta: e.date_or_location_as_printed || `Milestone Event Archive`
+    meta: e.date_or_location_as_printed || 'Magazine Event Archive',
+    category: 'Magazine Highlights'
   }));
 
-  const dinnerHighlights = [
+  // Newly sorted Class of 2025 photo archive across all 10 categories
+  const sortedArchivePhotos = [
+    // Internal Defence
+    {
+      id: 'def_1',
+      src: '/images/archive/defence_01.jpg',
+      title: 'Final-Year Project Internal Defence & Hardware Assessment',
+      meta: 'Internal Defence • EEE Laboratory',
+      category: 'Internal Defence'
+    },
+    {
+      id: 'def_2',
+      src: '/images/archive/defence_02.jpg',
+      title: 'Microcontroller Keypad & Embedded Prototype Demonstration',
+      meta: 'Internal Defence • Hardware Exhibition',
+      category: 'Internal Defence'
+    },
+    {
+      id: 'def_3',
+      src: '/images/archive/defence_03.jpg',
+      title: 'Departmental Examiners Evaluating Final-Year Prototypes',
+      meta: 'Internal Defence • ATBU EEE',
+      category: 'Internal Defence'
+    },
+    {
+      id: 'def_4',
+      src: '/images/archive/defence_04.jpg',
+      title: 'Circuit Testing & Live System Demonstration',
+      meta: 'Internal Defence • Class of 2025',
+      category: 'Internal Defence'
+    },
+
+    // Induction Ceremony
+    {
+      id: 'ind_1',
+      src: '/images/archive/induction_01.jpg',
+      title: '43rd EEE Balewite Engineering Induction & Oath-Taking Ceremony',
+      meta: 'Sir Ahmadu Bello Int’l Conference Centre, Bauchi',
+      category: 'Induction & Sign-Out'
+    },
+    {
+      id: 'ind_2',
+      src: '/images/archive/induction_02.jpg',
+      title: 'Graduating Engineers Taking the Professional Induction Oath',
+      meta: 'Induction Ceremony • Class of 2025',
+      category: 'Induction & Sign-Out'
+    },
+    {
+      id: 'ind_3',
+      src: '/images/archive/induction_03.jpg',
+      title: 'Inducted Balewite Engineers in Suits & Hard Hats',
+      meta: 'Induction Day • ATBU Bauchi',
+      category: 'Induction & Sign-Out'
+    },
+    {
+      id: 'ind_4',
+      src: '/images/archive/induction_04.jpg',
+      title: 'Convocation Gown, Custom Sash & Engineering Hard Hat Portrait',
+      meta: 'Induction Ceremony • Class of 2025',
+      category: 'Induction & Sign-Out'
+    },
+    {
+      id: 'ind_5',
+      src: '/images/archive/induction_05.jpg',
+      title: 'Coursemates Celebrating After the Induction Ceremony',
+      meta: 'Induction Ceremony • Bauchi',
+      category: 'Induction & Sign-Out'
+    },
+
+    // Sign-Out & Mega Rally
+    {
+      id: 'ral_1',
+      src: '/images/archive/rally_01.jpg',
+      title: 'Grand Aerial View of the 43rd Balewite Mega Rally Procession',
+      meta: 'Mega Rally • ATBU Campus',
+      category: 'Mega Rally'
+    },
+    {
+      id: 'ral_2',
+      src: '/images/archive/rally_02.jpg',
+      title: 'Coursemates in 43rd Dynamo Varsity Jackets During Sign-Out',
+      meta: 'Sign-Out & Mega Rally • Class of 2025',
+      category: 'Mega Rally'
+    },
+    {
+      id: 'ral_3',
+      src: '/images/archive/rally_03.jpg',
+      title: 'Signed White Shirts & 43rd Edition Varsity Jackets',
+      meta: 'Sign-Out Celebration • ATBU',
+      category: 'Mega Rally'
+    },
+    {
+      id: 'ral_4',
+      src: '/images/archive/rally_04.jpg',
+      title: 'Reflective Safety Vests, Hard Hats & Signed Shirts',
+      meta: 'Sign-Out Day • Class of 2025',
+      category: 'Induction & Sign-Out'
+    },
+    {
+      id: 'ral_5',
+      src: '/images/archive/rally_05.jpg',
+      title: 'Sign-Out Salute at Prof. A. O. Adekola Lecture Theatre',
+      meta: 'Yelwa Campus • ATBU Bauchi',
+      category: 'Induction & Sign-Out'
+    },
+
+    // SUG & Dinner Award Night
+    {
+      id: 'awd_1',
+      src: '/images/archive/awards_01.jpg',
+      title: 'Abdulliadi Abdulbaki Receiving SUG Award of Merit (Highest CGPA)',
+      meta: 'SUG Award Night • ATBU Bauchi',
+      category: 'SUG & Dinner Awards'
+    },
+    {
+      id: 'awd_2',
+      src: '/images/archive/awards_02.jpg',
+      title: 'Presentation of Most Active CWC Member Award to Olivia Oliver',
+      meta: '43rd Balewites Dinner & Awards Night',
+      category: 'SUG & Dinner Awards'
+    },
+    {
+      id: 'awd_3',
+      src: '/images/archive/awards_03.jpg',
+      title: 'Presentation of CEO of the Year Award to Olabisi Faruk (Coded)',
+      meta: '43rd Balewites Dinner & Awards Night',
+      category: 'SUG & Dinner Awards'
+    },
+    {
+      id: 'awd_4',
+      src: '/images/archive/awards_04.jpg',
+      title: 'Award Recipients & Coursemates on Stage at Dinner & Awards Night',
+      meta: 'Sir Ahmadu Bello Int’l Conference Centre',
+      category: 'SUG & Dinner Awards'
+    },
+
+    // Corporate Day
+    {
+      id: 'cor_1',
+      src: '/images/archive/corporate_01.jpg',
+      title: '43rd EEE Balewite Dynamos Group Portrait on Corporate Day',
+      meta: 'Corporate Day • Final Year Week',
+      category: 'Corporate & Costume Day'
+    },
+    {
+      id: 'cor_2',
+      src: '/images/archive/corporate_02.jpg',
+      title: 'Classmates in Formal Executive Attire on the Lecture Theatre Steps',
+      meta: 'Corporate Day • ATBU Bauchi',
+      category: 'Corporate & Costume Day'
+    },
+    {
+      id: 'cor_3',
+      src: '/images/archive/corporate_03.jpg',
+      title: 'Coursemates Looking Sharp on Corporate Day',
+      meta: 'Corporate Day • Final Year Week',
+      category: 'Corporate & Costume Day'
+    },
+    {
+      id: 'cor_4',
+      src: '/images/archive/corporate_04.jpg',
+      title: 'Executive Suits & Blazers on Corporate Day',
+      meta: 'Corporate Day • Class of 2025',
+      category: 'Corporate & Costume Day'
+    },
+
+    // Costume / Custom Day
+    {
+      id: 'cos_1',
+      src: '/images/archive/costume_01.jpg',
+      title: 'Full Class Group Capture on Costume & Character Day',
+      meta: 'Costume Day • Final Year Week',
+      category: 'Corporate & Costume Day'
+    },
+    {
+      id: 'cos_2',
+      src: '/images/archive/costume_02.jpg',
+      title: 'Creative Inmates & Officers Squad on Costume Day',
+      meta: 'Costume Day • Class of 2025',
+      category: 'Corporate & Costume Day'
+    },
+    {
+      id: 'cos_3',
+      src: '/images/archive/costume_03.jpg',
+      title: 'Doctor, Inmate & Retro Suspender Outfits on Costume Day',
+      meta: 'Costume Day • Final Year Week',
+      category: 'Corporate & Costume Day'
+    },
+    {
+      id: 'cos_4',
+      src: '/images/archive/costume_04.jpg',
+      title: 'Egyptian Pharaoh Royal Regalia on Costume Day',
+      meta: 'Costume Day • ATBU Bauchi',
+      category: 'Corporate & Costume Day'
+    },
+
+    // Cultural Day
+    {
+      id: 'cul_1',
+      src: '/images/archive/cultural_01.jpg',
+      title: 'Coursemates Showcasing Rich Nigerian Cultural Heritage',
+      meta: 'Cultural Day • Final Year Week',
+      category: 'Cultural Day'
+    },
+    {
+      id: 'cul_2',
+      src: '/images/archive/cultural_02.jpg',
+      title: 'Traditional Agbada, Babban Riga & Royal Caps on Cultural Day',
+      meta: 'Cultural Day • Class of 2025',
+      category: 'Cultural Day'
+    },
+    {
+      id: 'cul_3',
+      src: '/images/archive/cultural_03.jpg',
+      title: 'Celebrating Diversity and Unity on Cultural Day',
+      meta: 'Cultural Day • ATBU Bauchi',
+      category: 'Cultural Day'
+    },
+    {
+      id: 'cul_4',
+      src: '/images/archive/cultural_04.jpg',
+      title: 'Traditional Coral Beads, Red Cap & Royal Attire',
+      meta: 'Cultural Day • Final Year Week',
+      category: 'Cultural Day'
+    },
+
+    // Bring Random Things & Garri Day + Hiking
+    {
+      id: 'gar_1',
+      src: '/images/archive/garri_01.jpg',
+      title: 'Mixing the Giant Bucket of Garri, Milk & Groundnuts',
+      meta: 'Bring Random Things & Garri Day',
+      category: 'Garri Day & Hiking'
+    },
+    {
+      id: 'gar_2',
+      src: '/images/archive/garri_02.jpg',
+      title: 'Lining Up Cups of Chilled Garri for Coursemates',
+      meta: 'Garri Day • Final Year Week',
+      category: 'Garri Day & Hiking'
+    },
+    {
+      id: 'gar_3',
+      src: '/images/archive/garri_03.jpg',
+      title: 'Bring Random Things Day — Live Chickens & Kettles in the Lecture Hall',
+      meta: 'Bring Random Things & Garri Day',
+      category: 'Garri Day & Hiking'
+    },
+    {
+      id: 'gar_4',
+      src: '/images/archive/garri_04.jpg',
+      title: 'Laughter, Bread & Garri Feast in the Lecture Theatre',
+      meta: 'Garri Day • Class of 2025',
+      category: 'Garri Day & Hiking'
+    },
+    {
+      id: 'hik_1',
+      src: '/images/archive/hiking_01.jpg',
+      title: '43rd EEE Balewite Dynamos on the Mega Hiking Expedition',
+      meta: 'Mega Hiking • Final Year Week',
+      category: 'Garri Day & Hiking'
+    },
+    {
+      id: 'hik_2',
+      src: '/images/archive/hiking_02.jpg',
+      title: 'Reaching the Rock Summit During the Class Hike',
+      meta: 'Mega Hiking • Bauchi',
+      category: 'Garri Day & Hiking'
+    },
+    {
+      id: 'hik_3',
+      src: '/images/archive/hiking_03.jpg',
+      title: 'Coursemates Enjoying the View at the Hilltop',
+      meta: 'Mega Hiking • Class of 2025',
+      category: 'Garri Day & Hiking'
+    },
+
+    // Studio Portraits & Dinner Gala
+    {
+      id: 'stu_1',
+      src: '/images/archive/studio_01.jpg',
+      title: '“The Graduate” Special Edition Studio Feature — Engr. Saliu Abdulgafar',
+      meta: 'Studio Portrait Archive • Class of 2025',
+      category: 'Studio & Dinner Gala'
+    },
+    {
+      id: 'stu_2',
+      src: '/images/archive/studio_02.jpg',
+      title: 'Studio Graduation Portrait with Custom ATBU EEE Sash & Hard Hat',
+      meta: 'Studio Portrait Archive • Class of 2025',
+      category: 'Studio & Dinner Gala'
+    },
+    {
+      id: 'stu_3',
+      src: '/images/archive/studio_03.jpg',
+      title: 'Executive Studio Portrait with Engineering Hard Hat',
+      meta: 'Studio Portrait Archive • Class of 2025',
+      category: 'Studio & Dinner Gala'
+    },
     {
       id: 'd1',
       src: '/images/dinner/dinner_01.jpg',
-      title: 'Grand Dinner Arrival & Reception',
-      meta: 'Dynamos Graduation Dinner 2025'
+      title: 'Grand Dinner Arrival & Red Carpet Reception',
+      meta: 'Dynamos Graduation Dinner 2025',
+      category: 'Studio & Dinner Gala'
     },
     {
       id: 'd2',
       src: '/images/dinner/dinner_02.jpg',
-      title: 'Classmates Celebrating & Toasting',
-      meta: 'Dynamos Graduation Dinner 2025'
+      title: 'Classmates Celebrating & Toasting at the Dinner Gala',
+      meta: 'Dynamos Graduation Dinner 2025',
+      category: 'Studio & Dinner Gala'
     },
     {
       id: 'd3',
       src: '/images/dinner/dinner_03.jpg',
-      title: 'Department Award & Honor Ceremony',
-      meta: 'Dynamos Graduation Dinner 2025'
+      title: 'Department Award & Honor Ceremony at the Gala',
+      meta: 'Dynamos Graduation Dinner 2025',
+      category: 'Studio & Dinner Gala'
     },
     {
       id: 'd4',
       src: '/images/dinner/dinner_04.jpg',
-      title: 'Memorable Moments with Friends',
-      meta: 'Dynamos Graduation Dinner 2025'
+      title: 'Memorable Moments with Coursemates at the Dinner Hall',
+      meta: 'Dynamos Graduation Dinner 2025',
+      category: 'Studio & Dinner Gala'
     },
     {
       id: 'd5',
       src: '/images/dinner/dinner_05.jpg',
       title: 'Dinner Gala Elegance & Glamour',
-      meta: 'Dynamos Graduation Dinner 2025'
+      meta: 'Dynamos Graduation Dinner 2025',
+      category: 'Studio & Dinner Gala'
     },
     {
       id: 'd6',
       src: '/images/dinner/dinner_06.jpg',
       title: 'Balewite Dynamos Class Reunion Salute',
-      meta: 'Dynamos Graduation Dinner 2025'
+      meta: 'Dynamos Graduation Dinner 2025',
+      category: 'Studio & Dinner Gala'
     }
   ];
 
-  const currentGalleryList = activeTab === 'events' ? eventPhotos : dinnerHighlights;
+  const allPhotos = [...sortedArchivePhotos, ...printedEventPhotos];
+
+  const categories = [
+    { id: 'ALL', label: `All Moments (${allPhotos.length})` },
+    { id: 'Internal Defence', label: 'Internal Defence' },
+    { id: 'Induction & Sign-Out', label: 'Induction & Sign-Out' },
+    { id: 'SUG & Dinner Awards', label: 'SUG & Dinner Awards' },
+    { id: 'Mega Rally', label: 'Mega Rally' },
+    { id: 'Corporate & Costume Day', label: 'Corporate & Costume Day' },
+    { id: 'Cultural Day', label: 'Cultural Day' },
+    { id: 'Garri Day & Hiking', label: 'Garri Day & Hiking' },
+    { id: 'Studio & Dinner Gala', label: 'Studio & Dinner Gala' },
+  ];
+
+  const currentGalleryList =
+    selectedCategory === 'ALL'
+      ? allPhotos
+      : allPhotos.filter((item) => item.category === selectedCategory);
 
   const goToPrev = () => {
     setLightboxIndex((prev) => (prev - 1 + currentGalleryList.length) % currentGalleryList.length);
@@ -65,7 +388,6 @@ export default function GallerySection() {
     setLightboxIndex((prev) => (prev + 1) % currentGalleryList.length);
   };
 
-  // Keyboard navigation in Lightbox
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (lightboxIndex === null) return;
@@ -97,71 +419,63 @@ export default function GallerySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-950 text-white">
             <Camera className="w-3.5 h-3.5 text-copper-400" />
-            Visual Archives
+            Visual Archives • 265+ Curated Class Memories
           </div>
           <h2 className="text-3xl sm:text-4xl font-serif font-black text-emerald-950 tracking-tight">
             EVENTS & CELEBRATION <span className="copper-gradient-text">GALLERY</span>
           </h2>
           <p className="text-stone-600 text-sm sm:text-base font-sans">
-            Reliving the milestones: Induction Ceremony, Sign-Out, Mega Rally, Cultural Week, and the Dynamos Dinner Gala.
+            Internal Defence, Induction, Sign-Out, SUG Award Night, Mega Rally, Hiking, Cultural Day, Garri Day, Costume Day, Corporate Day & Dinner Gala.
           </p>
         </div>
 
-        {/* Tab Switcher */}
-        <div className="flex justify-center mb-8">
-          <div className="inline-flex rounded-xl bg-cream-200 p-1.5 border border-stone-300">
+        {/* Category Filter Pills */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+          {categories.map((cat) => (
             <button
-              onClick={() => setActiveTab('events')}
-              className={`px-4 sm:px-5 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all ${
-                activeTab === 'events'
+              key={cat.id}
+              onClick={() => {
+                setSelectedCategory(cat.id);
+                setLightboxIndex(null);
+              }}
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all ${
+                selectedCategory === cat.id
                   ? 'bg-emerald-950 text-white shadow-sm'
-                  : 'text-stone-700 hover:text-emerald-950'
+                  : 'bg-white text-stone-700 hover:bg-cream-200 border border-stone-200'
               }`}
             >
-              Milestone Events (11 Moments)
+              {cat.label}
             </button>
-            <button
-              onClick={() => setActiveTab('dinner')}
-              className={`px-4 sm:px-5 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all ${
-                activeTab === 'dinner'
-                  ? 'bg-copper-500 text-white shadow-sm'
-                  : 'text-stone-700 hover:text-emerald-950'
-              }`}
-            >
-              Dynamos Dinner Gala
-            </button>
-          </div>
+          ))}
         </div>
 
         {/* Google Drive Album Callout Banner */}
-        {activeTab === 'dinner' && (
-          <div className="mb-10 p-6 rounded-2xl bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 text-white shadow-lg border border-copper-400/40 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="space-y-1 text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-start gap-2 text-copper-300 text-xs font-bold uppercase tracking-wider">
-                <Sparkles className="w-4 h-4 text-copper-400" />
-                Complete High-Resolution Photo Vault
-              </div>
-              <h3 className="text-xl font-serif font-bold">
-                Access the Full 208+ Dinner Photos Album on Google Drive
-              </h3>
-              <p className="text-xs sm:text-sm text-stone-300 max-w-xl">
-                Browse, download, and preserve raw, uncompressed 4K portraits, group captures, and candid moments from the official graduation dinner.
-              </p>
+        <div className="mb-10 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 text-white shadow-lg border border-copper-400/40 flex flex-col md:flex-row items-center justify-between gap-5">
+          <div className="space-y-1 text-center md:text-left">
+            <div className="flex items-center justify-center md:justify-start gap-2 text-copper-300 text-xs font-bold uppercase tracking-wider">
+              <Sparkles className="w-4 h-4 text-copper-400" />
+              Complete High-Resolution Photo Vault
             </div>
-            <a
-              href="https://drive.google.com/drive/folders/1L45SnLR-wTtN_2EYNQ15MfDXP5_DCxIC"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl bg-copper-500 hover:bg-copper-600 text-white font-semibold text-xs sm:text-sm shadow-copper hover:shadow-copper-lg transition-all flex items-center gap-2 whitespace-nowrap"
-            >
-              <span>Open 208-Photo Album</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
+            <h3 className="text-lg sm:text-xl font-serif font-bold">
+              Access the Full 208+ Dinner & Event Photos Album on Google Drive
+            </h3>
+            <p className="text-xs text-stone-300 max-w-xl">
+              Browse and download uncompressed portraits, group captures, and candid moments from the official graduation dinner and class archives.
+            </p>
           </div>
-        )}
+          <a
+            href="https://drive.google.com/drive/folders/1L45SnLR-wTtN_2EYNQ15MfDXP5_DCxIC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 rounded-xl bg-copper-500 hover:bg-copper-600 text-white font-semibold text-xs sm:text-sm shadow-copper hover:shadow-copper-lg transition-all flex items-center gap-2 whitespace-nowrap"
+          >
+            <span>Open Full Drive Album</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -176,12 +490,16 @@ export default function GallerySection() {
                   src={item.src}
                   alt={item.title}
                   loading="lazy"
-                  className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover object-top transform transition-transform duration-700 group-hover:scale-105"
                   onError={(e) => {
                     e.target.src = '/images/cover/page_001_cover.jpg';
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity" />
+
+                <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-emerald-950/85 text-copper-300 border border-copper-400/30 text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">
+                  {item.category}
+                </div>
 
                 <div className="absolute top-3 right-3 p-2 rounded-full bg-black/40 text-white/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
                   <Maximize2 className="w-3.5 h-3.5" />
@@ -191,7 +509,7 @@ export default function GallerySection() {
                   <span className="text-[10px] font-mono tracking-widest uppercase text-copper-300 font-bold block">
                     {item.meta}
                   </span>
-                  <h4 className="text-base font-serif font-bold tracking-wide mt-0.5">
+                  <h4 className="text-sm sm:text-base font-serif font-bold tracking-wide mt-0.5 line-clamp-2">
                     {item.title}
                   </h4>
                 </div>
@@ -200,7 +518,7 @@ export default function GallerySection() {
           ))}
         </div>
 
-        {/* Redesigned Exhibition Lightbox Viewer (Full-Bleed Card Frame, Swipeable, Thumbnail Strip) */}
+        {/* Exhibition Lightbox Viewer */}
         {activePhoto && (
           <div
             className="fixed inset-0 z-50 bg-emerald-950/95 backdrop-blur-xl flex items-center justify-center p-2 sm:p-6"
@@ -212,7 +530,6 @@ export default function GallerySection() {
               className="w-full max-w-4xl bg-stone-900 rounded-2xl overflow-hidden border border-copper-400/40 shadow-2xl flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Viewer Top Header Bar */}
               <div className="px-4 sm:px-6 py-3.5 bg-stone-950 border-b border-stone-800 flex items-center justify-between">
                 <div className="flex items-center gap-2.5">
                   <span className="px-2.5 py-0.5 rounded-md bg-copper-500/20 text-copper-300 border border-copper-400/30 text-[10px] font-mono font-bold uppercase">
@@ -232,7 +549,6 @@ export default function GallerySection() {
                 </button>
               </div>
 
-              {/* Main Photo Stage — Edge-to-Edge Container */}
               <div className="relative w-full h-[54vh] sm:h-[62vh] bg-stone-950 flex items-center justify-center overflow-hidden select-none">
                 <img
                   src={activePhoto.src}
@@ -241,7 +557,6 @@ export default function GallerySection() {
                 />
               </div>
 
-              {/* Viewer Bottom Caption & Controls Bar */}
               <div className="p-4 sm:px-6 sm:py-4 bg-stone-900 border-t border-stone-800 flex flex-col gap-3">
                 <div className="flex items-center justify-between gap-3">
                   <div className="min-w-0">
@@ -253,7 +568,6 @@ export default function GallerySection() {
                     </p>
                   </div>
 
-                  {/* Dedicated Prev / Next Buttons */}
                   <div className="flex items-center gap-2 shrink-0">
                     <button
                       onClick={goToPrev}
@@ -272,7 +586,6 @@ export default function GallerySection() {
                   </div>
                 </div>
 
-                {/* Filmstrip Thumbnail Bar */}
                 <div className="flex items-center gap-2 overflow-x-auto pb-1 pt-1">
                   {currentGalleryList.map((thumb, tIdx) => (
                     <button

@@ -5,6 +5,7 @@ import MagazineReader from '../components/MagazineReader';
 import GraduandsWall from '../components/GraduandsWall';
 import StaffDirectory from '../components/StaffDirectory';
 import ProjectsShowcase from '../components/ProjectsShowcase';
+import SponsorSpotlight from '../components/SponsorSpotlight';
 import CommitteesSection from '../components/CommitteesSection';
 import GallerySection from '../components/GallerySection';
 import DownloadHub from '../components/DownloadHub';
@@ -18,6 +19,7 @@ export default function HomePage() {
       <GraduandsWall />
       <StaffDirectory />
       <ProjectsShowcase />
+      <SponsorSpotlight />
       <CommitteesSection />
       <GallerySection />
       <DownloadHub />

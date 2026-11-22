@@ -14,13 +14,13 @@ export default function Hero() {
   return (
     <section
       id="overview"
-      className="relative pt-24 sm:pt-28 md:pt-32 pb-0 overflow-hidden paper-pattern border-b border-stone-300/80"
+      className="relative pt-28 sm:pt-32 md:pt-36 pb-0 overflow-hidden paper-pattern border-b border-stone-300/80"
     >
       {/* Soft ambient warm glow */}
       <div className="absolute top-10 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-copper-300/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-8 -left-24 w-72 h-72 bg-emerald-900/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-8 sm:py-12 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-12 sm:py-16 relative z-10">
         
         {/* ROW 1: Clean 2-Column Grid — Headline & Subtitle on Left, 3D Magazine on Right */}
         <div className="grid grid-cols-12 gap-4 sm:gap-8 lg:gap-12 items-center">
