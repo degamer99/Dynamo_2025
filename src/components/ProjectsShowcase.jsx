@@ -155,6 +155,25 @@ export default function ProjectsShowcase() {
           })}
         </div>
 
+        {/* Directory Callout for All 150+ Final-Year Projects */}
+        <div className="mt-10 p-5 sm:p-6 rounded-2xl bg-emerald-950 text-white border border-copper-400/30 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
+          <div>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-copper-400 block">
+              Class of 2025 Research & Design Index
+            </span>
+            <p className="text-sm sm:text-base font-serif font-bold text-white mt-0.5">
+              Search 150+ Individual Final-Year Engineering Projects Across the Graduating Set
+            </p>
+          </div>
+          <Link
+            to="/graduands"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-copper-500 hover:bg-copper-600 text-white text-xs sm:text-sm font-bold shadow-copper transition-all whitespace-nowrap"
+          >
+            <span>Browse All Graduand Projects</span>
+            <ArrowUpRight className="w-4 h-4" />
+          </Link>
+        </div>
+
       </div>
     </section>
   );

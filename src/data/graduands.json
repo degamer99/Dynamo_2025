@@ -2,10 +2,19 @@
   {
     "id": "graduand_001",
     "name": "ABDULLIADI ABDULBAKI",
-    "phone": "9067506082",
+    "phone": "09067506082",
     "email": "abdulliadi3@gmail.com",
     "image": "/images/graduand_001.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Osun state",
+    "lga": "Ede south",
+    "origin": "Osun state / Ede south",
+    "project": "Smart Gas Leakage Detector and Fire Fighting Capability",
+    "career_aspiration": "Electrical Power Engineering",
+    "favorite_lecturer": "Dr. Mahmoud",
+    "best_friend": "Afolabi Abdulwasii",
+    "will_miss": "My friends and the happy times we spent together.",
+    "social_media": "Abdulhaadi Abdulbaki"
   },
   {
     "id": "graduand_002",
@@ -13,7 +22,16 @@
     "phone": "09132885699",
     "email": "danielonesimus4@gmail.com",
     "image": "/images/graduand_002.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Plateau",
+    "lga": "Bassa",
+    "origin": "Plateau / Bassa",
+    "project": "Design and Construction of A Microcontroller based Electronic School Bell System",
+    "career_aspiration": "Electrical and Electronics Engineer",
+    "favorite_lecturer": "Dr. Yerima",
+    "best_friend": "My Squad",
+    "will_miss": "All of the memories shared.",
+    "social_media": "Daniel Onesimus"
   },
   {
     "id": "graduand_003",
@@ -21,7 +39,16 @@
     "phone": "08103983339",
     "email": "engrysk77@gmail.com",
     "image": "/images/graduand_003.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Gombe",
+    "lga": "Akko",
+    "origin": "Gombe / Akko",
+    "project": "Design and Construction of a Microcontroller-based Automatic Road Reflector Light",
+    "career_aspiration": "Telecommunication Engineering",
+    "favorite_lecturer": "Assoc. Prof. A. A. Sadiq",
+    "best_friend": "Bashiru J.H., A.Y. Yaqub, Mubarak S.H., Jamilu U.M., & Saminu M.",
+    "will_miss": "Prof. Mansur Yelwa's Ramadan Tafseer & Lectures",
+    "social_media": "Facebook: https://www.facebook.com/profile.php?id=61589514576576, X(Twitter): @yusufsalehkumo, LinkedIn: Yusuf Saleh"
   },
   {
     "id": "graduand_004",
@@ -29,7 +56,16 @@
     "phone": "08145525784",
     "email": "adamukhalipa@gmail.com",
     "image": "/images/graduand_004.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Bauchi",
+    "lga": "Ganjuwa",
+    "origin": "Bauchi / Ganjuwa",
+    "project": "Exam Time management Sytem",
+    "career_aspiration": "Business man",
+    "favorite_lecturer": "Dr. H.S Miya",
+    "best_friend": "Umar Ibrahim",
+    "will_miss": "Nothing",
+    "social_media": "Adamu Idris Shuaibu"
   },
   {
     "id": "graduand_005",
@@ -37,7 +73,16 @@
     "phone": "07065675459",
     "email": "alexisuwa222@gmail.com",
     "image": "/images/graduand_005.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "FCT",
+    "lga": "Kwali",
+    "origin": "FCT / Kwali",
+    "project": "Multipurpose alarming system in IC unit",
+    "career_aspiration": "Electrical engineering",
+    "favorite_lecturer": "Dr sani sabo",
+    "best_friend": "David jesse",
+    "will_miss": "My reading mates",
+    "social_media": "Lexxis jnr"
   },
   {
     "id": "graduand_006",
@@ -45,7 +90,16 @@
     "phone": "07068817947",
     "email": "modugaltima@gmail.com",
     "image": "/images/graduand_006.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Yobe",
+    "lga": "Damaturu",
+    "origin": "Yobe / Damaturu",
+    "project": "Visual notice board with backup system",
+    "career_aspiration": "To become a successful Electrical and Electronics Engineer and contribute to the development of Nigeria’s power sector.",
+    "favorite_lecturer": "Engr I. T Balami and Dr Sani Sabo",
+    "best_friend": "All my class mate are my best friend",
+    "will_miss": "The friendships, unforgettable memories, and experiences shared with my classmates.",
+    "social_media": "https://www.facebook.com/alhaji.modugaltima.3"
   },
   {
     "id": "graduand_007",
@@ -53,7 +107,16 @@
     "phone": "07037227652",
     "email": "oluwayomiadebanjo1@gmail.com",
     "image": "/images/graduand_007.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Kogi",
+    "lga": "Yagba east",
+    "origin": "Kogi / Yagba east",
+    "project": "Hybrid Smart Dehydrator for Tomatoes",
+    "career_aspiration": "Entrepreneur",
+    "favorite_lecturer": "Dr HS Miya",
+    "best_friend": "All/ none",
+    "will_miss": "The stress 😁😁",
+    "social_media": "Facebook.... Adebanjo Oluwayomi"
   },
   {
     "id": "graduand_008",
@@ -61,7 +124,15 @@
     "phone": "08166691185",
     "email": "mayowaemma10@gmail.com",
     "image": "/images/graduand_008.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Kogi",
+    "lga": "Kabba bunnu",
+    "origin": "Kogi / Kabba bunnu",
+    "project": "Smart chicken egg incubator with IoT",
+    "career_aspiration": "Own a Tech industry",
+    "favorite_lecturer": "Dr. Yerima",
+    "best_friend": "Victor and Sharifah",
+    "will_miss": "Friends"
   },
   {
     "id": "graduand_009",
@@ -69,7 +140,16 @@
     "phone": "09038461836",
     "email": "ishayatapshak254@gmail.com",
     "image": "/images/graduand_009.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Plateau State",
+    "lga": "Mangu LGA",
+    "origin": "Plateau State / Mangu LGA",
+    "project": "ICU multipurpose alarm system",
+    "career_aspiration": "Infantry",
+    "favorite_lecturer": "Prof Anene",
+    "best_friend": "Plangji and Caleb O",
+    "will_miss": "Early morning test",
+    "social_media": "Twitter:@tappy_254"
   },
   {
     "id": "graduand_010",
@@ -77,7 +157,16 @@
     "phone": "08074031524",
     "email": "maryamyakubu2003@gmail.com",
     "image": "/images/graduand_010.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Kogi",
+    "lga": "Okehi",
+    "origin": "Kogi / Okehi",
+    "project": "Energy harvesting using piezoelectric disc, from human footsteps",
+    "career_aspiration": "An electrical engineer",
+    "favorite_lecturer": "Engr. Sani sabo",
+    "best_friend": "Suleiman Abdulazeez",
+    "will_miss": "The people I met",
+    "social_media": "Maryam yakubu"
   },
   {
     "id": "graduand_011",
@@ -85,7 +174,16 @@
     "phone": "09013197445",
     "email": "habibabdulsalam466@gmail.com",
     "image": "/images/graduand_011.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Kogi",
+    "lga": "Adavi",
+    "origin": "Kogi / Adavi",
+    "project": "Design and construction of an automatic indirect solar Rice dryer for temperature and humidity control",
+    "career_aspiration": "To become a successful Electrical and Electronics Engineer, specialize in renewable energy, establish my own engineering business, and use my knowledge and skills to solve problems and create employment opportunities for others.",
+    "favorite_lecturer": "Dr.Sanni Sabo",
+    "best_friend": "Abdulqudir&El-Halim",
+    "will_miss": "Chirowa in test",
+    "social_media": "Facebook: Harbbybullah Abdulsalam"
   },
   {
     "id": "graduand_012",
@@ -93,7 +191,15 @@
     "phone": "08144707926",
     "email": "dicksonjamesdoka@yahoo.com",
     "image": "/images/graduand_012.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "BENUE",
+    "lga": "OGBADIBO",
+    "origin": "BENUE / OGBADIBO",
+    "project": "Design and implementation of emergency response system and vehicle tyre monitoring",
+    "favorite_lecturer": "Dr. OBI UMAR",
+    "best_friend": "Everyone",
+    "will_miss": "The Seriousness emphasize on how they enforce students to live by standard",
+    "social_media": "Dickson james on all social media handles"
   },
   {
     "id": "graduand_013",
@@ -101,7 +207,16 @@
     "phone": "07060984405",
     "email": "hsdunga.ug@atbu.edu.ng",
     "image": "/images/graduand_013.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Bauchi",
+    "lga": "Bogoro",
+    "origin": "Bauchi / Bogoro",
+    "project": "Solar-Powered water quality monitoring and purification system",
+    "career_aspiration": "Engineering",
+    "favorite_lecturer": "No favorite",
+    "best_friend": "Emmanuel HO",
+    "will_miss": "Nothing",
+    "social_media": "Facebook , WhatsApp"
   },
   {
     "id": "graduand_014",
@@ -109,7 +224,13 @@
     "phone": "08164820156",
     "email": "Ngausmanbello3072@gmail.com",
     "image": "/images/graduand_014.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "FCT",
+    "lga": "AMAC",
+    "origin": "FCT / AMAC",
+    "project": "Design and implementation of a solar powered automated egg incubator.",
+    "career_aspiration": "Renewable Energy",
+    "social_media": "Bello Usman Nga"
   },
   {
     "id": "graduand_015",
@@ -117,7 +238,16 @@
     "phone": "07036998247",
     "email": "Lumanayoha051@gmail.com",
     "image": "/images/graduand_015.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Bauchi",
+    "lga": "Tafawa Balewa",
+    "origin": "Bauchi / Tafawa Balewa",
+    "project": "Home automation system using Dual tone multifrequency signal",
+    "career_aspiration": "Smart home Automation",
+    "favorite_lecturer": "Dr. Miya",
+    "best_friend": "Faruk and Caleb",
+    "will_miss": "Academic Activities",
+    "social_media": "Lumana Yohanna mazadu"
   },
   {
     "id": "graduand_016",
@@ -125,7 +255,16 @@
     "phone": "07086815654",
     "email": "aliyudanjuma24@gmail.com",
     "image": "/images/graduand_016.jpg",
-    "source_page": 1
+    "source_page": 1,
+    "state_of_origin": "Bauchi state",
+    "lga": "Kirfi",
+    "origin": "Bauchi state / Kirfi",
+    "project": "Design and construction of automatic chicken and duck incubator",
+    "career_aspiration": "Power Engrineer",
+    "favorite_lecturer": "Dr. Engr. H Miya",
+    "best_friend": "Ibrahim Ibrahim Abdulrahman",
+    "will_miss": "Baba blue",
+    "social_media": "https://www.facebook.com/itzuncle5655"
   },
   {
     "id": "graduand_017",
@@ -133,7 +272,16 @@
     "phone": "09023329488",
     "email": "harunasaleh2019@gmail.com",
     "image": "/images/graduand_017.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Katsina",
+    "lga": "Funtua",
+    "origin": "Katsina / Funtua",
+    "project": "Design and Implementation of an Automatic power factor correction system",
+    "career_aspiration": "Fibre optic Engineering and telecommunications",
+    "favorite_lecturer": "Dr. Yerima",
+    "best_friend": "One of the real ones.",
+    "will_miss": "Exams, perhaps.",
+    "social_media": "Daddiey Ibrahim"
   },
   {
     "id": "graduand_018",
@@ -141,7 +289,16 @@
     "phone": "09164663381",
     "email": "acumenprince@gmail.com",
     "image": "/images/graduand_018.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Delta",
+    "lga": "Oshimili North",
+    "origin": "Delta / Oshimili North",
+    "project": "Construction and design of a 12v battery charger",
+    "career_aspiration": "Electrical engineering",
+    "favorite_lecturer": "Dr Sani sabo",
+    "best_friend": "All",
+    "will_miss": "Cost of living",
+    "social_media": "Princeacumen"
   },
   {
     "id": "graduand_019",
@@ -149,7 +306,16 @@
     "phone": "08167042264",
     "email": "francisshedrach136@gmail.com",
     "image": "/images/graduand_019.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Nasarawa",
+    "lga": "Nassarawa-Eggon",
+    "origin": "Nasarawa / Nassarawa-Eggon",
+    "project": "Design and construction of a standalone mobile phone charging station",
+    "career_aspiration": "Innovation",
+    "favorite_lecturer": "Prof. Y.S. Haruna",
+    "best_friend": "Jeremiah Jehoida",
+    "will_miss": "The environment",
+    "social_media": "Facebook"
   },
   {
     "id": "graduand_020",
@@ -157,7 +323,16 @@
     "phone": "08054329049",
     "email": "calebagber2@gmail.com",
     "image": "/images/graduand_020.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Benue",
+    "lga": "Kwande",
+    "origin": "Benue / Kwande",
+    "project": "Design and construction of an automatic phase selector with under/over voltage protection for three phase power supply",
+    "career_aspiration": "Electrical services design",
+    "favorite_lecturer": "Dr Hassan Miya",
+    "best_friend": "Sambless/Slice/Tor",
+    "will_miss": "Course mates",
+    "social_media": "agbermvendagacaleb23@gmail.com/ ïtz Engr Smar"
   },
   {
     "id": "graduand_021",
@@ -165,7 +340,16 @@
     "phone": "09049562843",
     "email": "chuwangjoshua31@gmail.com",
     "image": "/images/graduand_021.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Plateau",
+    "lga": "Jos South",
+    "origin": "Plateau / Jos South",
+    "project": "Design and construct of a smart prepaid energy meter with biometric access control and real-time tamper alert system.",
+    "career_aspiration": "Electrical Machines Engineer",
+    "favorite_lecturer": "Engr A. I. Dalyop",
+    "best_friend": "Favour Anthony and Stanley Fejiro",
+    "will_miss": "Campus life",
+    "social_media": "Linkedin: Chuwang Joshua"
   },
   {
     "id": "graduand_022",
@@ -173,7 +357,16 @@
     "phone": "08068524322",
     "email": "usmanmuhammad143ftm@gmail.com",
     "image": "/images/graduand_022.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Gombe",
+    "lga": "Funakaye",
+    "origin": "Gombe / Funakaye",
+    "project": "Design and construction of a microcontroller based autonomous vehicle with zebra crossing recognition and distance monitoring",
+    "career_aspiration": "Masjidil Haram cleaning",
+    "favorite_lecturer": "Dr KO Lawal",
+    "best_friend": "A-Z",
+    "will_miss": "Ramadan Tafseer",
+    "social_media": "FBK Khateeb Shetima"
   },
   {
     "id": "graduand_023",
@@ -181,7 +374,16 @@
     "phone": "08030499873",
     "email": "abdulhaqabdulazeez3@gmail.com",
     "image": "/images/graduand_023.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Kwara state",
+    "lga": "Ilorin east",
+    "origin": "Kwara state / Ilorin east",
+    "project": "Implementation of smart patient call for hospitals and nursing homes.",
+    "career_aspiration": "Working in my field of study",
+    "favorite_lecturer": "DR.sani sabo",
+    "best_friend": "JAYLITE",
+    "will_miss": "The people I met there",
+    "social_media": "Abdulhaq AbdulAzeez"
   },
   {
     "id": "graduand_024",
@@ -189,15 +391,33 @@
     "phone": "08157547390",
     "email": "josephjeremiah22@gmail.com",
     "image": "/images/graduand_024.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Kogi state",
+    "lga": "Ofu LGA",
+    "origin": "Kogi state / Ofu LGA",
+    "project": "Design and construction of multipurpose ICU Alarm monitoring system with LCD display",
+    "career_aspiration": "Entrepreneur",
+    "favorite_lecturer": "Dr. Sani S.",
+    "best_friend": "My team",
+    "will_miss": "Only the strong hearted survives ATBU, I will forever miss the war laying behind the school gate 🔥",
+    "social_media": "Joseph Jeremiah Ojonugwa"
   },
   {
     "id": "graduand_025",
     "name": "UMAR FARUK MUSTAPHA",
-    "phone": "8034195808",
+    "phone": "08034195808",
     "email": "frmustapha.ufm.02@gmail.com",
     "image": "/images/graduand_025.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Bauchi",
+    "lga": "Katagum",
+    "origin": "Bauchi / Katagum",
+    "project": "Prayer Time Display System",
+    "career_aspiration": "Entrepreneurship",
+    "favorite_lecturer": "Engr. Sani Sabo",
+    "best_friend": "Isah Usman Isah",
+    "will_miss": "YRA",
+    "social_media": "Faruk Mustapha (Facebook)"
   },
   {
     "id": "graduand_026",
@@ -205,7 +425,16 @@
     "phone": "08061688298",
     "email": "iaakanuku.ug@atbu.edu.ng",
     "image": "/images/graduand_026.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Bauchi",
+    "lga": "Dambam",
+    "origin": "Bauchi / Dambam",
+    "project": "Design & construction of an integrated microcontroller training kit",
+    "career_aspiration": "Becoming an academic lecturer and technical consultant in Power Systems and Electrical Machine Analysis.",
+    "favorite_lecturer": "Engr. Dr. Sani Sabo",
+    "best_friend": "U.I. Anchau",
+    "will_miss": "The profound, masterly, and enjoyable delivery of knowledge from my mentor, Engr. Dr. Sani Sabo.",
+    "social_media": "Facebook Akanuku Abdullahi Idris"
   },
   {
     "id": "graduand_027",
@@ -213,7 +442,16 @@
     "phone": "07013630962",
     "email": "Torshiaondodaniel@gmail.com",
     "image": "/images/graduand_027.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Benue",
+    "lga": "Vandeikya",
+    "origin": "Benue / Vandeikya",
+    "project": "Optical based Non invasive Aneamia detector",
+    "career_aspiration": "Telecommunications Engr.",
+    "favorite_lecturer": "Dr. Said Musa Yerima",
+    "best_friend": "JighJigh Peter Pever",
+    "will_miss": "My coursemates and football teammates",
+    "social_media": "@Dannyvee45 (TikTok) shiaondo Daniel Tor (Facebook) @TorShiaondo (X)"
   },
   {
     "id": "graduand_028",
@@ -221,7 +459,16 @@
     "phone": "07037273372",
     "email": "umarsamailanng@gmail.com",
     "image": "/images/graduand_028.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "BAUCHI",
+    "lga": "NINGI",
+    "origin": "BAUCHI / NINGI",
+    "project": "Smart Home Energy Management system",
+    "career_aspiration": "Wiring and Installation",
+    "favorite_lecturer": "All but one favor most",
+    "best_friend": "MUSA BALA IBRAHIM",
+    "will_miss": "Cirowa",
+    "social_media": "Whatsapp"
   },
   {
     "id": "graduand_029",
@@ -229,7 +476,14 @@
     "phone": "07083148649",
     "email": "enahorothomas.835@gmail.com",
     "image": "/images/graduand_029.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Edo State",
+    "lga": "Owan East",
+    "origin": "Edo State / Owan East",
+    "project": "Smart Hospital Queue management system",
+    "career_aspiration": "Power Engineering",
+    "best_friend": "JESUS CHRIST",
+    "social_media": "(x@eli_t1106)(IG@thomaselijaholuwatoyosi)"
   },
   {
     "id": "graduand_030",
@@ -237,7 +491,16 @@
     "phone": "07051579339",
     "email": "emmanueluba95@gmail.com",
     "image": "/images/graduand_030.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Imo state",
+    "lga": "Mbaitoli",
+    "origin": "Imo state / Mbaitoli",
+    "project": "ICU SECURITY ALRAM SYSTEM",
+    "career_aspiration": "Forex trading / fashion design",
+    "favorite_lecturer": "Dr. Sani sabo",
+    "best_friend": "Tondow peter",
+    "will_miss": "Department football matches",
+    "social_media": "Uba emmanuel"
   },
   {
     "id": "graduand_031",
@@ -245,7 +508,16 @@
     "phone": "09032519316",
     "email": "oliverolivia612@gmail.com",
     "image": "/images/graduand_031.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Abia state",
+    "lga": "Isuikwato",
+    "origin": "Abia state / Isuikwato",
+    "project": "Egg incubator",
+    "career_aspiration": "Powe systems",
+    "favorite_lecturer": "Dr. Buhari",
+    "best_friend": "My Paddys",
+    "will_miss": "My friends, The premium gists and the freedom that comes with uni",
+    "social_media": "Fb: Oliver Olivia"
   },
   {
     "id": "graduand_032",
@@ -253,7 +525,16 @@
     "phone": "07063833230",
     "email": "salihuyusuf59@gmail.com",
     "image": "/images/graduand_032.jpg",
-    "source_page": 2
+    "source_page": 2,
+    "state_of_origin": "Kaduna state",
+    "lga": "Kachia",
+    "origin": "Kaduna state / Kachia",
+    "project": "Construction of smart poultry cage",
+    "career_aspiration": "Engineering",
+    "favorite_lecturer": "Dr sani sabo",
+    "best_friend": "Usman, m.kabir and the rest",
+    "will_miss": "TDP",
+    "social_media": "Engr salihu Yusuf @ Facebook"
   },
   {
     "id": "graduand_033",
@@ -261,7 +542,16 @@
     "phone": "07035351418",
     "email": "farukolabisi123@gmail.com",
     "image": "/images/graduand_033.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "OYO",
+    "lga": "Ogbomosho",
+    "origin": "OYO / Ogbomosho",
+    "project": "Face Recognition Door Access System Using Edge Al",
+    "career_aspiration": "Business",
+    "favorite_lecturer": "Engr Salihu",
+    "best_friend": "The OG’s",
+    "will_miss": "The hustle and bustle",
+    "social_media": "Faruk Olabisi"
   },
   {
     "id": "graduand_034",
@@ -269,7 +559,15 @@
     "phone": "07066802500",
     "email": "calebobida2@gmail.com",
     "image": "/images/graduand_034.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Gombe",
+    "lga": "Shongom",
+    "origin": "Gombe / Shongom",
+    "project": "DESIGN, CONSTRUCTION AND IMPLEMENTATION OF A SMART SNAKE DETECTION AND ALERT SYSTEM: AN EMBEDDED COMPUTER VISION APPROACH TO POULTRY FARM SECURITY AND HOUSING.",
+    "career_aspiration": "Visual story Architecture",
+    "best_friend": "Block boys",
+    "will_miss": "The struggle",
+    "social_media": "block_roddy"
   },
   {
     "id": "graduand_035",
@@ -277,7 +575,16 @@
     "phone": "09069329865",
     "email": "yaqubyaqub20152014@gmail.com",
     "image": "/images/graduand_035.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Yobe",
+    "lga": "Potiskum",
+    "origin": "Yobe / Potiskum",
+    "project": "Design and construction of smart prepaid energy meter with biometric access control and real-time tamper alert system",
+    "career_aspiration": "Power system/Entrepreneurship",
+    "favorite_lecturer": "Dr. Yarima",
+    "best_friend": "Bash",
+    "will_miss": "Ramadan Tafsir",
+    "social_media": "Facebook @Yaqub Abubakar"
   },
   {
     "id": "graduand_036",
@@ -285,7 +592,16 @@
     "phone": "07037883284",
     "email": "Abdulyero01@gmail.com",
     "image": "/images/graduand_036.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Katsina",
+    "lga": "Jibia",
+    "origin": "Katsina / Jibia",
+    "project": "Voltage Doubler",
+    "career_aspiration": "Business",
+    "favorite_lecturer": "Engr. Sani Sabo",
+    "best_friend": "Z&M",
+    "will_miss": "The friendship and academic struggles",
+    "social_media": "https://www.facebook.com/abdulmalik.yero.7"
   },
   {
     "id": "graduand_037",
@@ -293,7 +609,16 @@
     "phone": "08106806994",
     "email": "harunasufiyan87@gmail.com",
     "image": "/images/graduand_037.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Kogi state",
+    "lga": "Adavi LG",
+    "origin": "Kogi state / Adavi LG",
+    "project": "Sphygmomanometer",
+    "career_aspiration": "Business/Electrical service",
+    "favorite_lecturer": "Dr. Hassan Buhari Maman",
+    "best_friend": "Myself",
+    "will_miss": "Nothing to miss",
+    "social_media": "INDAH SUFYY"
   },
   {
     "id": "graduand_038",
@@ -301,7 +626,15 @@
     "phone": "08107600873",
     "email": "jmumar.ug@atbu.edu.ng",
     "image": "/images/graduand_038.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Bauchi",
+    "lga": "Ganjuwa",
+    "origin": "Bauchi / Ganjuwa",
+    "project": "Multipurpose security alarm system",
+    "career_aspiration": "Football ⚽",
+    "favorite_lecturer": "Dr sani sabo",
+    "best_friend": "All my gees",
+    "will_miss": "My cycle"
   },
   {
     "id": "graduand_039",
@@ -309,7 +642,16 @@
     "phone": "09073407458",
     "email": "oj22245@gmail.com",
     "image": "/images/graduand_039.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Cross River State",
+    "lga": "Yala Local Government Area",
+    "origin": "Cross River State / Yala Local Government Area",
+    "project": "Design of and intelligent charger for lithium ion battery powered Electric Bike",
+    "career_aspiration": "Contractor",
+    "favorite_lecturer": "Proof. Amao",
+    "best_friend": "Ojonugwa Jerymiah J.",
+    "will_miss": "Marathon Academic work",
+    "social_media": "Facebook"
   },
   {
     "id": "graduand_040",
@@ -317,7 +659,16 @@
     "phone": "09079616047",
     "email": "dangwaramc@gmail.com",
     "image": "/images/graduand_040.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Gombe",
+    "lga": "Balanga",
+    "origin": "Gombe / Balanga",
+    "project": "Design and construction of Tyre monitoring and security emergency system.",
+    "career_aspiration": "Electrical/Solar Design Engr.",
+    "favorite_lecturer": "Prof. Y.S.Haruna",
+    "best_friend": "All my guys",
+    "will_miss": "Lecturers threat😅",
+    "social_media": "LinkedIn @ Dangwaram clement. Whatsapp"
   },
   {
     "id": "graduand_041",
@@ -325,7 +676,16 @@
     "phone": "08083884261",
     "email": "odeymarkenwa@gmail.com",
     "image": "/images/graduand_041.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "CROSS RIVER",
+    "lga": "BEKWARRA",
+    "origin": "CROSS RIVER / BEKWARRA",
+    "project": "DESIGN AND IMPLEMENTATION OF A MICROCONTROLLER-BASE SMART WATCH FOR ELDERLY",
+    "career_aspiration": "Becoming a Certified Electrical Engineer, expert in Systems Engineer. Interest in Renewable Energy & Power Systems engineering, aiming to innovate sustainable energy solutions across Africa.\"",
+    "favorite_lecturer": "PhD. Engr Sani Sabo",
+    "best_friend": "Umele Enoch Sunday",
+    "will_miss": "Built-in Community and Proximity to Friends and Coursemate",
+    "social_media": "X: @OdeyMarkE. facebook: Odey Mar-kbless Enwa, Instagram: @odeymarkbless"
   },
   {
     "id": "graduand_042",
@@ -333,7 +693,15 @@
     "phone": "08086893623",
     "email": "paulbitrus35@gmail.com",
     "image": "/images/graduand_042.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Plateau",
+    "lga": "Jos East",
+    "origin": "Plateau / Jos East",
+    "project": "Design of a hybrid smart solar dehydrator for tomatoes",
+    "career_aspiration": "High Voltage Engineering",
+    "favorite_lecturer": "Pro. Y.S Haruna",
+    "will_miss": "The environment",
+    "social_media": "X: Paul_bitrus5206. Instagram: Paulthegreat6"
   },
   {
     "id": "graduand_043",
@@ -341,7 +709,14 @@
     "phone": "08148082729",
     "email": "maabdulbasit804@gmail.com",
     "image": "/images/graduand_043.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Kaduna State",
+    "lga": "Igabi",
+    "origin": "Kaduna State / Igabi",
+    "project": "Hydrolysis cooker",
+    "career_aspiration": "All electrical works",
+    "favorite_lecturer": "The perfect once",
+    "will_miss": "Nothing"
   },
   {
     "id": "graduand_044",
@@ -349,7 +724,16 @@
     "phone": "08133852481",
     "email": "elmerleek142@gmail.com",
     "image": "/images/graduand_044.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Jigawa",
+    "lga": "Kafin Hausa",
+    "origin": "Jigawa / Kafin Hausa",
+    "project": "Design and Construction of Camera Remote Control",
+    "career_aspiration": "Electrical Engineer",
+    "favorite_lecturer": "Engr. Dr. H.S. Miya",
+    "best_friend": "All my buddies",
+    "will_miss": "Engineering Complex",
+    "social_media": "Whatsapp and Facebook"
   },
   {
     "id": "graduand_045",
@@ -357,7 +741,16 @@
     "phone": "07018220952",
     "email": "joshuaoguche3@gmail.com",
     "image": "/images/graduand_045.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Kogi state",
+    "lga": "Olamaboro",
+    "origin": "Kogi state / Olamaboro",
+    "project": "Magnetic Leviatation",
+    "career_aspiration": "Contractor/ Business Mogul",
+    "favorite_lecturer": "Dr Buhari",
+    "best_friend": "Samuel .A. Daniels",
+    "will_miss": "NIFES Fellowship",
+    "social_media": "Linkedin: Oguche Joshua, Facebook: Chenemi"
   },
   {
     "id": "graduand_046",
@@ -365,15 +758,33 @@
     "phone": "09038028948",
     "email": "nathananthonymusa@gmail.com",
     "image": "/images/graduand_046.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Gombe",
+    "lga": "Kaltungo",
+    "origin": "Gombe / Kaltungo",
+    "project": "Design and implementation of a three phase selector",
+    "career_aspiration": "Engineer",
+    "favorite_lecturer": "Dr Sani Sabo",
+    "best_friend": "Abdulsallam liman yahaya",
+    "will_miss": "Baba Blue",
+    "social_media": "FLACKO_SZN"
   },
   {
     "id": "graduand_047",
     "name": "EMMANUEL ALIZI",
-    "phone": "008022709641",
+    "phone": "08022709641",
     "email": "aliziemmanuel7@gmail.com",
     "image": "/images/graduand_047.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Nassarawa",
+    "lga": "Nassarawa Eggon",
+    "origin": "Nassarawa / Nassarawa Eggon",
+    "project": "Egg incubator",
+    "career_aspiration": "Ac synchronous machines",
+    "favorite_lecturer": "Sani sabo",
+    "best_friend": "Habila Andy",
+    "will_miss": "My friends",
+    "social_media": "@Aliziperkins on x"
   },
   {
     "id": "graduand_048",
@@ -381,7 +792,16 @@
     "phone": "09162958990",
     "email": "kabiruabbamussa2020@gmail.com",
     "image": "/images/graduand_048.jpg",
-    "source_page": 3
+    "source_page": 3,
+    "state_of_origin": "Jigawa",
+    "lga": "Maigatari.",
+    "origin": "Jigawa / Maigatari.",
+    "project": "Design and Construction of an IoT-Based Smart Home Energy Management System with Load Scheduling",
+    "career_aspiration": "Electrical Engineer and an entrepreneur",
+    "favorite_lecturer": "Dr. Yareema",
+    "best_friend": "Kamaluddeen and Nura",
+    "will_miss": "My friends and Masa",
+    "social_media": "Kabiru Abba Musa"
   },
   {
     "id": "graduand_049",
@@ -389,7 +809,16 @@
     "phone": "09079342115",
     "email": "simonelisha485@gmail.com",
     "image": "/images/graduand_049.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Bauchi",
+    "lga": "Tafawa Balewa",
+    "origin": "Bauchi / Tafawa Balewa",
+    "project": "Design and implementation of smart door lock system using passcode and fingerprint authentication",
+    "career_aspiration": "Technoprenuer/Researcher",
+    "favorite_lecturer": "Engr Mahmud",
+    "best_friend": "My guys",
+    "will_miss": "Early momo class",
+    "social_media": "Simon Elisha (Facebook and LinkedIn)"
   },
   {
     "id": "graduand_050",
@@ -397,7 +826,16 @@
     "phone": "07064283474",
     "email": "gideonbarka4@gmail.com",
     "image": "/images/graduand_050.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Borno",
+    "lga": "Shani",
+    "origin": "Borno / Shani",
+    "project": "Vehicle tyre monitoring and emergency response system",
+    "career_aspiration": "Facility design Engineer",
+    "favorite_lecturer": "Dr.H.S.miya",
+    "best_friend": "Isahya Godday",
+    "will_miss": "Nice environment",
+    "social_media": "Facebook"
   },
   {
     "id": "graduand_051",
@@ -405,7 +843,16 @@
     "phone": "07062361805",
     "email": "adamuhussainihardawa@gmail.com",
     "image": "/images/graduand_051.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Yobe",
+    "lga": "Potiskum",
+    "origin": "Yobe / Potiskum",
+    "project": "Noninvasive Blood Sugar monitoring system",
+    "career_aspiration": "Power System Engineer",
+    "favorite_lecturer": "Engineer Dalyop",
+    "best_friend": "All my guys",
+    "will_miss": "The TDBs Tutorials and More",
+    "social_media": "Adamu Hussaini, Facebook"
   },
   {
     "id": "graduand_052",
@@ -413,7 +860,13 @@
     "phone": "07019659168",
     "email": "Yahayateejay@gmail.com",
     "image": "/images/graduand_052.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "KOGI",
+    "lga": "IJUMU",
+    "origin": "KOGI / IJUMU",
+    "project": "Design and Construction of a Smart Gas Leakage Detector with Fire Fighting Capability.",
+    "favorite_lecturer": "Dr. Mahmud",
+    "best_friend": "Squad"
   },
   {
     "id": "graduand_053",
@@ -421,7 +874,16 @@
     "phone": "09012772532",
     "email": "bilalbayodele@gmail.com",
     "image": "/images/graduand_053.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Lagos State",
+    "lga": "Surulere",
+    "origin": "Lagos State / Surulere",
+    "project": "Study Kit ( Led bulb, rechargeable fan and power bank)",
+    "career_aspiration": "The oil and gas industry, with expertise in electrical engineering business development.",
+    "favorite_lecturer": "Prof. Sadiq and Prof. Amoo",
+    "best_friend": "My Squad",
+    "will_miss": "My Football Family.",
+    "social_media": "Abdulkareem Bilal"
   },
   {
     "id": "graduand_054",
@@ -429,7 +891,14 @@
     "phone": "08106612674",
     "email": "nazifabasharigrk@gmail.com",
     "image": "/images/graduand_054.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Jigawa",
+    "lga": "Garki",
+    "origin": "Jigawa / Garki",
+    "project": "Design and construction of automatic temperature control for monitoring chicken",
+    "favorite_lecturer": "Dr. A .A Sadiq",
+    "best_friend": "Salis lawan",
+    "social_media": "Nazifi Bashari"
   },
   {
     "id": "graduand_055",
@@ -437,7 +906,16 @@
     "phone": "07060688860",
     "email": "ahmedhoyo@gmail.com",
     "image": "/images/graduand_055.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Borno",
+    "lga": "Gwoza",
+    "origin": "Borno / Gwoza",
+    "project": "Design and construction of a smart Vehicles accident detection and emergency alert system",
+    "career_aspiration": "Power and renewable energy/Biomedical engineering👨‍🔧",
+    "favorite_lecturer": "Dr, Buhari Mamman/Engr Dalyop",
+    "best_friend": "Muhammed Baba Alkali",
+    "will_miss": "Getting contact with different cultures of different forms",
+    "social_media": "Facebook, Instagram, WhatsApp, Snapchat and Imo."
   },
   {
     "id": "graduand_056",
@@ -445,7 +923,16 @@
     "phone": "07025331085",
     "email": "Chaliphabukar77@gmail.com",
     "image": "/images/graduand_056.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Kaduna",
+    "lga": "Zaria",
+    "origin": "Kaduna / Zaria",
+    "project": "Electronic Voting Machine [EVM]",
+    "career_aspiration": "General Electrical Engineering Equipments Supply",
+    "favorite_lecturer": "Engr. Dr. H. S. Miya",
+    "best_friend": "Kamalludeen Aliyu Adamu",
+    "will_miss": "ATBU Writers Society (AWS)",
+    "social_media": "X: chaliphabukar, Facebook: Chalipha Bukar, Tiktok: chaliphabukar, LinkedIn: Chalipha Bukar, Instagram: chalipha.bukar"
   },
   {
     "id": "graduand_057",
@@ -453,7 +940,16 @@
     "phone": "07062064863",
     "email": "muhammadsalisyahaya@gmail.com",
     "image": "/images/graduand_057.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Nasarawa",
+    "lga": "Keffi",
+    "origin": "Nasarawa / Keffi",
+    "project": "Smart Snake Detection & Alert System. An Embedded Computer Vision Approach to Poultry Farm Security",
+    "career_aspiration": "Renewable energy/ Telecommunications Engineering",
+    "favorite_lecturer": "Engr. Dr. Hassan Sabo Miya",
+    "best_friend": "Kamaluddeen Aliyu Adamu",
+    "will_miss": "The Stress",
+    "social_media": "@yms_gamji"
   },
   {
     "id": "graduand_058",
@@ -461,7 +957,16 @@
     "phone": "08133166069",
     "email": "isahjr11@gmail.com",
     "image": "/images/graduand_058.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Katsina",
+    "lga": "Batagarawa",
+    "origin": "Katsina / Batagarawa",
+    "project": "Design and construction of an electrical energy harvesting system using Piezoelectric disc.",
+    "career_aspiration": "Engineering",
+    "favorite_lecturer": "Dr. Miya",
+    "best_friend": "Faruq,Ola ,Samuel ,temple members and block brothers",
+    "will_miss": "Good moments with friends",
+    "social_media": "Iserh_usman on twitter"
   },
   {
     "id": "graduand_059",
@@ -469,7 +974,16 @@
     "phone": "08134820208",
     "email": "musadaniel083@gmail.com",
     "image": "/images/graduand_059.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Kaduna",
+    "lga": "Chikun",
+    "origin": "Kaduna / Chikun",
+    "project": "Virtual digital notice board with back up system",
+    "career_aspiration": "Renewable Energy/Automation Engineering",
+    "favorite_lecturer": "Prof. Y.S Haruna",
+    "best_friend": "Isaac Tosin Abioye",
+    "will_miss": "Sunny Heat",
+    "social_media": "Facebook @Daniel Musa"
   },
   {
     "id": "graduand_060",
@@ -477,7 +991,16 @@
     "phone": "07087179229",
     "email": "salehibrahimadamu@gmail.com",
     "image": "/images/graduand_060.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Katsina",
+    "lga": "Funtua",
+    "origin": "Katsina / Funtua",
+    "project": "Design and Implementation of an Automatic power factor correction system",
+    "career_aspiration": "Fibre optic Engineering and telecommunications",
+    "favorite_lecturer": "Dr. Yerima",
+    "best_friend": "One of the real ones.",
+    "will_miss": "Exams, perhaps.",
+    "social_media": "Daddiey Ibrahim"
   },
   {
     "id": "graduand_061",
@@ -485,7 +1008,16 @@
     "phone": "08106410503",
     "email": "abdullahahmadhja@gmail.com",
     "image": "/images/graduand_061.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Jigawa",
+    "lga": "Hadejia",
+    "origin": "Jigawa / Hadejia",
+    "project": "Zoo monitoring and wildlife tracking system",
+    "career_aspiration": "Electronic engineer",
+    "favorite_lecturer": "DR. S.M yareema",
+    "best_friend": "Nura Abdulrahman",
+    "will_miss": "Reading books",
+    "social_media": "Abdallah Ahmad yayalle"
   },
   {
     "id": "graduand_062",
@@ -493,7 +1025,16 @@
     "phone": "09023371872",
     "email": "bgyuk@yahoo.com",
     "image": "/images/graduand_062.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Kaduna",
+    "lga": "Jaba",
+    "origin": "Kaduna / Jaba",
+    "project": "Smart Hospital Queue Management System",
+    "career_aspiration": "Electronics Engineering",
+    "favorite_lecturer": "Dr. Yerima",
+    "best_friend": "Obadiah",
+    "will_miss": "The early morning lectures, the unexpected short-guns and the chirowa.",
+    "social_media": "LinkedIn: www.linkedin.com/in/benjamin-gyuk-883138375 Facebook: https://www.facebook.com/GyukB Instagram: https://www.instagram.com/kpeknomo/#"
   },
   {
     "id": "graduand_063",
@@ -501,7 +1042,15 @@
     "phone": "08085119007",
     "email": "khalilibrahimkhalil92@gmail.com",
     "image": "/images/graduand_063.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Bauchi",
+    "lga": "Bauchi",
+    "origin": "Bauchi / Bauchi",
+    "project": "Three phase motor control and protection",
+    "career_aspiration": "Electrical installation",
+    "favorite_lecturer": "Dr sani sabo",
+    "best_friend": "Khalil Ibrahim Muhammad",
+    "will_miss": "Lecture"
   },
   {
     "id": "graduand_064",
@@ -509,7 +1058,13 @@
     "phone": "08104998160",
     "email": "mh574194@gmail.com",
     "image": "/images/graduand_064.jpg",
-    "source_page": 4
+    "source_page": 4,
+    "state_of_origin": "Jigawa",
+    "lga": "Babura",
+    "origin": "Jigawa / Babura",
+    "project": "Design and construction of 1.5kw solar Generator",
+    "favorite_lecturer": "Engr Dr sani sabo",
+    "best_friend": "They're many"
   },
   {
     "id": "graduand_065",
@@ -517,7 +1072,16 @@
     "phone": "08132473248",
     "email": "Mahwashishayaobed335@gmail.com",
     "image": "/images/graduand_065.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Plateau",
+    "lga": "Bokkos",
+    "origin": "Plateau / Bokkos",
+    "project": "Smart dehydrator",
+    "career_aspiration": "ELECTRICAL ENGINEER",
+    "favorite_lecturer": "Dr sani Sabo",
+    "best_friend": "Aii",
+    "will_miss": "The hards times",
+    "social_media": "Fb@Mahwash Obed. Tiktok @Zamaniofficialz"
   },
   {
     "id": "graduand_066",
@@ -525,7 +1089,16 @@
     "phone": "09063515495",
     "email": "ishaqharuna18@gmail.com",
     "image": "/images/graduand_066.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Bauchi",
+    "lga": "Bauchi",
+    "origin": "Bauchi / Bauchi",
+    "project": "Design and construction of a smart battery charger for electric bike",
+    "career_aspiration": "Business",
+    "favorite_lecturer": "Dr yerima",
+    "best_friend": "Musa Abubakar sadiq",
+    "will_miss": "Kingsmen",
+    "social_media": "Ishaq baba (Facebook)"
   },
   {
     "id": "graduand_067",
@@ -533,7 +1106,16 @@
     "phone": "08165799387",
     "email": "farukakwaziri019@gmail.com",
     "image": "/images/graduand_067.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Bauchi",
+    "lga": "Misau",
+    "origin": "Bauchi / Misau",
+    "project": "O.5KWh Solar-Powered Generator with 1.5KVA Modified Sine-Wave Inverter",
+    "career_aspiration": "Nanophotonics",
+    "favorite_lecturer": "Dr Yarima",
+    "best_friend": "I have a few close friends rather—Omer, Ishaq, Faruk Mustapha, Adamu, and a couple of others.",
+    "will_miss": "The memories and everything in between.",
+    "social_media": "Facebook: Faruk Ak Waziri, Instagram: @ak_waziri19"
   },
   {
     "id": "graduand_068",
@@ -541,7 +1123,16 @@
     "phone": "08064940953",
     "email": "bhjibril.ug@atbu.edu.ng",
     "image": "/images/graduand_068.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Nassarawa",
+    "lga": "Lafia",
+    "origin": "Nassarawa / Lafia",
+    "project": "Geo-fencing (IoT based)",
+    "career_aspiration": "Telecommunications",
+    "favorite_lecturer": "Dr. S. M. Yarima",
+    "best_friend": "Yaqub",
+    "will_miss": "The ATBU itself.",
+    "social_media": "Facebook: Bashiru Jibril, all other media:@bashirujh"
   },
   {
     "id": "graduand_069",
@@ -549,7 +1140,16 @@
     "phone": "08067554159",
     "email": "hassanidristk@gmail.com",
     "image": "/images/graduand_069.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "BAUCHI",
+    "lga": "BAUCHI",
+    "origin": "BAUCHI / BAUCHI",
+    "project": "DESIGN AND IMPLEMENTATION OF AN RFID-BASED SMART DOOR LOCK SYSTEM USING CARD ID AUTHENTICATION",
+    "career_aspiration": "Allah decides",
+    "favorite_lecturer": "Dr. S.M. Yerima",
+    "best_friend": "Mayinta & Ojih",
+    "will_miss": "Friends",
+    "social_media": "Facebook (hassan.idris.5203577), Instagram (i_am_m_hassan1), X (Hassani26499058)"
   },
   {
     "id": "graduand_070",
@@ -557,7 +1157,16 @@
     "phone": "09076305551",
     "email": "muhammadmuhammadmayinta@gmail.com",
     "image": "/images/graduand_070.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Yobe state",
+    "lga": "Potiskum",
+    "origin": "Yobe state / Potiskum",
+    "project": "1.5kwh solar generator",
+    "career_aspiration": "Wet welding",
+    "favorite_lecturer": "Dr.IT BALAMI",
+    "best_friend": "M.hassan and Ojih",
+    "will_miss": "Hostel life",
+    "social_media": "X:(@mmmayinta)"
   },
   {
     "id": "graduand_071",
@@ -565,7 +1174,15 @@
     "phone": "09058299274",
     "email": "akormichael73@gmail.com",
     "image": "/images/graduand_071.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Benue state",
+    "lga": "Okpokwu local government",
+    "origin": "Benue state / Okpokwu local government",
+    "project": "Design and construction of fire alarm system with water pump automation and SMS/PISH notification",
+    "career_aspiration": "Solar design and installation",
+    "favorite_lecturer": "Dr HS Miya",
+    "best_friend": "Dafeng",
+    "will_miss": "Late night reading"
   },
   {
     "id": "graduand_072",
@@ -573,7 +1190,16 @@
     "phone": "09030376216",
     "email": "Ymuazu301@gmail.com",
     "image": "/images/graduand_072.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Yobe state",
+    "lga": "Potiskum",
+    "origin": "Yobe state / Potiskum",
+    "project": "Design and construction of cockcroft Walton voltage multipler",
+    "career_aspiration": "Control and instrumentation/renewable energy",
+    "favorite_lecturer": "Sani Sabo phd",
+    "best_friend": "Mustapha geidam, abdulmalik jibia, Umar Faruq bauchi",
+    "will_miss": "My guys",
+    "social_media": "Yusuf Mohammed muazu"
   },
   {
     "id": "graduand_073",
@@ -581,7 +1207,16 @@
     "phone": "07068913919",
     "email": "Abdulrahmanabubakarojih@gmail.com",
     "image": "/images/graduand_073.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Kogi",
+    "lga": "Ankpa",
+    "origin": "Kogi / Ankpa",
+    "project": "Electric Bike Charger",
+    "career_aspiration": "Academia",
+    "favorite_lecturer": "Dr. Hassan Sabo Miya",
+    "best_friend": "Muhammad & Hassan",
+    "will_miss": "The People I met",
+    "social_media": "https://www.linkedin.com/in/ojih"
   },
   {
     "id": "graduand_074",
@@ -589,7 +1224,16 @@
     "phone": "07085581985",
     "email": "Sambless20@gmail.com",
     "image": "/images/graduand_074.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Kogi",
+    "lga": "OFU",
+    "origin": "Kogi / OFU",
+    "project": "Smart Queing system",
+    "career_aspiration": "Technopreneur",
+    "favorite_lecturer": "Engr. Sani sabo",
+    "best_friend": "Chenems",
+    "will_miss": "Nothing",
+    "social_media": "IG,FB,LinkedIn :Samuel Daniels"
   },
   {
     "id": "graduand_075",
@@ -597,7 +1241,16 @@
     "phone": "08127093403",
     "email": "muhammadsaminu3403@gmail.com",
     "image": "/images/graduand_075.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Bauchi",
+    "lga": "Alkaleri",
+    "origin": "Bauchi / Alkaleri",
+    "project": "Smart Medication Reminder, Patient Monitoring and Nurse Alert System.",
+    "career_aspiration": "CEO/Clothing Brand/Practice Engineering/Business Field.",
+    "favorite_lecturer": "Dr. Sani Sabo",
+    "best_friend": "Abdulhafiz, and my guys.",
+    "will_miss": "The gentle brotherhood moments during our hardest days.",
+    "social_media": "Instagram : thebrand.scar ; vintageabuja ; kingpin.scar"
   },
   {
     "id": "graduand_076",
@@ -605,7 +1258,16 @@
     "phone": "08108205363",
     "email": "abdulrahmanmmohammed41@gmail.com",
     "image": "/images/graduand_076.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Gombe",
+    "lga": "Funakaye",
+    "origin": "Gombe / Funakaye",
+    "project": "Rechargeable fan",
+    "career_aspiration": "Drawing and learning",
+    "favorite_lecturer": "Dr. M. H. Miya",
+    "best_friend": "Mohammed Garba",
+    "will_miss": "Class mates",
+    "social_media": "Facebook"
   },
   {
     "id": "graduand_077",
@@ -613,7 +1275,16 @@
     "phone": "07063709263",
     "email": "kamalaliyu60@gmail.com",
     "image": "/images/graduand_077.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Gombe state",
+    "lga": "Gombe LGA",
+    "origin": "Gombe state / Gombe LGA",
+    "project": "Smart belt for patients",
+    "career_aspiration": "Power systems/ To become successful Electrical engineer and Business man.",
+    "favorite_lecturer": "Malam sani sabo",
+    "best_friend": "All my guys",
+    "will_miss": "I will miss the friendships, campus life, departmental activities, unforgettable memories, and the beautiful moments that made my journey at ATBU Bauchi special.",
+    "social_media": "Facebook: kamaluddeen Aliyu Adamu WhatsApp:07063709263"
   },
   {
     "id": "graduand_078",
@@ -621,7 +1292,13 @@
     "phone": "08136515022",
     "email": "ishaqjakadah001@gmail.com",
     "image": "/images/graduand_078.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Katsina",
+    "lga": "Katsina",
+    "origin": "Katsina / Katsina",
+    "project": "Design and Construction of automatic door lock using RFID",
+    "favorite_lecturer": "Prof.Hassan Sabo Miya",
+    "will_miss": "Viewing centre"
   },
   {
     "id": "graduand_079",
@@ -629,7 +1306,16 @@
     "phone": "09136451556",
     "email": "kennethstanley3731@gmail.com",
     "image": "/images/graduand_079.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Delta State",
+    "lga": "Unghelli South",
+    "origin": "Delta State / Unghelli South",
+    "project": "Maglev",
+    "career_aspiration": "Engineering",
+    "favorite_lecturer": "Sani Sabo",
+    "best_friend": "Ansy Stanley",
+    "will_miss": "Friends",
+    "social_media": "https://www.facebook.com/share/18Lg147qXF/"
   },
   {
     "id": "graduand_080",
@@ -637,7 +1323,16 @@
     "phone": "09039302632",
     "email": "enochumele@gmail.com",
     "image": "/images/graduand_080.jpg",
-    "source_page": 5
+    "source_page": 5,
+    "state_of_origin": "Benue",
+    "lga": "Ohimini",
+    "origin": "Benue / Ohimini",
+    "project": "IOT BASE ZOO MONITORING AND TRACKING SYSTEM",
+    "career_aspiration": "Power systems/energy",
+    "favorite_lecturer": "Dr.Buhari",
+    "best_friend": "Mark/Jeremiah",
+    "will_miss": "My course mate",
+    "social_media": "Facebook"
   },
   {
     "id": "graduand_081",
@@ -645,7 +1340,16 @@
     "phone": "09161178651",
     "email": "Daeenurudeen@gmail.com",
     "image": "/images/graduand_081.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Kogi",
+    "lga": "Ankpa",
+    "origin": "Kogi / Ankpa",
+    "project": "IoT based solar egg incubator",
+    "career_aspiration": "Electrical service design/pub design",
+    "favorite_lecturer": "Admire them all",
+    "best_friend": "We all homies",
+    "will_miss": "Night reading with mendem",
+    "social_media": "LinkedIn@ Nurudeen Daee"
   },
   {
     "id": "graduand_082",
@@ -653,7 +1357,12 @@
     "phone": "08141966961",
     "email": "yahayaabdulrazak100@gmail.com",
     "image": "/images/graduand_082.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Kogi",
+    "lga": "Ankpa",
+    "origin": "Kogi / Ankpa",
+    "career_aspiration": "Success.",
+    "favorite_lecturer": "Engr. Sani Sabo"
   },
   {
     "id": "graduand_083",
@@ -661,7 +1370,15 @@
     "phone": "09134833229",
     "email": "afolabiabdulwasii19@gmail.com",
     "image": "/images/graduand_083.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Oyo",
+    "lga": "Kajola",
+    "origin": "Oyo / Kajola",
+    "project": "Design and Construction of Non invasive blood sugar monitoring system",
+    "career_aspiration": "Biomedical Engineering",
+    "favorite_lecturer": "Dr. Yerima",
+    "best_friend": "Abdulbaki",
+    "social_media": "LinkedIn: Afolabi Abdulwasii"
   },
   {
     "id": "graduand_084",
@@ -669,7 +1386,16 @@
     "phone": "09079289767",
     "email": "sikakazy227@gmail.com",
     "image": "/images/graduand_084.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "TARABA STATE",
+    "lga": "TAKUM",
+    "origin": "TARABA STATE / TAKUM",
+    "project": "Design and construction of microcontroller-Based Mini elevator system",
+    "career_aspiration": "Installations",
+    "favorite_lecturer": "DR SANI SABO",
+    "best_friend": "Yusuf/Wilson",
+    "will_miss": "7am to 6pm lecture",
+    "social_media": "Whatsapp"
   },
   {
     "id": "graduand_085",
@@ -677,7 +1403,16 @@
     "phone": "09134069335",
     "email": "abdulsly069@gmail.com",
     "image": "/images/graduand_085.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Oyo state",
+    "lga": "Ogbomosho North",
+    "origin": "Oyo state / Ogbomosho North",
+    "project": "Obstacle avoidance robot",
+    "career_aspiration": "To specialized in power systems and contribute to reliable and efficient electricity supply",
+    "favorite_lecturer": "Dr Sani Sabo",
+    "best_friend": "All my homies",
+    "will_miss": "Memories and friends",
+    "social_media": "Big_Yinka"
   },
   {
     "id": "graduand_086",
@@ -685,7 +1420,16 @@
     "phone": "08166753537",
     "email": "samueljamessamj@gmail.com",
     "image": "/images/graduand_086.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "BAUCHI",
+    "lga": "Bogoro",
+    "origin": "BAUCHI / Bogoro",
+    "project": "Smart queue management system",
+    "career_aspiration": "Business /Engineer",
+    "favorite_lecturer": "ENG MUHAMMAD",
+    "best_friend": "The OG'S",
+    "will_miss": "The OG'S and Impact ATBU made",
+    "social_media": "TWITTER (@CyrusFooty)"
   },
   {
     "id": "graduand_087",
@@ -693,7 +1437,15 @@
     "phone": "07080981536",
     "email": "Mustaphasuleimangdm1@gmail.com",
     "image": "/images/graduand_087.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Yobe",
+    "lga": "Geidam",
+    "origin": "Yobe / Geidam",
+    "project": "Hybrid rechargeble security touch light",
+    "favorite_lecturer": "All except 1",
+    "best_friend": "All my guy",
+    "will_miss": "My people",
+    "social_media": "https://www.facebook.com/share/1C4FauBXS8/"
   },
   {
     "id": "graduand_088",
@@ -701,7 +1453,15 @@
     "phone": "07056560973",
     "email": "abdulsalamy90@gmail.com",
     "image": "/images/graduand_088.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "EDO",
+    "lga": "OWAN EAST",
+    "origin": "EDO / OWAN EAST",
+    "project": "Construction of Heart rate Monitoring Device using fingertips",
+    "career_aspiration": "Engineering",
+    "favorite_lecturer": "Dr. Sani Sabo, Dr. Mahmood",
+    "best_friend": "All them boyz",
+    "will_miss": "The amazing people I met"
   },
   {
     "id": "graduand_089",
@@ -709,7 +1469,16 @@
     "phone": "07044322277",
     "email": "onyilo33@gmail.com",
     "image": "/images/graduand_089.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Benue",
+    "lga": "Ohimini",
+    "origin": "Benue / Ohimini",
+    "project": "Design of cooking gas leakage alarming system with sms alert",
+    "career_aspiration": "Electrical domestic/industrial installator",
+    "favorite_lecturer": "Engr Sani Sabo",
+    "best_friend": "All humans",
+    "will_miss": "Man O'war Atbu unit",
+    "social_media": "Facebook, Messenger, tiktok"
   },
   {
     "id": "graduand_090",
@@ -717,7 +1486,16 @@
     "phone": "07010415163",
     "email": "gishaya.ug@atbu.edu.ng",
     "image": "/images/graduand_090.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Kaduna",
+    "lga": "Kauru LGA",
+    "origin": "Kaduna / Kauru LGA",
+    "project": "Iot based egg incubator",
+    "career_aspiration": "Electrical service design",
+    "favorite_lecturer": "Dr. Mahmood",
+    "best_friend": "Caleb and Gideon",
+    "will_miss": "Stress",
+    "social_media": "Ishaya Godday"
   },
   {
     "id": "graduand_091",
@@ -725,7 +1503,15 @@
     "phone": "07014304939",
     "email": "vickyisrael2020@gmail.com",
     "image": "/images/graduand_091.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Enugu",
+    "lga": "Isi-uzo",
+    "origin": "Enugu / Isi-uzo",
+    "project": "A Single Phase to three phase converter",
+    "career_aspiration": "Electronics",
+    "favorite_lecturer": "Dr Yarima",
+    "best_friend": "Teckie and more",
+    "will_miss": "My Niggas"
   },
   {
     "id": "graduand_092",
@@ -733,7 +1519,16 @@
     "phone": "08168365100",
     "email": "Itzkumdetp@gmail.com",
     "image": "/images/graduand_092.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Plateau state",
+    "lga": "Pankshin",
+    "origin": "Plateau state / Pankshin",
+    "project": "Smart Attendance using biometrics and facial recognition",
+    "career_aspiration": "Military personnel",
+    "favorite_lecturer": "Dr sani Sabo",
+    "best_friend": "Caleb obida,ishaya Tapshak,Samuel sarki",
+    "will_miss": "Nothing",
+    "social_media": "@peejay221"
   },
   {
     "id": "graduand_093",
@@ -741,7 +1536,15 @@
     "phone": "09059126268",
     "email": "andyhabila455@gmail.com",
     "image": "/images/graduand_093.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Kaduna",
+    "lga": "Sanga",
+    "origin": "Kaduna / Sanga",
+    "project": "Grid powered smart IoT based incubator",
+    "career_aspiration": "Entrepreneur/Engineer",
+    "favorite_lecturer": "Prof Abdullahi Lanre Amao",
+    "best_friend": "My friends",
+    "will_miss": "Lectures"
   },
   {
     "id": "graduand_094",
@@ -749,7 +1552,16 @@
     "phone": "07061199081",
     "email": "wakilirobert59@gmail.com",
     "image": "/images/graduand_094.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Gombe",
+    "lga": "Shongom",
+    "origin": "Gombe / Shongom",
+    "project": "Automated conveyor belt",
+    "career_aspiration": "Control Engineer",
+    "favorite_lecturer": "Dr. Sani Sabo",
+    "best_friend": "Abraham Paul Elisha(Dcee)",
+    "will_miss": "My coursemates",
+    "social_media": "Wakili Robert Danja"
   },
   {
     "id": "graduand_095",
@@ -757,7 +1569,16 @@
     "phone": "09011919107",
     "email": "umaribr90@gmail.com",
     "image": "/images/graduand_095.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Kaduna",
+    "lga": "Kubau",
+    "origin": "Kaduna / Kubau",
+    "project": "Design and implementation of mini elevator",
+    "career_aspiration": "Power system and control engineering",
+    "favorite_lecturer": "Ml. Dr. Sani sabo",
+    "best_friend": "My people",
+    "will_miss": "My people",
+    "social_media": "https://www.linkedin.com/in/umar-ibrahim-1499b4315?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   },
   {
     "id": "graduand_096",
@@ -765,15 +1586,33 @@
     "phone": "09030841204",
     "email": "jamilualhajiidriss001@gmail.com",
     "image": "/images/graduand_096.jpg",
-    "source_page": 6
+    "source_page": 6,
+    "state_of_origin": "Yobe",
+    "lga": "Nguru yobe state",
+    "origin": "Yobe / Nguru yobe state",
+    "project": "Design and construction of solar generator",
+    "career_aspiration": "Solar installation and building installation",
+    "favorite_lecturer": "Engr. Mahammud",
+    "best_friend": "Zayyan",
+    "will_miss": "Innovative idea",
+    "social_media": "https://www.facebook.com/dex.trader.770644"
   },
   {
     "id": "graduand_097",
     "name": "ABDULGAFAR SALIU",
-    "phone": "9061634809",
+    "phone": "09061634809",
     "email": "abdulgafarsaliu5@gmail.com",
     "image": "/images/graduand_097.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Kogi state",
+    "lga": "Yagba East",
+    "origin": "Kogi state / Yagba East",
+    "project": "Design and construction of Examination countdown Timer management system",
+    "career_aspiration": "Telecommunication",
+    "favorite_lecturer": "DR Yarima",
+    "best_friend": "Hikmah",
+    "will_miss": "My course mates",
+    "social_media": "Abdulgafar saliu .... Facebook"
   },
   {
     "id": "graduand_098",
@@ -781,7 +1620,16 @@
     "phone": "07041461454",
     "email": "tondowpeter@gmail.com",
     "image": "/images/graduand_098.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Gonbe",
+    "lga": "Billiri",
+    "origin": "Gonbe / Billiri",
+    "project": "Design and construction of a microcontroller based substation base monitoring and control system.",
+    "career_aspiration": "Midas Technologies LTD",
+    "favorite_lecturer": "Dr. Yerima",
+    "best_friend": "Omnibus qui mecum ambulaverunt et animum tetigerunt",
+    "will_miss": "Primum homines, et deinde cibus.",
+    "social_media": "@Tondow peter"
   },
   {
     "id": "graduand_099",
@@ -789,7 +1637,15 @@
     "phone": "08065849621",
     "email": "kayceechris2@gmail.com",
     "image": "/images/graduand_099.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Abia",
+    "lga": "Isuikwuato",
+    "origin": "Abia / Isuikwuato",
+    "project": "Design and construction of a 30,000mah Power Bank",
+    "career_aspiration": "Electrical Services Design and Machine Rewinding, with the ambition of building and owning a successful electrical rewinding company.",
+    "best_friend": "Squad of (V)",
+    "will_miss": "The Drill",
+    "social_media": "Chris Udeogu (Facebook)"
   },
   {
     "id": "graduand_100",
@@ -797,7 +1653,16 @@
     "phone": "07062863488",
     "email": "elijaemmanueldoh@gmail.com",
     "image": "/images/graduand_100.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Benue",
+    "lga": "Apa",
+    "origin": "Benue / Apa",
+    "project": "Design and Construction of a Single phase to Three phase converter",
+    "career_aspiration": "Electrical Power Systems",
+    "favorite_lecturer": "Engr. I. A. Dalyop",
+    "best_friend": "No particular best friend, just a collection of amazing friends who made the journey worthwhile.",
+    "will_miss": "NIFES ATBU",
+    "social_media": "Facebook - Emmanuel Elijah . LinkedIn - Elijah Emmanuel Edoh"
   },
   {
     "id": "graduand_101",
@@ -805,7 +1670,16 @@
     "phone": "07065836443",
     "email": "omanisenterprise@gmail.com",
     "image": "/images/graduand_101.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "OSUN STATE",
+    "lga": "EDE SOUTH",
+    "origin": "OSUN STATE / EDE SOUTH",
+    "project": "AUTOMATIC FACE RECOGNITION USING EDGE AI",
+    "career_aspiration": "ELECTRICAL ENGINEERING",
+    "favorite_lecturer": "MALLAM SANI SABO",
+    "best_friend": "ALL FRIENDs",
+    "will_miss": "ENGINEERING Complex",
+    "social_media": "exclusive omanis"
   },
   {
     "id": "graduand_102",
@@ -813,7 +1687,13 @@
     "phone": "08162284072",
     "email": "aumanasseh72@gmail.comm",
     "image": "/images/graduand_102.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Gombe",
+    "lga": "Billiri",
+    "origin": "Gombe / Billiri",
+    "project": "Design and Construction of a Digital Clock Display using 7-Segment Display",
+    "career_aspiration": "Biomedical Engineering",
+    "will_miss": "A lot"
   },
   {
     "id": "graduand_103",
@@ -821,7 +1701,15 @@
     "phone": "08134798014",
     "email": "damianjoeson33@gmail.com",
     "image": "/images/graduand_103.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Plateau",
+    "lga": "Langtang north",
+    "origin": "Plateau / Langtang north",
+    "project": "Design and Development of a Hybrid, Smart Dehydrator for Tomato",
+    "career_aspiration": "Engineering",
+    "favorite_lecturer": "Dr. Sani Sabo",
+    "will_miss": "Alot",
+    "social_media": "Facebook handle: Damian Dex. Instagram : damian394."
   },
   {
     "id": "graduand_104",
@@ -829,7 +1717,16 @@
     "phone": "09036596798",
     "email": "hafsahbolabello@gmail.com",
     "image": "/images/graduand_104.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Ekiti",
+    "lga": "Irepodun/ifelodun",
+    "origin": "Ekiti / Irepodun/ifelodun",
+    "project": "Design and construction of laptop power bank with active balancing",
+    "career_aspiration": "Business",
+    "favorite_lecturer": "Dr sani sabo",
+    "best_friend": "My twin brother",
+    "will_miss": "Light,water and free WiFi",
+    "social_media": "X= @hbolabello Instagram= hafsahbolabello1 Facebook= hafsah bolabello Tiktok= @hafsahbolabello4 linkedin = Abdulrazaq Hafsah"
   },
   {
     "id": "graduand_105",
@@ -837,7 +1734,16 @@
     "phone": "08127701077",
     "email": "calebchinkinaan@gmail.com",
     "image": "/images/graduand_105.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Plateau State",
+    "lga": "Mangu",
+    "origin": "Plateau State / Mangu",
+    "project": "Development of hybrid smart dehydrator",
+    "career_aspiration": "Engineer",
+    "favorite_lecturer": "Dr sani sabo",
+    "best_friend": "Every one",
+    "will_miss": "TDB",
+    "social_media": "TIKTOK : Big Dcee gadgets, Facebook: chinkinaan caleb"
   },
   {
     "id": "graduand_106",
@@ -845,7 +1751,14 @@
     "phone": "09038430988",
     "email": "johnsonkunsuene@gmail.com",
     "image": "/images/graduand_106.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Akwa Ibom",
+    "lga": "Oruk Anam",
+    "origin": "Akwa Ibom / Oruk Anam",
+    "project": "Smart Queue Hospital Management System",
+    "favorite_lecturer": "Sani Sabo",
+    "best_friend": "Hamza",
+    "social_media": "https://www.facebook.com/monday.kunzy"
   },
   {
     "id": "graduand_107",
@@ -853,15 +1766,31 @@
     "phone": "08162643128",
     "email": "muhammadalmustaphamusa@gmail.com",
     "image": "/images/graduand_107.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Gombe",
+    "lga": "Kwami",
+    "origin": "Gombe / Kwami",
+    "project": "Non invasive Anemia(Hemoglobin) detector",
+    "favorite_lecturer": "Dr Buhari maman",
+    "best_friend": "Yunusa yusuf",
+    "will_miss": "My friends and roommates",
+    "social_media": "Facebook: Muhammad Al-mustapha Musa"
   },
   {
     "id": "graduand_108",
     "name": "YUSUF HIKMAT OYINDAMOLA",
-    "phone": "9066202986",
+    "phone": "09066202986",
     "email": "hikmatyusuf01@gmail.com",
     "image": "/images/graduand_108.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Oyo state",
+    "lga": "Ogbomosho North",
+    "origin": "Oyo state / Ogbomosho North",
+    "project": "Gas detector with alarm system and fire fighting capability (sprinkler system)",
+    "career_aspiration": "Network Engineering",
+    "best_friend": "Abdulgafar Saliu",
+    "will_miss": "My friends",
+    "social_media": "Twitter- HikmatYusuff, Instagram -Hiq_qie, LinkedIn -Hikmat(Oyindamola) Yusuf"
   },
   {
     "id": "graduand_109",
@@ -869,7 +1798,15 @@
     "phone": "09060214321",
     "email": "stanleyansy9@gmail.com",
     "image": "/images/graduand_109.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Plateau state",
+    "lga": "Mangu",
+    "origin": "Plateau state / Mangu",
+    "project": "Solar",
+    "career_aspiration": "To become a successful electrical engineer",
+    "favorite_lecturer": "Sani sabo",
+    "best_friend": "Stanley",
+    "will_miss": "The habit of learning"
   },
   {
     "id": "graduand_110",
@@ -877,7 +1814,16 @@
     "phone": "08068342145",
     "email": "mymaiulu20@gmail.com",
     "image": "/images/graduand_110.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Jigawa state",
+    "lga": "Sule tankarkar",
+    "origin": "Jigawa state / Sule tankarkar",
+    "project": "Smart medication reminder and nurse alert system",
+    "career_aspiration": "Power Engineering",
+    "favorite_lecturer": "Non-deserving",
+    "best_friend": "The Street",
+    "will_miss": "The freedom",
+    "social_media": "Twitter: @maiulu20 Instagram: @maiulu20"
   },
   {
     "id": "graduand_111",
@@ -885,7 +1831,16 @@
     "phone": "09063676968",
     "email": "Adamusalahu20@gmail.con",
     "image": "/images/graduand_111.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "JIGAWA",
+    "lga": "KAZAURE",
+    "origin": "JIGAWA / KAZAURE",
+    "project": "Heart Rate Monitoring Device.",
+    "career_aspiration": "Successful Entrepreneur, Engineer, and Future Billionaire. In sha Allah. 🤲💰🚀",
+    "favorite_lecturer": "Dr. Buhari H. Mamman",
+    "best_friend": "My Gees",
+    "will_miss": "All the unforgettable memories we created together at ATBU. ❤️🎓",
+    "social_media": "@Dady_Salahu"
   },
   {
     "id": "graduand_112",
@@ -893,7 +1848,16 @@
     "phone": "09035725772",
     "email": "Peverpeter22@gmail.com",
     "image": "/images/graduand_112.jpg",
-    "source_page": 7
+    "source_page": 7,
+    "state_of_origin": "Benue",
+    "lga": "Ushongo",
+    "origin": "Benue / Ushongo",
+    "project": "Design and construction of a smart reading lamp.",
+    "career_aspiration": "Control engineer",
+    "favorite_lecturer": "Engr.Dr.Mall. Sani Sabo",
+    "best_friend": "All",
+    "will_miss": "Course mates",
+    "social_media": "Facebook: Elslice, LinkedIn: pever peter"
   },
   {
     "id": "graduand_113",
@@ -901,7 +1865,15 @@
     "phone": "07069962777",
     "email": "mijfaisal@gmail.com",
     "image": "/images/graduand_113.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Kaduna State",
+    "lga": "Kaduna North",
+    "origin": "Kaduna State / Kaduna North",
+    "project": "Automatic Bottling System (for small scale industries)",
+    "career_aspiration": "Engineering/Politics",
+    "favorite_lecturer": "Dr. Rukayya Tilde",
+    "will_miss": "The Cirowa lol (the pressure unites the students)",
+    "social_media": "X @faisalmij"
   },
   {
     "id": "graduand_114",
@@ -909,7 +1881,16 @@
     "phone": "07015088583",
     "email": "obadiahibrahim113@gmail.com",
     "image": "/images/graduand_114.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Kaduna",
+    "lga": "Lere local government",
+    "origin": "Kaduna / Lere local government",
+    "project": "Design and construction of camera positioning remote control",
+    "career_aspiration": "Systems automation",
+    "favorite_lecturer": "Engr.A.A Salihu",
+    "best_friend": "Benjamin gyuk",
+    "will_miss": "Dr.Sani sabo chirowa in class and unannounced shotgun in class",
+    "social_media": "https://www.facebook.com/profile.php?id=100080160231241"
   },
   {
     "id": "graduand_115",
@@ -917,7 +1898,16 @@
     "phone": "09069788133",
     "email": "terungwaaii@gmail.com",
     "image": "/images/graduand_115.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "BENUE",
+    "lga": "Tarka",
+    "origin": "BENUE / Tarka",
+    "project": "Design and construction of a 1.5kwh solar generator",
+    "career_aspiration": "Career Interest: Teaching, Research and Electrical Power Systems Engineering. Aspiring Profession: University Lecturer in Electrical and Electronics Engineering.",
+    "favorite_lecturer": "Dr. Sani Sabo",
+    "best_friend": "Kwaghbo Teryima Dominic",
+    "will_miss": "Friends, coursemates and the how well am prepared for the journey ahead",
+    "social_media": "Facebook"
   },
   {
     "id": "graduand_116",
@@ -925,7 +1915,16 @@
     "phone": "09030735993",
     "email": "khalilibrahim4real@gmail.com",
     "image": "/images/graduand_116.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Nasarawa state",
+    "lga": "Keffi",
+    "origin": "Nasarawa state / Keffi",
+    "project": "Solar generator",
+    "career_aspiration": "An engineer",
+    "favorite_lecturer": "Sani sabo",
+    "best_friend": "Yusuf asansu",
+    "will_miss": "My long room 200l block E",
+    "social_media": "Ibrahim khaleel muh'd"
   },
   {
     "id": "graduand_117",
@@ -933,63 +1932,128 @@
     "phone": "08025838472",
     "email": "raphaeldavid942@gmail.com",
     "image": "/images/graduand_117.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Plateau state",
+    "lga": "Riyom Local government",
+    "origin": "Plateau state / Riyom Local government",
+    "project": "Design and construction of an automatic egg turning incubator",
+    "career_aspiration": "Agriculturist/professional footballer",
+    "favorite_lecturer": "Dr Buhari",
+    "best_friend": "Micheal Akor",
+    "will_miss": "NIFES/ football",
+    "social_media": "Dafsonfarms@insta,tik-tok"
   },
   {
     "id": "graduand_118",
     "name": "CLETUS ANOINTED SAMUEL",
-    "phone": "8029126857",
+    "phone": "08029126857",
     "email": "cletusanointedsamuel@gmail.com",
     "image": "/images/graduand_118.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Delta",
+    "lga": "Ika South",
+    "origin": "Delta / Ika South",
+    "project": "Grid Powered IoT Based Incubator",
+    "career_aspiration": "Thinking",
+    "favorite_lecturer": "Oga Y",
+    "best_friend": "Peter Nitte Tondow",
+    "will_miss": "The Students on Campus",
+    "social_media": "Youtube - https://youtube.com/@anointedcletus?si=SpsuWuYrlaDHsBe2"
   },
   {
     "id": "graduand_119",
     "name": "SULEIMAN ABDURRAHMAN IBRAHIM",
-    "phone": "8034894780",
+    "phone": "08034894780",
     "email": "asambatile@gmail.com",
     "image": "/images/graduand_119.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Plateau",
+    "lga": "Wase",
+    "origin": "Plateau / Wase",
+    "project": "Smart Hospital Queuing Management System",
+    "career_aspiration": "Electrical service design",
+    "favorite_lecturer": "All",
+    "will_miss": "WIFI"
   },
   {
     "id": "graduand_120",
     "name": "ABDULLAHI MUJAHIDEEN MOMOH",
-    "phone": "9056739558",
+    "phone": "09056739558",
     "email": "abdullahimujahideen24@gmail.com",
     "image": "/images/graduand_120.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Edo",
+    "lga": "Estako West",
+    "origin": "Edo / Estako West",
+    "project": "Single phase to three phase converter",
+    "career_aspiration": "Renewable energy and automation",
+    "favorite_lecturer": "Dr.Mahmud",
+    "best_friend": "Emmanuel",
+    "will_miss": "The Fun experiences I had in School and the people I met.",
+    "social_media": "LinkedIn-Abdullahi Mujahideen"
   },
   {
     "id": "graduand_121",
     "name": "PHILIP YOHANNA",
-    "phone": "8085910703",
+    "phone": "08085910703",
     "email": "philipyohanna58@gmail.com",
     "image": "/images/graduand_121.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "ADAMAWA STATE",
+    "lga": "MUBI SOUTH",
+    "origin": "ADAMAWA STATE / MUBI SOUTH",
+    "project": "12V DC AUTOMATIC DESERT COOLER",
+    "career_aspiration": "PRACTICING ENGINEER",
+    "favorite_lecturer": "ENGR DR DAYLOP",
+    "best_friend": "@ ALL",
+    "will_miss": "MY COURSEMATES",
+    "social_media": "NO"
   },
   {
     "id": "graduand_122",
     "name": "ABDULWAHEED ABDULBADIU",
-    "phone": "8036001226",
+    "phone": "08036001226",
     "email": "badiuwaheed5553@gmail.com",
     "image": "/images/graduand_122.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Nasarawa state",
+    "lga": "Nasarawa L.G.A",
+    "origin": "Nasarawa state / Nasarawa L.G.A",
+    "project": "Automated Poultry Cage Snake Detection System",
+    "favorite_lecturer": "Dr Hassan Miya"
   },
   {
     "id": "graduand_123",
     "name": "WISDOM SHENYANMA EMMANUEL",
-    "phone": "9079292241",
+    "phone": "09079292241",
     "email": "emmanuelwisdom290@gmail.com",
     "image": "/images/graduand_123.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "KADUNA",
+    "lga": "ZANGON KATAF",
+    "origin": "KADUNA / ZANGON KATAF",
+    "project": "HYBRID SMART DEHYDRATOR",
+    "career_aspiration": "ELECTRICAL ENGINEERING",
+    "favorite_lecturer": "Engr. SANI SABO",
+    "best_friend": "ANDY HABILA ARINDA",
+    "will_miss": "MY SQUAD",
+    "social_media": "@shenyanma(TikTok)"
   },
   {
     "id": "graduand_124",
     "name": "SANI FRIDAY PHILIP",
-    "phone": "8147016463",
+    "phone": "08147016463",
     "email": "philipsani41@gmail.com",
     "image": "/images/graduand_124.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "KOGI STATE",
+    "lga": "L.G.A",
+    "origin": "KOGI STATE / L.G.A",
+    "project": "Construction and Design Examination Time Management System",
+    "career_aspiration": "Telecom",
+    "best_friend": "Ademu Yunus Yas",
+    "will_miss": "Morning lectures.",
+    "social_media": "Facebook.com/philip.sani2"
   },
   {
     "id": "graduand_125",
@@ -997,63 +2061,128 @@
     "phone": "09030691129",
     "email": "smutihu@gmail.com",
     "image": "/images/graduand_125.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Osun state",
+    "lga": "Obokun LGA",
+    "origin": "Osun state / Obokun LGA",
+    "project": "Piezoelectric energy harvesting",
+    "best_friend": "My homies"
   },
   {
     "id": "graduand_126",
     "name": "ABDULRAHMAN SAKA OLUWASEYI",
-    "phone": "9045619809",
+    "phone": "09045619809",
     "email": "rahmanoluwaseyi2001@gmail.com",
     "image": "/images/graduand_126.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Osun State",
+    "lga": "Irewole",
+    "origin": "Osun State / Irewole",
+    "project": "DESIGN AND CONSTRUCTION OF A WIRELESS PATIENT CALL SYSTEM FOR HOSPITAL AND NURSING HOMES",
+    "career_aspiration": "Engineering",
+    "favorite_lecturer": "Dr.Sani Sabo",
+    "best_friend": "Abduulbasit Ibrahim",
+    "will_miss": "My reading squad",
+    "social_media": "Abdulrahman Saka"
   },
   {
     "id": "graduand_127",
     "name": "ABIOYE ISAAC TOSIN",
-    "phone": "7064437028",
+    "phone": "07064437028",
     "email": "abioyetosin7@gmail.com",
     "image": "/images/graduand_127.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Osun",
+    "lga": "Odun-Otin",
+    "origin": "Osun / Odun-Otin",
+    "project": "Smart Hospital Queueing Management System",
+    "career_aspiration": "Electrical and Solar System",
+    "favorite_lecturer": "Dr. Sani Sabo",
+    "best_friend": "Daniel Musa Emmanuel",
+    "will_miss": "I will miss the routine, the people, and the experience we shared along the way",
+    "social_media": "@facebook Engr Isaac Abioye"
   },
   {
     "id": "graduand_128",
     "name": "JOSHUA BITRUS MABUR",
-    "phone": "8108354456",
+    "phone": "08108354456",
     "email": "joshuabm.ug@atbu.edu.ng",
     "image": "/images/graduand_128.jpg",
-    "source_page": 8
+    "source_page": 8,
+    "state_of_origin": "Plateau",
+    "lga": "Bokkos",
+    "origin": "Plateau / Bokkos",
+    "project": "Design and construction of single phase to three phase converter",
+    "career_aspiration": "Technician/ Solar installer",
+    "favorite_lecturer": "Dr. Sani Sabo",
+    "best_friend": "Pantong Jonathan Nanle",
+    "will_miss": "Religious activities",
+    "social_media": "Joshua Bitrus"
   },
   {
     "id": "graduand_129",
     "name": "IBRAHIM HALIM ONUJABE",
-    "phone": "9031792752",
+    "phone": "09031792752",
     "email": "halimonujabe@gmail.com",
     "image": "/images/graduand_129.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Kogi",
+    "lga": "Okene",
+    "origin": "Kogi / Okene",
+    "project": "DC smart induction cooker",
+    "career_aspiration": "Professional engineer and my professional work",
+    "favorite_lecturer": "Dr. Yerima",
+    "best_friend": "Harbbybullah",
+    "will_miss": "Chiro",
+    "social_media": "Facebook, Whatsapp and Instagram"
   },
   {
     "id": "graduand_130",
     "name": "BULUS SIMON YINNI",
-    "phone": "9064982367",
+    "phone": "09064982367",
     "email": "simonbulus101@gmail.com",
     "image": "/images/graduand_130.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Plateau",
+    "lga": "Bassa",
+    "origin": "Plateau / Bassa",
+    "favorite_lecturer": "Mallam Sani Sabo",
+    "best_friend": "Shedrack",
+    "will_miss": "My people"
   },
   {
     "id": "graduand_131",
     "name": "SAEED MUBARAK HUSSAINI",
-    "phone": "9031827600",
+    "phone": "09031827600",
     "email": "mubarakibnsaeed@gmail.com",
     "image": "/images/graduand_131.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Borno",
+    "lga": "Bayo",
+    "origin": "Borno / Bayo",
+    "project": "Design and construction of Digital Notice Board",
+    "career_aspiration": "To become a certified Engineer",
+    "favorite_lecturer": "All of them except one",
+    "best_friend": "Can’t mention",
+    "will_miss": "My friends",
+    "social_media": "TikTok: mr_nonchallant253"
   },
   {
     "id": "graduand_132",
     "name": "ABUBAKAR ISMAIL",
-    "phone": "9065733876",
+    "phone": "09065733876",
     "email": "2019ismaila@gmail.com",
     "image": "/images/graduand_132.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Bauchi State",
+    "lga": "Tafewa Belawa",
+    "origin": "Bauchi State / Tafewa Belawa",
+    "project": "Design and Construction of a Wireless Patient Calling System with P10 Board Display and Audible Alert",
+    "career_aspiration": "Entrepreneur/Control and instrumentation Engineer",
+    "favorite_lecturer": "Prof. Y.S Haruna",
+    "best_friend": "All my gees",
+    "will_miss": "Tafsir and khutab of Prof. Mansur Isa Yelwa",
+    "social_media": "Facebook: Abubakar Ismail, Linkedln: Abubakar Ismail Abdullahi"
   },
   {
     "id": "graduand_133",
@@ -1061,7 +2190,16 @@
     "phone": "09035336111",
     "email": "Abdulhafeezmuhideen@gmail.com",
     "image": "/images/graduand_133.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Osun state",
+    "lga": "Irewole.",
+    "origin": "Osun state / Irewole.",
+    "project": "Smart hospital queue management system.",
+    "career_aspiration": "Power and system Engineering.",
+    "favorite_lecturer": "Mal sani Sabo",
+    "best_friend": "All homies!",
+    "will_miss": "All good people's Atbu brought together to my life.",
+    "social_media": "Instagram:Jay_abdul__ ,https://www.linkedin.com/in/abdulhafiz-muhideen, X(twitter):@jayAbdul001"
   },
   {
     "id": "graduand_134",
@@ -1069,7 +2207,16 @@
     "phone": "09019997070",
     "email": "ibrahimfuntuasalehu@gmail.com",
     "image": "/images/graduand_134.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Katsina",
+    "lga": "Funtua",
+    "origin": "Katsina / Funtua",
+    "project": "Design and Implementation of an Automatic power factor correction system",
+    "career_aspiration": "Fibre optic Engineering and telecommunications",
+    "favorite_lecturer": "Dr. Yerima",
+    "best_friend": "One of the real ones.",
+    "will_miss": "Exams, perhaps.",
+    "social_media": "Daddiey Ibrahim"
   },
   {
     "id": "graduand_135",
@@ -1077,7 +2224,16 @@
     "phone": "08162238708",
     "email": "anmaitabarmi@gmail.com",
     "image": "/images/graduand_135.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Katsina",
+    "lga": "Funtua",
+    "origin": "Katsina / Funtua",
+    "project": "Design and Construction of an Automatic Indirect Solar Rice Dryer",
+    "career_aspiration": "Academia",
+    "favorite_lecturer": "Dr. H. S. Miya",
+    "best_friend": "Zayyan",
+    "will_miss": "Students Unionism",
+    "social_media": "Abdurrasheed Nasir Maitabarmi"
   },
   {
     "id": "graduand_136",
@@ -1085,7 +2241,15 @@
     "phone": "07066676369",
     "email": "asquareasquare79@gmail.com",
     "image": "/images/graduand_136.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Benue",
+    "lga": "Ohimini",
+    "origin": "Benue / Ohimini",
+    "project": "Design and construction of 5kva automatic voltage stabilizer",
+    "career_aspiration": "Contractor",
+    "favorite_lecturer": "Dr IT balami",
+    "best_friend": "Daee",
+    "will_miss": "Nothing"
   },
   {
     "id": "graduand_137",
@@ -1093,7 +2257,16 @@
     "phone": "08147525852",
     "email": "udiegabrielofficial@gmail.com",
     "image": "/images/graduand_137.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Cross-River",
+    "lga": "Obanliku",
+    "origin": "Cross-River / Obanliku",
+    "project": "Design and construction of a microcontroller based automatic waste segregation system",
+    "career_aspiration": "My career interests lie in renewable energy, particularly its potential to improve electricity access in rural and underserved communities through research and the development of practical, affordable solutions to Africa's energy challenges. I am also interested in entrepreneurship. Beyond engineering and business, I enjoy creative writing and storytelling, and hope to keep growing in this space, using stories to share experiences, communicate ideas, and inspire others to see possibilities.",
+    "favorite_lecturer": "Dr. A.A Sadiq",
+    "best_friend": "Muktar Faruq (Pharouq)",
+    "will_miss": "I will miss the people and community.",
+    "social_media": "https://www.linkedin.com/in/udiegabrielofficial"
   },
   {
     "id": "graduand_138",
@@ -1101,7 +2274,16 @@
     "phone": "08156675566",
     "email": "johnemmanuel12345678@gmail.com",
     "image": "/images/graduand_138.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Kogi",
+    "lga": "Olamaboro",
+    "origin": "Kogi / Olamaboro",
+    "project": "Design and construction of ninvasive blood glucose monitoring",
+    "career_aspiration": "Electrical Engineering/Music",
+    "favorite_lecturer": "Dr Mahmoud",
+    "best_friend": "Shigat",
+    "will_miss": "The people I met",
+    "social_media": "John Emmanuel Ho"
   },
   {
     "id": "graduand_139",
@@ -1109,7 +2291,16 @@
     "phone": "09079863682",
     "email": "mkabeeru9@gmail.com",
     "image": "/images/graduand_139.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Adamawa",
+    "lga": "Yola South",
+    "origin": "Adamawa / Yola South",
+    "project": "Dessert Coolant",
+    "career_aspiration": "Computer Programmer",
+    "favorite_lecturer": "Dr. Buhari",
+    "best_friend": "All of the above",
+    "will_miss": "Lectures",
+    "social_media": "IG: _m_kabeer"
   },
   {
     "id": "graduand_140",
@@ -1117,7 +2308,16 @@
     "phone": "08102383527",
     "email": "davidjesse2k20@gmail.com",
     "image": "/images/graduand_140.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Plateau state",
+    "lga": "Jos south",
+    "origin": "Plateau state / Jos south",
+    "project": "Smart hospital management queuing system",
+    "career_aspiration": "An industrial electrical engineer",
+    "favorite_lecturer": "Dr. Yerima",
+    "best_friend": "Alex isuwa",
+    "will_miss": "My friends",
+    "social_media": "https://www.facebook.com/jess.dee.9469"
   },
   {
     "id": "graduand_141",
@@ -1125,7 +2325,14 @@
     "phone": "08136265729",
     "email": "hmibrahim003@gmail.com",
     "image": "/images/graduand_141.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Plateau",
+    "lga": "Kanam",
+    "origin": "Plateau / Kanam",
+    "project": "Design and construction of dual biometric attendance system",
+    "career_aspiration": "Digital marketer",
+    "favorite_lecturer": "All",
+    "will_miss": "The environment"
   },
   {
     "id": "graduand_142",
@@ -1133,7 +2340,16 @@
     "phone": "08053315555",
     "email": "sadavize99@gmail.com",
     "image": "/images/graduand_142.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Kogi",
+    "lga": "Ajaokuta",
+    "origin": "Kogi / Ajaokuta",
+    "project": "Iot Smart poultry cage management system",
+    "career_aspiration": "Lecturing/ Field work",
+    "favorite_lecturer": "ENGR. I T BALAMI",
+    "best_friend": "Abdulsalam &Abdulrasheed",
+    "will_miss": "The stress",
+    "social_media": "Engr aso"
   },
   {
     "id": "graduand_143",
@@ -1141,7 +2357,15 @@
     "phone": "08160775627",
     "email": "faruqharoon85@gmail.com",
     "image": "/images/graduand_143.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Bauchi",
+    "lga": "Bauchi",
+    "origin": "Bauchi / Bauchi",
+    "project": "Design And Construction Of Digital Notice Board With Backup System",
+    "career_aspiration": "Cybersecurity Analyst",
+    "favorite_lecturer": "Engr Daylop",
+    "best_friend": "Zayyan",
+    "social_media": "Fareeq_e"
   },
   {
     "id": "graduand_144",
@@ -1149,15 +2373,31 @@
     "phone": "08141757934",
     "email": "iahanif.ug@atbu.edu.ng",
     "image": "/images/graduand_144.jpg",
-    "source_page": 9
+    "source_page": 9,
+    "state_of_origin": "Plateau",
+    "lga": "Mangu",
+    "origin": "Plateau / Mangu",
+    "project": "Smart medication reminder, patient monitoring and nurse alert system",
+    "career_aspiration": "Business",
+    "favorite_lecturer": "Non deserving",
+    "best_friend": "All",
+    "will_miss": "My homies",
+    "social_media": "Sir_neef @IG"
   },
   {
     "id": "graduand_145",
     "name": "ALHASSAN ISMAILA UGBEDEOJO",
-    "phone": "9069331781",
+    "phone": "09069331781",
     "email": "alhassanismaila2010@gmail.com",
     "image": "/images/graduand_145.jpg",
-    "source_page": 10
+    "source_page": 10,
+    "state_of_origin": "Kogi",
+    "lga": "Olamaboro",
+    "origin": "Kogi / Olamaboro",
+    "project": "Design and implementation of smart door system using Edge Artificial Intelligence",
+    "favorite_lecturer": "Dr. Sani Sabo",
+    "best_friend": "All my homies",
+    "will_miss": "The stress"
   },
   {
     "id": "graduand_146",
@@ -1165,7 +2405,15 @@
     "phone": "07046644990",
     "email": "awoseyijuwon@gmail.com",
     "image": "/images/graduand_146.jpg",
-    "source_page": 10
+    "source_page": 10,
+    "state_of_origin": "Osun",
+    "lga": "Obokun",
+    "origin": "Osun / Obokun",
+    "project": "Design and construction of smart dc induction cooker",
+    "career_aspiration": "Energy Engineering",
+    "best_friend": "All my homies",
+    "will_miss": "Food and culture",
+    "social_media": "@juwonnick"
   },
   {
     "id": "graduand_147",
@@ -1173,7 +2421,16 @@
     "phone": "08108067531",
     "email": "Khengz1111@gmail.com",
     "image": "/images/graduand_147.jpg",
-    "source_page": 10
+    "source_page": 10,
+    "state_of_origin": "Kogi state",
+    "lga": "Lokoja LGA",
+    "origin": "Kogi state / Lokoja LGA",
+    "project": "Single phase automatic transfer switch",
+    "career_aspiration": "Entrepreneur",
+    "favorite_lecturer": "Mallam Sani Sabo",
+    "best_friend": "The OGs",
+    "will_miss": "The people",
+    "social_media": "Instagram: og_khengz"
   },
   {
     "id": "graduand_148",
@@ -1181,7 +2438,16 @@
     "phone": "08109465003",
     "email": "uabba1468@gmail.com",
     "image": "/images/graduand_148.jpg",
-    "source_page": 10
+    "source_page": 10,
+    "state_of_origin": "BAUCHI",
+    "lga": "DARAZO",
+    "origin": "BAUCHI / DARAZO",
+    "project": "Construction of microcomputer based smart helmet",
+    "career_aspiration": "Engineering",
+    "favorite_lecturer": "ENGR Dr. H S Miya",
+    "best_friend": "All my guys",
+    "will_miss": "Every moment",
+    "social_media": "@Abbaozeel10"
   },
   {
     "id": "graduand_149",
@@ -1189,7 +2455,16 @@
     "phone": "09126440969",
     "email": "sajoftehudi@gmail.com",
     "image": "/images/graduand_149.jpg",
-    "source_page": 10
+    "source_page": 10,
+    "state_of_origin": "ADAMAWA STATE",
+    "lga": "MAIHA",
+    "origin": "ADAMAWA STATE / MAIHA",
+    "project": "SOLAR POWERED WATER MONITORING AND PURIFICATION SYSTEM",
+    "career_aspiration": "Solar system Design, Installation and Maintenance",
+    "favorite_lecturer": "PROF. Y.S HARUNA",
+    "best_friend": "SAMUEL DANIEL",
+    "will_miss": "The friends and memories you made.",
+    "social_media": "FTEHUDI SAJO"
   },
   {
     "id": "graduand_150",
@@ -1197,7 +2472,16 @@
     "phone": "07063964857",
     "email": "abdulhafeezabdulrazaq04@gmail.com",
     "image": "/images/graduand_150.jpg",
-    "source_page": 10
+    "source_page": 10,
+    "state_of_origin": "Ekiti",
+    "lga": "Irepodun/Ifelodun",
+    "origin": "Ekiti / Irepodun/Ifelodun",
+    "project": "Microcontroller trainer kit",
+    "career_aspiration": "A good person",
+    "favorite_lecturer": "Oga Y",
+    "best_friend": "My twin sister",
+    "will_miss": "The journey",
+    "social_media": "Facebook: A hafeez bello, Instagram: @a_hafeez_bello"
   },
   {
     "id": "graduand_151",
@@ -1205,7 +2489,16 @@
     "phone": "08038836412",
     "email": "Alabiabdulwahab08@gmail.com",
     "image": "/images/graduand_151.jpg",
-    "source_page": 10
+    "source_page": 10,
+    "state_of_origin": "Kogi",
+    "lga": "Okene",
+    "origin": "Kogi / Okene",
+    "project": "Design and construction of egg incubator",
+    "career_aspiration": "Just want to be a professional Engineer and make the best out of it",
+    "favorite_lecturer": "Engr A. A Salihu",
+    "best_friend": "All my homies",
+    "will_miss": "I will miss you guys all",
+    "social_media": "22_abdulwahab on Instagram"
   },
   {
     "id": "graduand_152",
@@ -1213,7 +2506,14 @@
     "phone": "09036776762",
     "email": "Sharifah3677@gmail.com",
     "image": "/images/graduand_152.jpg",
-    "source_page": 10
+    "source_page": 10,
+    "state_of_origin": "Kogi State",
+    "lga": "Adavi",
+    "origin": "Kogi State / Adavi",
+    "project": "Design and Construction Of A Blood Pressure Measuring Device",
+    "career_aspiration": "Aspiring Biomedical Engineer😅",
+    "best_friend": "Kathryn Moses",
+    "will_miss": "Friends"
   },
   {
     "id": "graduand_153",
@@ -1230,5 +2530,105 @@
     "email": "samdn2009r@gmail.com",
     "image": "/images/graduand_154.jpg",
     "source_page": 10
+  },
+  {
+    "id": "graduand_155",
+    "name": "ODINE ABDULBASIT ITOPA",
+    "phone": "09069294914",
+    "email": "abdulbasitodine@gmail.com",
+    "image": "/atbu_crest.png",
+    "isCrest": true,
+    "source_page": 13,
+    "state_of_origin": "Kogi State",
+    "lga": "Adavi",
+    "origin": "Kogi State / Adavi",
+    "project": "Design and construction of 1.5kwh portable solar generator",
+    "career_aspiration": "Electrical engineer",
+    "favorite_lecturer": "Engr. Dr. Sani Sabo",
+    "best_friend": "Abdulhaqq",
+    "will_miss": "Being a student of ATBU",
+    "social_media": "Abdulbasit Itopa Odine"
+  },
+  {
+    "id": "graduand_156",
+    "name": "JONATHAN PANTONG NANLE",
+    "phone": "08103616179",
+    "email": "jonathanpantongnanle78@gmail.com",
+    "image": "/atbu_crest.png",
+    "isCrest": true,
+    "source_page": 13,
+    "state_of_origin": "Plateau State",
+    "lga": "Pankshin",
+    "origin": "Plateau State / Pankshin",
+    "project": "Design and construction of a microcontroller",
+    "career_aspiration": "Solar system installation",
+    "favorite_lecturer": "Mallam Sano Sabo",
+    "best_friend": "Mabur Joshua",
+    "will_miss": "Teaching me to be resilient, be vigilant and be ready for anything that'll come my way",
+    "social_media": "https://www.facebook.com/profile.php?id=61584882989537"
+  },
+  {
+    "id": "graduand_157",
+    "name": "MUKTAR FARUQ MOHAMMED",
+    "phone": "08163856629",
+    "email": "faruqmuktar31@gmail.com",
+    "image": "/atbu_crest.png",
+    "isCrest": true,
+    "source_page": 13,
+    "state_of_origin": "Nasarawa",
+    "lga": "Keffi",
+    "origin": "Nasarawa / Keffi",
+    "project": "Microcontroller Based Mini-Elevator System",
+    "career_aspiration": "Web3 and Insha'Allah",
+    "favorite_lecturer": "Dr Buhari",
+    "best_friend": "Gabriel",
+    "will_miss": "The people who made ATBU, ATBU",
+    "social_media": "@Omouarpharouq"
+  },
+  {
+    "id": "graduand_158",
+    "name": "MOHAMMED GARBA",
+    "phone": "09126335395",
+    "email": "mohammedgarba3352@gmail.com",
+    "image": "/atbu_crest.png",
+    "isCrest": true,
+    "source_page": 13,
+    "state_of_origin": "Yobe",
+    "lga": "Gujba",
+    "origin": "Yobe / Gujba",
+    "project": "Design and construction of wifi-base 3 phase induction motor control using a mobile phone",
+    "career_aspiration": "Telecommunication Engineering",
+    "favorite_lecturer": "Abdulrahman",
+    "will_miss": "Library",
+    "social_media": "Muhammad garba buni (facebook)"
+  },
+  {
+    "id": "graduand_159",
+    "name": "BELLO HABEEB",
+    "phone": "09036541981",
+    "email": "hhabeebbello15@gmail.com",
+    "image": "/atbu_crest.png",
+    "isCrest": true,
+    "source_page": 13,
+    "state_of_origin": "Kwara",
+    "lga": "Ifelodun",
+    "origin": "Kwara / Ifelodun",
+    "best_friend": "AbdulBadiu"
+  },
+  {
+    "id": "graduand_160",
+    "name": "SARKI SAMUEL DAVID",
+    "phone": "08101272827",
+    "email": "samuelsarki04@gmail.com",
+    "image": "/atbu_crest.png",
+    "isCrest": true,
+    "source_page": 13,
+    "state_of_origin": "Kaduna",
+    "lga": "Kagarko",
+    "origin": "Kaduna / Kagarko",
+    "project": "DESIGN AND CONSTRUCTION OF AN ELECTRICAL ENERGY HARVESTING SYSTEM USING PIEZOELECTRIC DISCS FROM HUMAN FOOTSTEPS",
+    "career_aspiration": "Professional Footballer",
+    "favorite_lecturer": "Engr Rukaiyya",
+    "will_miss": "My people"
   }
 ]

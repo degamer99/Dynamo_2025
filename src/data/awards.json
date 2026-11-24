@@ -5,7 +5,7 @@
       "rank": "1st Best Graduating",
       "title": "Overall Best Graduating Student",
       "recipient": "Abdulliadi Abdulbaki",
-      "type": "Framed Award & SUG Merit",
+      "type": "Academic Distinction & SUG Merit",
       "image": "/images/graduand_001.jpg"
     },
     {
@@ -13,7 +13,7 @@
       "rank": "2nd Best Distinction",
       "title": "Second Best Distinction Graduating Student",
       "recipient": "Elijah Emmanuel Edoh",
-      "type": "Framed Award #5",
+      "type": "Academic Distinction",
       "image": "/images/graduand_100.jpg"
     },
     {
@@ -21,7 +21,7 @@
       "rank": "3rd Best Distinction",
       "title": "Third Best Distinction Graduating Student",
       "recipient": "Mustapha Faruk Umar",
-      "type": "Framed Award #6",
+      "type": "Academic Distinction",
       "image": "/images/graduand_025.jpg"
     },
     {
@@ -29,16 +29,17 @@
       "rank": "Best Graduating Female",
       "title": "Best Graduating Female Student",
       "recipient": "Abdulrazaq Hafsah",
-      "type": "Framed Award #16",
+      "type": "Academic Distinction",
       "image": "/images/graduand_104.jpg"
     },
     {
       "id": "dist_5",
-      "rank": "Special Honour",
+      "rank": "Special Distinction",
       "title": "Award of Recognition for Females in Engineering",
       "recipient": "All Graduating Female Engineers (Class of 2025)",
-      "type": "Framed Award #17 (All Framed)",
-      "image": "/images/archive/awards_02.jpg"
+      "type": "Special Recognition",
+      "image": "/images/dinner/females_in_engineering_award.jpg",
+      "fit": "contain"
     }
   ],
   "faculty_and_partners": [
@@ -47,7 +48,7 @@
       "title": "Outstanding Departmental Leadership Award",
       "recipient": "Prof. A. L. Amoo",
       "subtitle": "Head of Department, Electrical & Electronics Engineering",
-      "type": "Framed Award #1",
+      "type": "Departmental Leadership",
       "image": "/images/staff/prof_a_l_amoo.jpg"
     },
     {
@@ -55,7 +56,7 @@
       "title": "Outstanding Lecturer Award",
       "recipient": "Dr. S. M. Yarima",
       "subtitle": "Senior Lecturer & Registration Officer",
-      "type": "Framed Award #2",
+      "type": "Faculty Excellence",
       "image": "/images/staff/dr_s_m_yarima.jpg"
     },
     {
@@ -63,7 +64,7 @@
       "title": "Most Inspiring Lecturer Award",
       "recipient": "Engr. A. A. Salihu",
       "subtitle": "Senior Lecturer, Electrical & Electronics Engineering",
-      "type": "Framed Award #3",
+      "type": "Inspiring Mentorship",
       "image": "/images/staff/engr_a_a_salihu.jpg"
     },
     {
@@ -71,7 +72,7 @@
       "title": "Pioneer HOD Biomedical Engineering",
       "recipient": "Dr. Buhari Mamman",
       "subtitle": "Reader / Former Head of Department",
-      "type": "Framed Award #4",
+      "type": "Pioneer Leadership",
       "image": "/images/staff/dr_b_h_mamman.jpg"
     },
     {
@@ -79,7 +80,7 @@
       "title": "Award of Recognition — Embedded Systems & Technical Partner",
       "recipient": "Nascomsoft Embedded",
       "subtitle": "Engineering & Innovation Partner",
-      "type": "Framed Award #18",
+      "type": "Technical Partner",
       "image": "/atbu_crest.png",
       "isCrest": true
     },
@@ -88,225 +89,227 @@
       "title": "Award of Recognition — Institutional Service Partner",
       "recipient": "Haske Business Centre",
       "subtitle": "Campus Partner & Support Services",
-      "type": "Framed Award #19",
+      "type": "Institutional Partner",
       "image": "/atbu_crest.png",
       "isCrest": true
     }
   ],
-  "student_leadership_framed": [
+  "leadership_and_service": [
     {
-      "id": "stu_f_9",
+      "id": "lead_9",
       "title": "Outstanding Student Leadership Award",
       "recipient": "Saliu Abdulgafar",
-      "type": "Framed Award #9",
+      "type": "Student Leadership",
       "image": "/images/graduand_097.jpg"
     },
     {
-      "id": "stu_f_10",
+      "id": "lead_10",
       "title": "Outstanding Departmental Senator Award",
       "recipient": "Nasir Abdulrashid Maitabarmi",
-      "type": "Framed Award #10",
+      "type": "Student Governance",
       "image": "/images/graduand_135.jpg"
     },
     {
-      "id": "stu_f_11",
+      "id": "lead_7",
+      "title": "Outstanding Class Rep Award",
+      "recipient": "Arinola Hammed Abiodun",
+      "type": "Class Representation",
+      "image": "/atbu_crest.png",
+      "isCrest": true
+    },
+    {
+      "id": "lead_8",
+      "title": "Outstanding Assistant Class Rep Award",
+      "recipient": "Ihemdilihu Calvin Cyprian",
+      "type": "Class Representation",
+      "image": "/atbu_crest.png",
+      "isCrest": true
+    },
+    {
+      "id": "lead_11",
       "title": "Outstanding Tutorial Coordinator",
       "recipient": "Abdulazeez Abdul Haq",
-      "type": "Framed Award #11",
+      "type": "Academic Mentorship",
       "image": "/images/graduand_023.jpg"
     },
     {
-      "id": "stu_f_12",
+      "id": "lead_12",
       "title": "Outstanding Academic Support",
       "recipient": "Hussaini Hardawa Adamu",
-      "type": "Framed Award #12",
+      "type": "Academic Support",
       "image": "/images/graduand_051.jpg"
     },
     {
-      "id": "stu_f_13",
+      "id": "lead_13",
       "title": "Outstanding Academic Support",
       "recipient": "Afolabi Opeyemi Wasiu",
-      "type": "Framed Award #13",
+      "type": "Academic Support",
       "image": "/images/graduand_083.jpg"
     },
     {
-      "id": "stu_f_14",
+      "id": "lead_14",
       "title": "Outstanding Academic Support",
       "recipient": "Abubakar Ismail",
-      "type": "Framed Award #14",
+      "type": "Academic Support",
       "image": "/images/graduand_132.jpg"
-    },
+    }
+  ],
+  "innovation_and_creative": [
     {
-      "id": "stu_f_15",
+      "id": "inn_15",
       "title": "Outstanding Technical Contribution Award",
       "recipient": "Mayowa Ariyo Emmanuel",
-      "type": "Framed Award #15",
+      "type": "Technical Excellence",
       "image": "/images/graduand_008.jpg"
     },
     {
-      "id": "stu_f_20",
-      "title": "Photography Excellence Award",
-      "recipient": "Shem Yakubu Yankari",
-      "type": "Framed Award #20",
-      "image": "/images/graduand_153.jpg"
-    },
-    {
-      "id": "stu_f_21",
-      "title": "Most Active Student",
-      "recipient": "Plangji Kumdet Victor",
-      "type": "Framed Award #21",
-      "image": "/images/graduand_092.jpg"
-    },
-    {
-      "id": "stu_f_22",
-      "title": "Model of the Year",
-      "recipient": "Obida Gobna Caleb",
-      "type": "Framed Award #22",
-      "image": "/images/graduand_034.jpg"
-    },
-    {
-      "id": "stu_f_23",
-      "title": "FYB Face of the Department",
-      "recipient": "Adamu Aliyu Kamaluddeen",
-      "type": "Framed Award #23",
-      "image": "/images/graduand_077.jpg"
-    },
-    {
-      "id": "stu_f_7",
-      "title": "Outstanding Class Rep Award",
-      "recipient": "Arinola Hammed Abiodun",
-      "type": "Framed Award #7",
-      "image": "/atbu_crest.png",
-      "isCrest": true
-    },
-    {
-      "id": "stu_f_8",
-      "title": "Outstanding Assistant Class Rep Award",
-      "recipient": "Ihemdilihu Calvin Cyprian",
-      "type": "Framed Award #8",
-      "image": "/atbu_crest.png",
-      "isCrest": true
-    }
-  ],
-  "paper_personality_awards": [
-    {
-      "id": "pap_16",
+      "id": "inn_16",
       "title": "Techpreneur of the Year",
       "recipient": "Ojih Abubakar Abdulrahman",
-      "type": "Personality & Innovation Award",
+      "type": "Tech Entrepreneurship",
       "image": "/images/graduand_073.jpg"
     },
     {
-      "id": "pap_17",
+      "id": "inn_17",
       "title": "Tech Pioneer Personality of the Year",
       "recipient": "Abdullahi Mujaheed Momoh",
-      "type": "Personality & Innovation Award",
+      "type": "Tech Innovation",
       "image": "/images/graduand_120.jpg"
     },
     {
-      "id": "pap_5",
+      "id": "inn_20",
+      "title": "Photography Excellence Award",
+      "recipient": "Shem Yakubu Yankari",
+      "type": "Visual Arts & Media",
+      "image": "/images/graduand_153.jpg"
+    },
+    {
+      "id": "inn_12",
+      "title": "Content Creator (Class of 2025)",
+      "recipient": "Oliver Chinecherem Olivia",
+      "type": "Digital Media",
+      "image": "/images/graduand_031.jpg"
+    },
+    {
+      "id": "inn_10",
+      "title": "Poet of the Department (Class of 2025)",
+      "recipient": "Waziri Abdulkadir Faruk",
+      "type": "Literary Arts",
+      "image": "/images/graduand_067.jpg"
+    }
+  ],
+  "culture_and_personality": [
+    {
+      "id": "cult_21",
+      "title": "Most Active Student",
+      "recipient": "Plangji Kumdet Victor",
+      "type": "Campus Engagement",
+      "image": "/images/graduand_092.jpg"
+    },
+    {
+      "id": "cult_23",
+      "title": "FYB Face of the Department",
+      "recipient": "Adamu Aliyu Kamaluddeen",
+      "type": "Class Ambassador",
+      "image": "/images/graduand_077.jpg"
+    },
+    {
+      "id": "cult_22",
+      "title": "Model of the Year",
+      "recipient": "Obida Gobna Caleb",
+      "type": "Style & Poise",
+      "image": "/images/graduand_034.jpg"
+    },
+    {
+      "id": "cult_5",
       "title": "Walking Google",
       "recipient": "Faruk Umar Mustapha",
-      "type": "Class Superlative #5",
+      "type": "Class Distinction",
       "image": "/images/graduand_025.jpg"
     },
     {
-      "id": "pap_10",
-      "title": "Poet of the Department (Class of 2025)",
-      "recipient": "Waziri Abdulkadir Faruk",
-      "type": "Class Superlative #10",
-      "image": "/images/graduand_067.jpg"
-    },
-    {
-      "id": "pap_6",
+      "id": "cult_6",
       "title": "Class Peacemaker",
       "recipient": "Saliu Abdulgafar",
-      "type": "Class Superlative #6",
+      "type": "Harmony & Unity",
       "image": "/images/graduand_097.jpg"
     },
     {
-      "id": "pap_1",
+      "id": "cult_1",
       "title": "Best Dressed (Male)",
       "recipient": "Yahaya Liman Abdulsalam",
-      "type": "Class Superlative #1",
+      "type": "Style & Elegance",
       "image": "/images/graduand_088.jpg"
     },
     {
-      "id": "pap_11",
+      "id": "cult_11",
       "title": "Fashion Ambassador (Class of 2025)",
       "recipient": "Abubakar Ibrahim Hanif",
-      "type": "Class Superlative #11",
+      "type": "Style & Elegance",
       "image": "/images/graduand_144.jpg"
     },
     {
-      "id": "pap_2",
-      "title": "Most Reserved (Male)",
-      "recipient": "Ibrahim Umar Anchau",
-      "type": "Class Superlative #2",
-      "image": "/images/graduand_095.jpg"
-    },
-    {
-      "id": "pap_3",
-      "title": "Most Reserved (Female)",
-      "recipient": "Abdulrazaq Hafsah",
-      "type": "Class Superlative #3",
-      "image": "/images/graduand_104.jpg"
-    },
-    {
-      "id": "pap_4",
-      "title": "Meme Lord",
-      "recipient": "Mayowa Ariyo Emmanuel",
-      "type": "Class Superlative #4",
-      "image": "/images/graduand_008.jpg"
-    },
-    {
-      "id": "pap_7",
-      "title": "Ambassador of Laughter and Good Vibes",
-      "recipient": "Usman Isah Isah",
-      "type": "Class Superlative #7",
-      "image": "/images/graduand_058.jpg"
-    },
-    {
-      "id": "pap_8",
-      "title": "Ustaz of the Department",
-      "recipient": "Muhammad Yahaya Salis",
-      "type": "Class Superlative #8",
-      "image": "/images/graduand_057.jpg"
-    },
-    {
-      "id": "pap_9",
-      "title": "Pastor of the Department",
-      "recipient": "Cletus Anointed Samuel",
-      "type": "Class Superlative #9",
-      "image": "/images/graduand_118.jpg"
-    },
-    {
-      "id": "pap_12",
-      "title": "Content Creator (Class of 2025)",
-      "recipient": "Oliver Chinecherem Olivia",
-      "type": "Class Superlative #12",
-      "image": "/images/graduand_031.jpg"
-    },
-    {
-      "id": "pap_13",
+      "id": "cult_13",
       "title": "Arewa Personality (Class of 2025)",
       "recipient": "Hussaini Hardawa Adamu",
-      "type": "Class Superlative #13",
+      "type": "Cultural Heritage",
       "image": "/images/graduand_051.jpg"
     },
     {
-      "id": "pap_14",
+      "id": "cult_14",
       "title": "Yoruba Personality (Class of 2025)",
       "recipient": "Yusuf Hikmat Oyindamola",
-      "type": "Class Superlative #14",
+      "type": "Cultural Heritage",
       "image": "/images/graduand_108.jpg"
     },
     {
-      "id": "pap_15",
+      "id": "cult_15",
       "title": "Igbo Personality (Class of 2025)",
       "recipient": "Oliver Chinecherem Olivia",
-      "type": "Class Superlative #15",
+      "type": "Cultural Heritage",
       "image": "/images/graduand_031.jpg"
+    },
+    {
+      "id": "cult_8",
+      "title": "Ustaz of the Department",
+      "recipient": "Muhammad Yahaya Salis",
+      "type": "Spiritual Leadership",
+      "image": "/images/graduand_057.jpg"
+    },
+    {
+      "id": "cult_9",
+      "title": "Pastor of the Department",
+      "recipient": "Cletus Anointed Samuel",
+      "type": "Spiritual Leadership",
+      "image": "/images/graduand_118.jpg"
+    },
+    {
+      "id": "cult_7",
+      "title": "Ambassador of Laughter and Good Vibes",
+      "recipient": "Usman Isah Isah",
+      "type": "Camaraderie",
+      "image": "/images/graduand_058.jpg"
+    },
+    {
+      "id": "cult_2",
+      "title": "Most Reserved (Male)",
+      "recipient": "Ibrahim Umar Anchau",
+      "type": "Class Personality",
+      "image": "/images/graduand_095.jpg"
+    },
+    {
+      "id": "cult_3",
+      "title": "Most Reserved (Female)",
+      "recipient": "Abdulrazaq Hafsah",
+      "type": "Class Personality",
+      "image": "/images/graduand_104.jpg"
+    },
+    {
+      "id": "cult_4",
+      "title": "Meme Lord",
+      "recipient": "Mayowa Ariyo Emmanuel",
+      "type": "Class Humour",
+      "image": "/images/graduand_008.jpg"
     }
   ]
 }

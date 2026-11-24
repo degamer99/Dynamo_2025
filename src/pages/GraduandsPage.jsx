@@ -1,6 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Phone, Mail, Copy, Check, X, ChevronLeft, ChevronRight, User, ArrowLeft } from 'lucide-react';
+import {
+  Search,
+  Phone,
+  Mail,
+  Copy,
+  Check,
+  X,
+  ChevronLeft,
+  ChevronRight,
+  User,
+  ArrowLeft,
+  MapPin,
+  Cpu,
+  Briefcase,
+  GraduationCap,
+  Users,
+  Heart,
+  Globe
+} from 'lucide-react';
 import graduands from '../data/graduands.json';
 
 export default function GraduandsPage() {
@@ -21,7 +39,11 @@ export default function GraduandsPage() {
       !q ||
       g.name.toLowerCase().includes(q) ||
       (g.email && g.email.toLowerCase().includes(q)) ||
-      (g.phone && g.phone.includes(q));
+      (g.phone && g.phone.includes(q)) ||
+      (g.origin && g.origin.toLowerCase().includes(q)) ||
+      (g.project && g.project.toLowerCase().includes(q)) ||
+      (g.career_aspiration && g.career_aspiration.toLowerCase().includes(q)) ||
+      (g.favorite_lecturer && g.favorite_lecturer.toLowerCase().includes(q));
     const matchesLetter =
       selectedLetter === 'ALL' || g.name.trim().toUpperCase().startsWith(selectedLetter);
     return matchesSearch && matchesLetter;
@@ -35,18 +57,18 @@ export default function GraduandsPage() {
   };
 
   const currentIndex = activeGraduand
-    ? graduands.findIndex((g) => g.id === activeGraduand.id)
+    ? filteredGraduands.findIndex((g) => g.id === activeGraduand.id)
     : -1;
 
   const handleNextGraduand = () => {
-    if (currentIndex < graduands.length - 1) {
-      setActiveGraduand(graduands[currentIndex + 1]);
+    if (currentIndex >= 0 && currentIndex < filteredGraduands.length - 1) {
+      setActiveGraduand(filteredGraduands[currentIndex + 1]);
     }
   };
 
   const handlePrevGraduand = () => {
     if (currentIndex > 0) {
-      setActiveGraduand(graduands[currentIndex - 1]);
+      setActiveGraduand(filteredGraduands[currentIndex - 1]);
     }
   };
 
@@ -59,7 +81,7 @@ export default function GraduandsPage() {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [activeGraduand]);
+  }, [activeGraduand, currentIndex, filteredGraduands.length]);
 
   return (
     <div className="pt-24 pb-20 min-h-screen bg-white">
@@ -76,19 +98,19 @@ export default function GraduandsPage() {
               <span>Back to Home</span>
             </Link>
             <h1 className="text-3xl sm:text-4xl font-serif font-black text-emerald-950 tracking-tight">
-              THE 154 <span className="copper-gradient-text">BALEWITE GRADUANDS</span>
+              THE {graduands.length} <span className="copper-gradient-text">BALEWITE GRADUANDS</span>
             </h1>
             <p className="text-stone-600 text-sm sm:text-base font-sans mt-1">
-              Complete directory of the Class of 2025 Electrical & Electronics Engineering Graduating Set.
+              Complete directory of the Class of 2025 Electrical & Electronics Engineering Graduating Set — with projects, aspirations, origins, and contacts.
             </p>
           </div>
 
           {/* Search Input */}
-          <div className="w-full md:w-80 relative">
+          <div className="w-full md:w-96 relative">
             <Search className="w-4 h-4 text-stone-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Search by name, email, or phone..."
+              placeholder="Search name, project, state, career, email..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-8 py-2.5 text-xs sm:text-sm rounded-xl bg-cream-50 border border-stone-300 focus:outline-none focus:border-copper-500 shadow-sm font-sans"
@@ -128,24 +150,29 @@ export default function GraduandsPage() {
             {graduands.length} Graduating Engineers
           </span>
           <span className="text-[11px] text-copper-700 italic">
-            Click any portrait to view full contact card
+            Click any portrait to view full profile, project & contact card
           </span>
         </div>
 
-        {/* Full 154 Grid */}
+        {/* Full Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5 sm:gap-4">
           {filteredGraduands.map((g) => (
             <div
               key={g.id}
               onClick={() => setActiveGraduand(g)}
-              className="group cursor-pointer bg-cream-50 rounded-xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-md hover:border-copper-400 transition-all transform hover:-translate-y-1"
+              className="group cursor-pointer bg-cream-50 rounded-xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-md hover:border-copper-400 transition-all transform hover:-translate-y-1 flex flex-col justify-between"
             >
-              <div className="aspect-[4/5] bg-stone-100 overflow-hidden relative">
+              <div className="aspect-[4/5] bg-stone-100 overflow-hidden relative flex items-center justify-center">
                 <img
                   src={g.image}
                   alt={g.name}
                   loading="lazy"
-                  className="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-105"
+                  decoding="async"
+                  className={
+                    g.isCrest
+                      ? 'w-1/2 h-1/2 object-contain p-2 opacity-60'
+                      : 'w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-105'
+                  }
                   onError={(e) => {
                     e.target.src = '/atbu_crest.png';
                     e.target.className = 'w-1/2 h-1/2 m-auto object-contain p-4 opacity-50';
@@ -154,17 +181,17 @@ export default function GraduandsPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-2.5">
                   <span className="text-[10px] text-white font-semibold flex items-center gap-1">
                     <User className="w-3 h-3 text-copper-400" />
-                    View Contact
+                    View Profile
                   </span>
                 </div>
               </div>
 
-              <div className="p-2.5 bg-white">
+              <div className="p-2.5 bg-white border-t border-stone-100">
                 <h4 className="text-[11px] font-bold text-emerald-950 truncate uppercase group-hover:text-copper-700 transition-colors">
                   {g.name}
                 </h4>
-                <div className="text-[9px] text-stone-400 font-mono">
-                  p.{g.source_page || 1} • EEE ’25
+                <div className="text-[9px] text-stone-500 font-mono truncate mt-0.5">
+                  {g.state_of_origin ? `${g.state_of_origin} • EEE ’25` : `p.${g.source_page || 1} • EEE ’25`}
                 </div>
               </div>
             </div>
@@ -186,57 +213,147 @@ export default function GraduandsPage() {
           </div>
         )}
 
-        {/* Lightbox Modal */}
+        {/* Rich Profile Lightbox Modal */}
         {activeGraduand && (
           <div
-            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4"
             onClick={() => setActiveGraduand(null)}
           >
             <div
-              className="relative w-full max-w-lg bg-white rounded-2xl overflow-hidden shadow-2xl border border-stone-200"
+              className="relative w-full max-w-lg max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl border border-stone-200 flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={() => setActiveGraduand(null)}
                 className="absolute top-3 right-3 z-20 p-2 rounded-full bg-black/50 text-white hover:bg-black/70"
+                aria-label="Close modal"
               >
                 <X className="w-4 h-4" />
               </button>
 
               <button
                 onClick={handlePrevGraduand}
-                disabled={currentIndex === 0}
-                className="absolute left-2 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 text-stone-800 hover:bg-white shadow-md disabled:opacity-30"
+                disabled={currentIndex <= 0}
+                className="absolute left-2 top-28 sm:top-32 z-20 p-2 rounded-full bg-white/85 text-stone-800 hover:bg-white shadow-md disabled:opacity-30"
+                aria-label="Previous graduand"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
 
               <button
                 onClick={handleNextGraduand}
-                disabled={currentIndex === graduands.length - 1}
-                className="absolute right-2 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 text-stone-800 hover:bg-white shadow-md disabled:opacity-30"
+                disabled={currentIndex === filteredGraduands.length - 1}
+                className="absolute right-2 top-28 sm:top-32 z-20 p-2 rounded-full bg-white/85 text-stone-800 hover:bg-white shadow-md disabled:opacity-30"
+                aria-label="Next graduand"
               >
                 <ChevronRight className="w-5 h-5" />
               </button>
 
-              <div className="h-72 sm:h-80 w-full bg-stone-950 relative">
+              <div className="h-60 sm:h-64 w-full bg-stone-950 relative shrink-0 flex items-center justify-center">
                 <img
                   src={activeGraduand.image}
                   alt={activeGraduand.name}
-                  className="w-full h-full object-contain"
+                  className={
+                    activeGraduand.isCrest
+                      ? 'w-28 h-28 object-contain opacity-70'
+                      : 'w-full h-full object-contain'
+                  }
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                 <div className="absolute bottom-4 left-6 right-6 text-white">
                   <span className="text-[10px] font-mono tracking-widest uppercase text-copper-400 font-bold">
-                    ATBU EEE CLASS OF 2025 • #{currentIndex + 1} OF 154
+                    ATBU EEE CLASS OF 2025 • #{currentIndex + 1} OF {filteredGraduands.length}
                   </span>
                   <h3 className="text-xl sm:text-2xl font-serif font-bold leading-tight mt-0.5">
                     {activeGraduand.name}
                   </h3>
+                  {activeGraduand.origin && (
+                    <p className="text-xs text-stone-200 flex items-center gap-1 mt-1">
+                      <MapPin className="w-3.5 h-3.5 text-copper-400 shrink-0" />
+                      <span>{activeGraduand.origin}</span>
+                    </p>
+                  )}
                 </div>
               </div>
 
-              <div className="p-6 space-y-4 font-sans bg-cream-50">
+              <div className="p-5 sm:p-6 space-y-3 font-sans bg-cream-50 overflow-y-auto">
+                {activeGraduand.project && (
+                  <div className="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm">
+                    <div className="text-[10px] font-bold text-copper-700 uppercase tracking-wider flex items-center gap-1.5 mb-1">
+                      <Cpu className="w-3.5 h-3.5" />
+                      Final-Year Project
+                    </div>
+                    <p className="text-xs sm:text-sm font-semibold text-emerald-950 leading-relaxed">
+                      {activeGraduand.project}
+                    </p>
+                  </div>
+                )}
+
+                {activeGraduand.career_aspiration && (
+                  <div className="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm">
+                    <div className="text-[10px] font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5 mb-1">
+                      <Briefcase className="w-3.5 h-3.5" />
+                      Career Aspiration
+                    </div>
+                    <p className="text-xs text-stone-700 leading-relaxed">
+                      {activeGraduand.career_aspiration}
+                    </p>
+                  </div>
+                )}
+
+                {(activeGraduand.favorite_lecturer || activeGraduand.best_friend) && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {activeGraduand.favorite_lecturer && (
+                      <div className="bg-white p-3 rounded-xl border border-stone-200 shadow-sm">
+                        <div className="text-[10px] font-bold text-stone-400 uppercase flex items-center gap-1 mb-0.5">
+                          <GraduationCap className="w-3.5 h-3.5 text-copper-600" />
+                          Favorite Lecturer
+                        </div>
+                        <div className="text-xs font-semibold text-stone-800">
+                          {activeGraduand.favorite_lecturer}
+                        </div>
+                      </div>
+                    )}
+                    {activeGraduand.best_friend && (
+                      <div className="bg-white p-3 rounded-xl border border-stone-200 shadow-sm">
+                        <div className="text-[10px] font-bold text-stone-400 uppercase flex items-center gap-1 mb-0.5">
+                          <Users className="w-3.5 h-3.5 text-emerald-700" />
+                          Best Friend
+                        </div>
+                        <div className="text-xs font-semibold text-stone-800">
+                          {activeGraduand.best_friend}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {activeGraduand.will_miss && (
+                  <div className="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm">
+                    <div className="text-[10px] font-bold text-stone-400 uppercase flex items-center gap-1.5 mb-1">
+                      <Heart className="w-3.5 h-3.5 text-copper-600" />
+                      Will Miss Most About ATBU
+                    </div>
+                    <p className="text-xs text-stone-700 italic leading-relaxed">
+                      “{activeGraduand.will_miss}”
+                    </p>
+                  </div>
+                )}
+
+                {activeGraduand.social_media && (
+                  <div className="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm flex items-start gap-3">
+                    <div className="p-2 rounded-lg bg-stone-100 text-emerald-800 shrink-0">
+                      <Globe className="w-4 h-4" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-[10px] font-bold text-stone-400 uppercase">Social Media</div>
+                      <div className="text-xs font-medium text-stone-800 break-words">
+                        {activeGraduand.social_media}
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 <div className="bg-white p-3.5 rounded-xl border border-stone-200 flex items-center justify-between shadow-sm">
                   <div className="flex items-center gap-3">
                     <div className="p-2 rounded-lg bg-emerald-50 text-emerald-800">

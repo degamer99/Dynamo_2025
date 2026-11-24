@@ -6,6 +6,7 @@ import {
   Sparkles,
   GraduationCap,
   Users,
+  Cpu,
   ArrowLeft,
   Search,
   X
@@ -23,15 +24,17 @@ export default function AwardsPage() {
   const {
     academic_distinction,
     faculty_and_partners,
-    student_leadership_framed,
-    paper_personality_awards
+    leadership_and_service,
+    innovation_and_creative,
+    culture_and_personality
   } = awardsData;
 
   const totalCount =
     academic_distinction.length +
     faculty_and_partners.length +
-    student_leadership_framed.length +
-    paper_personality_awards.length;
+    leadership_and_service.length +
+    innovation_and_creative.length +
+    culture_and_personality.length;
 
   const filterBySearch = (list) => {
     const q = searchQuery.toLowerCase().trim();
@@ -40,30 +43,39 @@ export default function AwardsPage() {
       (item) =>
         item.title.toLowerCase().includes(q) ||
         item.recipient.toLowerCase().includes(q) ||
-        (item.type && item.type.toLowerCase().includes(q))
+        (item.type && item.type.toLowerCase().includes(q)) ||
+        (item.subtitle && item.subtitle.toLowerCase().includes(q))
     );
   };
 
   const tabs = [
-    { id: 'ALL', label: `All Honors (${totalCount})`, icon: Trophy },
+    { id: 'ALL', label: `All Honours (${totalCount})`, icon: Trophy },
     { id: 'ACADEMIC', label: `Academic Distinction (${academic_distinction.length})`, icon: Award },
     { id: 'FACULTY', label: `Faculty & Partners (${faculty_and_partners.length})`, icon: GraduationCap },
-    { id: 'LEADERSHIP', label: `Student Framed Awards (${student_leadership_framed.length})`, icon: Users },
-    { id: 'PERSONALITY', label: `Paper & Superlatives (${paper_personality_awards.length})`, icon: Sparkles }
+    { id: 'LEADERSHIP', label: `Leadership & Service (${leadership_and_service.length})`, icon: Users },
+    { id: 'INNOVATION', label: `Innovation & Creative (${innovation_and_creative.length})`, icon: Cpu },
+    { id: 'CULTURE', label: `Culture & Personality (${culture_and_personality.length})`, icon: Sparkles }
   ];
 
-  const renderCard = (item, badgeColor = 'copper') => (
+  const renderCard = (item, badgeColor = 'emerald') => (
     <div
       key={item.id}
       className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-md hover:border-copper-400 transition-all flex flex-col justify-between group"
     >
-      <div className="aspect-[4/5] bg-stone-100 overflow-hidden relative flex items-center justify-center">
+      <div className={`aspect-[4/5] overflow-hidden relative flex items-center justify-center ${
+        item.fit === 'contain' ? 'bg-stone-950' : 'bg-stone-100'
+      }`}>
         <img
           src={item.image}
           alt={item.recipient}
           loading="lazy"
-          className={`w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-105 ${
-            item.isCrest ? 'p-10 object-contain opacity-75 bg-gradient-to-b from-cream-50 to-cream-200' : ''
+          decoding="async"
+          className={`w-full h-full transform transition-transform duration-500 group-hover:scale-105 ${
+            item.isCrest
+              ? 'p-10 object-contain opacity-75 bg-gradient-to-b from-cream-50 to-cream-200'
+              : item.fit === 'contain'
+              ? 'object-contain'
+              : 'object-cover object-top'
           }`}
           onError={(e) => {
             e.target.src = '/atbu_crest.png';
@@ -116,10 +128,10 @@ export default function AwardsPage() {
               <span>Back to Home</span>
             </Link>
             <h1 className="text-3xl sm:text-4xl font-serif font-black text-emerald-950 tracking-tight">
-              CLASS OF 2025 <span className="copper-gradient-text">HONORS & AWARDS</span>
+              CLASS OF 2025 <span className="copper-gradient-text">HONOURS & AWARDS</span>
             </h1>
             <p className="text-stone-600 text-sm sm:text-base font-sans mt-1 max-w-2xl">
-              Official archive of the 23 Framed Awards of Excellence and 17 Class Superlative & Personality Awards presented at the 43rd EEE Balewite Dynamo celebration.
+              Official archive of the {totalCount} awards of academic distinction, faculty mentorship, student leadership, engineering innovation, and class heritage presented by the 43rd EEE Balewite Dynamo Set.
             </p>
           </div>
 
@@ -172,7 +184,7 @@ export default function AwardsPage() {
               <section>
                 <div className="mb-6">
                   <span className="text-[11px] font-bold uppercase tracking-widest text-copper-600 block">
-                    Framed Honors • Academic Podium
+                    Scholastic Excellence • Academic Podium
                   </span>
                   <h2 className="text-xl sm:text-2xl font-serif font-bold text-emerald-950">
                     Academic Distinction & Special Recognition
@@ -186,16 +198,16 @@ export default function AwardsPage() {
               </section>
             )}
 
-          {/* 2. Faculty & Institutional Framed Awards */}
+          {/* 2. Faculty Mentorship & Institutional Partners */}
           {(activeTab === 'ALL' || activeTab === 'FACULTY') &&
             filterBySearch(faculty_and_partners).length > 0 && (
               <section>
                 <div className="mb-6">
                   <span className="text-[11px] font-bold uppercase tracking-widest text-copper-600 block">
-                    Framed Honors • Mentorship & Partners
+                    Mentorship & Institutional Support
                   </span>
                   <h2 className="text-xl sm:text-2xl font-serif font-bold text-emerald-950">
-                    Faculty & Institutional Framed Awards
+                    Faculty Mentorship & Institutional Partners
                   </h2>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-5">
@@ -206,40 +218,60 @@ export default function AwardsPage() {
               </section>
             )}
 
-          {/* 3. Student Leadership & Service Framed Awards */}
+          {/* 3. Student Leadership & Academic Service */}
           {(activeTab === 'ALL' || activeTab === 'LEADERSHIP') &&
-            filterBySearch(student_leadership_framed).length > 0 && (
+            filterBySearch(leadership_and_service).length > 0 && (
               <section>
                 <div className="mb-6">
                   <span className="text-[11px] font-bold uppercase tracking-widest text-copper-600 block">
-                    Framed Honors • Service & Impact
+                    Governance, Stewardship & Peer Mentorship
                   </span>
                   <h2 className="text-xl sm:text-2xl font-serif font-bold text-emerald-950">
-                    Student Leadership, Academic Support & Service Awards
+                    Student Leadership & Academic Service
                   </h2>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5">
-                  {filterBySearch(student_leadership_framed).map((item) =>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-5">
+                  {filterBySearch(leadership_and_service).map((item) =>
                     renderCard(item, 'emerald')
                   )}
                 </div>
               </section>
             )}
 
-          {/* 4. Paper & Personality Superlatives */}
-          {(activeTab === 'ALL' || activeTab === 'PERSONALITY') &&
-            filterBySearch(paper_personality_awards).length > 0 && (
+          {/* 4. Engineering Innovation, Media & Creative Excellence */}
+          {(activeTab === 'ALL' || activeTab === 'INNOVATION') &&
+            filterBySearch(innovation_and_creative).length > 0 && (
               <section>
                 <div className="mb-6">
                   <span className="text-[11px] font-bold uppercase tracking-widest text-copper-600 block">
-                    Class Superlatives • Dinner & Awards Night
+                    Technology, Entrepreneurship & Creative Arts
                   </span>
                   <h2 className="text-xl sm:text-2xl font-serif font-bold text-emerald-950">
-                    Paper & Personality Superlative Awards
+                    Engineering Innovation, Media & Creative Excellence
                   </h2>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5">
-                  {filterBySearch(paper_personality_awards).map((item) =>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-5">
+                  {filterBySearch(innovation_and_creative).map((item) =>
+                    renderCard(item, 'copper')
+                  )}
+                </div>
+              </section>
+            )}
+
+          {/* 5. Class Heritage, Culture & Personality Honours */}
+          {(activeTab === 'ALL' || activeTab === 'CULTURE') &&
+            filterBySearch(culture_and_personality).length > 0 && (
+              <section>
+                <div className="mb-6">
+                  <span className="text-[11px] font-bold uppercase tracking-widest text-copper-600 block">
+                    Community, Culture & Class Spirit
+                  </span>
+                  <h2 className="text-xl sm:text-2xl font-serif font-bold text-emerald-950">
+                    Class Heritage, Culture & Personality Honours
+                  </h2>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-5">
+                  {filterBySearch(culture_and_personality).map((item) =>
                     renderCard(item, 'copper')
                   )}
                 </div>

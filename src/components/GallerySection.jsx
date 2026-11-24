@@ -1,13 +1,30 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Camera, ExternalLink, X, ChevronLeft, ChevronRight, Sparkles, Maximize2 } from 'lucide-react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { Camera, ExternalLink, X, ChevronLeft, ChevronRight, Sparkles, Maximize2, ArrowRight, Images, Loader2 } from 'lucide-react';
 import records from '../data/records.json';
+
+const MAX_GRID_CARDS = 11;
+const FEATURED_ALL_IDS = [
+  'def_4',
+  'ind_1',
+  'ral_1',
+  'ral_5',
+  'awd_1',
+  'awd_4',
+  'cor_1',
+  'cos_1',
+  'cul_1',
+  'gar_1',
+  'hik_1'
+];
 
 export default function GallerySection() {
   const [selectedCategory, setSelectedCategory] = useState('ALL');
   const [lightboxIndex, setLightboxIndex] = useState(null);
+  const [imageLoading, setImageLoading] = useState(false);
 
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+  const activeThumbRef = useRef(null);
 
   // Original magazine printed event photos
   const printedEventPhotos = records.event_photos.map((e) => ({
@@ -358,10 +375,67 @@ export default function GallerySection() {
       title: 'Balewite Dynamos Class Reunion Salute',
       meta: 'Dynamos Graduation Dinner 2025',
       category: 'Studio & Dinner Gala'
+    },
+    {
+      id: 'd_fem_awd',
+      src: '/images/dinner/females_in_engineering_award.jpg',
+      title: 'Graduating Female Engineers with HOD Prof. A. L. Amoo Receiving Awards of Recognition',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'SUG & Dinner Awards'
+    },
+    {
+      id: 'd7',
+      src: '/images/dinner/dinner_07.jpg',
+      title: 'Keynote Address at the 43rd EEE Balewite Dynamo Dinner & Award Night',
+      meta: 'Dynamos Graduation Dinner 2025',
+      category: 'Studio & Dinner Gala'
+    },
+    {
+      id: 'd8',
+      src: '/images/dinner/dinner_08.jpg',
+      title: 'On-Stage Award Presentation & Class Honours Celebration',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'SUG & Dinner Awards'
+    },
+    {
+      id: 'd9',
+      src: '/images/dinner/dinner_09.jpg',
+      title: 'Honorees & Coursemates Celebrating on Stage at Award Night',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'SUG & Dinner Awards'
+    },
+    {
+      id: 'd10',
+      src: '/images/dinner/dinner_10.jpg',
+      title: 'Grand Class of 2025 & Faculty Group Portrait at the Dinner Gala',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'Studio & Dinner Gala'
+    },
+    {
+      id: 'd11',
+      src: '/images/dinner/dinner_11.jpg',
+      title: 'Evening Elegance on the Dinner Gala Red Carpet',
+      meta: 'Dynamos Graduation Dinner 2025',
+      category: 'Studio & Dinner Gala'
+    },
+    {
+      id: 'd12',
+      src: '/images/dinner/dinner_12.jpg',
+      title: 'Celebrating with Award of Recognition Certificates at Dinner Night',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'SUG & Dinner Awards'
     }
   ];
 
-  const allPhotos = [...sortedArchivePhotos, ...printedEventPhotos];
+  const allPhotos = useMemo(() => {
+    const combined = [...sortedArchivePhotos, ...printedEventPhotos];
+    const featuredSet = new Set(FEATURED_ALL_IDS);
+    const featuredFirst = FEATURED_ALL_IDS
+      .map((id) => combined.find((item) => item.id === id))
+      .filter(Boolean);
+    const remaining = combined.filter((item) => !featuredSet.has(item.id));
+    return [...featuredFirst, ...remaining];
+  }, []);
 
   const categories = [
     { id: 'ALL', label: `All Moments (${allPhotos.length})` },
@@ -380,11 +454,24 @@ export default function GallerySection() {
       ? allPhotos
       : allPhotos.filter((item) => item.category === selectedCategory);
 
+  const hasMorePhotos = currentGalleryList.length > MAX_GRID_CARDS;
+  const visibleGridPhotos = hasMorePhotos
+    ? currentGalleryList.slice(0, MAX_GRID_CARDS)
+    : currentGalleryList;
+  const remainingCount = Math.max(0, currentGalleryList.length - MAX_GRID_CARDS);
+
+  const openLightboxAt = (index) => {
+    setImageLoading(true);
+    setLightboxIndex(index);
+  };
+
   const goToPrev = () => {
+    setImageLoading(true);
     setLightboxIndex((prev) => (prev - 1 + currentGalleryList.length) % currentGalleryList.length);
   };
 
   const goToNext = () => {
+    setImageLoading(true);
     setLightboxIndex((prev) => (prev + 1) % currentGalleryList.length);
   };
 
@@ -398,6 +485,16 @@ export default function GallerySection() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [lightboxIndex, currentGalleryList.length]);
+
+  useEffect(() => {
+    if (lightboxIndex !== null && activeThumbRef.current) {
+      activeThumbRef.current.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest'
+      });
+    }
+  }, [lightboxIndex]);
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.targetTouches[0].clientX;
@@ -477,12 +574,12 @@ export default function GallerySection() {
           </a>
         </div>
 
-        {/* Gallery Grid */}
+        {/* Gallery Grid (11 Unique Featured Cards + 12th "See More" CTA Card) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {currentGalleryList.map((item, idx) => (
+          {visibleGridPhotos.map((item, idx) => (
             <div
               key={item.id || idx}
-              onClick={() => setLightboxIndex(idx)}
+              onClick={() => openLightboxAt(idx)}
               className="group cursor-pointer bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-lg transition-all transform hover:-translate-y-1"
             >
               <div className="aspect-[4/3] w-full bg-stone-900 overflow-hidden relative">
@@ -490,6 +587,7 @@ export default function GallerySection() {
                   src={item.src}
                   alt={item.title}
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover object-top transform transition-transform duration-700 group-hover:scale-105"
                   onError={(e) => {
                     e.target.src = '/images/cover/page_001_cover.jpg';
@@ -516,9 +614,38 @@ export default function GallerySection() {
               </div>
             </div>
           ))}
+
+          {/* 12th Card: See More CTA matching Central Working Committee style */}
+          {hasMorePhotos && (
+            <button
+              type="button"
+              onClick={() => openLightboxAt(MAX_GRID_CARDS)}
+              className="group cursor-pointer rounded-2xl overflow-hidden border border-copper-400/60 shadow-sm hover:shadow-lg transition-all transform hover:-translate-y-1 bg-emerald-950 text-left"
+            >
+              <div className="aspect-[4/3] w-full bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 p-6 flex flex-col items-center justify-center text-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(217,119,6,0.18),transparent_60%)] pointer-events-none" />
+                <div className="w-12 h-12 rounded-xl bg-copper-500/20 border border-copper-400/40 flex items-center justify-center text-copper-300 mb-3 relative z-10">
+                  <Images className="w-6 h-6" />
+                </div>
+                <div className="text-4xl sm:text-5xl font-serif font-black text-copper-300 relative z-10">
+                  +{remainingCount}
+                </div>
+                <p className="text-sm sm:text-base font-serif font-bold text-white mt-1.5 relative z-10">
+                  See More Event Moments
+                </p>
+                <p className="text-[11px] text-stone-300 mt-1 max-w-xs relative z-10">
+                  Open the gallery viewer to browse all {currentGalleryList.length} photos on demand
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-copper-500 group-hover:bg-copper-600 text-white text-xs font-bold shadow-copper transition-all relative z-10">
+                  <span>Browse Full Archive</span>
+                  <ArrowRight className="w-3.5 h-3.5 transform transition-transform group-hover:translate-x-1" />
+                </span>
+              </div>
+            </button>
+          )}
         </div>
 
-        {/* Exhibition Lightbox Viewer */}
+        {/* Exhibition Lightbox Viewer (Lazy-Loaded On Demand) */}
         {activePhoto && (
           <div
             className="fixed inset-0 z-50 bg-emerald-950/95 backdrop-blur-xl flex items-center justify-center p-2 sm:p-6"
@@ -530,19 +657,19 @@ export default function GallerySection() {
               className="w-full max-w-4xl bg-stone-900 rounded-2xl overflow-hidden border border-copper-400/40 shadow-2xl flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="px-4 sm:px-6 py-3.5 bg-stone-950 border-b border-stone-800 flex items-center justify-between">
-                <div className="flex items-center gap-2.5">
-                  <span className="px-2.5 py-0.5 rounded-md bg-copper-500/20 text-copper-300 border border-copper-400/30 text-[10px] font-mono font-bold uppercase">
+              <div className="px-4 sm:px-6 py-3.5 bg-stone-950 border-b border-stone-800 flex items-center justify-between gap-2">
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <span className="px-2.5 py-0.5 rounded-md bg-copper-500/20 text-copper-300 border border-copper-400/30 text-[10px] font-mono font-bold uppercase shrink-0">
                     {lightboxIndex + 1} / {currentGalleryList.length}
                   </span>
-                  <span className="text-xs text-stone-400 font-sans truncate max-w-[180px] sm:max-w-sm">
+                  <span className="text-xs text-stone-400 font-sans truncate">
                     {activePhoto.meta}
                   </span>
                 </div>
 
                 <button
                   onClick={() => setLightboxIndex(null)}
-                  className="p-1.5 rounded-lg bg-stone-800 text-stone-300 hover:bg-copper-500 hover:text-white transition-colors"
+                  className="p-1.5 rounded-lg bg-stone-800 text-stone-300 hover:bg-copper-500 hover:text-white transition-colors shrink-0"
                   aria-label="Close gallery viewer"
                 >
                   <X className="w-4 h-4" />
@@ -550,10 +677,21 @@ export default function GallerySection() {
               </div>
 
               <div className="relative w-full h-[54vh] sm:h-[62vh] bg-stone-950 flex items-center justify-center overflow-hidden select-none">
+                {imageLoading && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-stone-950/70 z-10">
+                    <Loader2 className="w-7 h-7 text-copper-400 animate-spin" />
+                  </div>
+                )}
                 <img
+                  key={activePhoto.id || lightboxIndex}
                   src={activePhoto.src}
                   alt={activePhoto.title}
-                  className="w-full h-full object-contain"
+                  decoding="async"
+                  onLoad={() => setImageLoading(false)}
+                  onError={() => setImageLoading(false)}
+                  className={`w-full h-full object-contain transition-opacity duration-300 ${
+                    imageLoading ? 'opacity-0' : 'opacity-100'
+                  }`}
                 />
               </div>
 
@@ -564,7 +702,7 @@ export default function GallerySection() {
                       {activePhoto.title}
                     </h4>
                     <p className="text-[11px] text-copper-300 font-sans">
-                      Swipe or tap arrows to browse moments
+                      Swipe, use arrow keys, or scroll strip below • Images load on demand
                     </p>
                   </div>
 
@@ -586,24 +724,39 @@ export default function GallerySection() {
                   </div>
                 </div>
 
+                {/* Windowed Lazy Thumbnail Strip — only mounts <img> near active index to save bandwidth */}
                 <div className="flex items-center gap-2 overflow-x-auto pb-1 pt-1">
-                  {currentGalleryList.map((thumb, tIdx) => (
-                    <button
-                      key={thumb.id || tIdx}
-                      onClick={() => setLightboxIndex(tIdx)}
-                      className={`w-12 h-10 sm:w-14 sm:h-11 rounded-lg overflow-hidden shrink-0 border-2 transition-all ${
-                        lightboxIndex === tIdx
-                          ? 'border-copper-400 scale-105 opacity-100'
-                          : 'border-transparent opacity-45 hover:opacity-80'
-                      }`}
-                    >
-                      <img
-                        src={thumb.src}
-                        alt=""
-                        className="w-full h-full object-cover"
-                      />
-                    </button>
-                  ))}
+                  {currentGalleryList.map((thumb, tIdx) => {
+                    const isActive = lightboxIndex === tIdx;
+                    const isWithinWindow = Math.abs(tIdx - lightboxIndex) <= 5;
+                    return (
+                      <button
+                        key={thumb.id || tIdx}
+                        ref={isActive ? activeThumbRef : null}
+                        onClick={() => openLightboxAt(tIdx)}
+                        title={thumb.title}
+                        className={`w-12 h-10 sm:w-14 sm:h-11 rounded-lg overflow-hidden shrink-0 border-2 transition-all flex items-center justify-center bg-stone-800 ${
+                          isActive
+                            ? 'border-copper-400 scale-105 opacity-100'
+                            : 'border-transparent opacity-55 hover:opacity-90'
+                        }`}
+                      >
+                        {isWithinWindow ? (
+                          <img
+                            src={thumb.src}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <span className="text-[10px] font-mono font-bold text-stone-400">
+                            {tIdx + 1}
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
             </div>

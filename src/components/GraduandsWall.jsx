@@ -1,6 +1,23 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, Copy, Check, X, User, ArrowRight, Users, Award, Trophy } from 'lucide-react';
+import {
+  Phone,
+  Mail,
+  Copy,
+  Check,
+  X,
+  User,
+  ArrowRight,
+  Users,
+  Award,
+  Trophy,
+  MapPin,
+  Cpu,
+  Briefcase,
+  GraduationCap,
+  Heart,
+  Globe
+} from 'lucide-react';
 import graduands from '../data/graduands.json';
 import awardsData from '../data/awards.json';
 
@@ -10,6 +27,11 @@ export default function GraduandsWall() {
 
   // Top 4 Academic Distinction Podium Honorees
   const topDistinctions = awardsData.academic_distinction.slice(0, 4);
+
+  const totalAwardsCount = Object.values(awardsData).reduce(
+    (sum, list) => sum + (Array.isArray(list) ? list.length : 0),
+    0
+  );
 
   // Curated 11 specific graduands (+ 12th Explore card = complete 12-item grid)
   const curatedIds = [
@@ -47,7 +69,7 @@ export default function GraduandsWall() {
             <div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-copper-500/20 border border-copper-400/40 text-copper-300 text-xs font-bold uppercase tracking-wider mb-2">
                 <Trophy className="w-3.5 h-3.5 text-copper-400" />
-                <span>Academic Distinction & Framed Honors</span>
+                <span>Academic Distinction & Class Honours</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-serif font-black text-white tracking-tight">
                 ROLL OF <span className="copper-gradient-text">DISTINCTION</span>
@@ -62,7 +84,7 @@ export default function GraduandsWall() {
               className="self-start md:self-auto inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-copper-500 hover:bg-copper-600 text-white text-xs sm:text-sm font-bold shadow-copper transition-all whitespace-nowrap"
             >
               <Trophy className="w-4 h-4" />
-              <span>Explore All 40 Class Awards</span>
+              <span>Explore All {totalAwardsCount} Class Awards</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -99,7 +121,7 @@ export default function GraduandsWall() {
           </div>
         </div>
 
-        {/* PART 2: Section Header for the 154 Graduands */}
+        {/* PART 2: Section Header for the Graduands */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <p className="text-xs font-sans font-bold uppercase tracking-[0.2em] text-copper-600 mb-2">
@@ -109,7 +131,7 @@ export default function GraduandsWall() {
               THE BALEWITE <span className="copper-gradient-text">GRADUANDS</span>
             </h2>
             <p className="text-stone-600 text-sm sm:text-base font-sans mt-1 max-w-xl">
-              Meet the graduating engineers of the 43rd Dynamo set. Click any portrait to inspect contact details, or explore all 154 graduates.
+              Meet the graduating engineers of the 43rd Dynamo set. Click any portrait to inspect their full profile, final-year project, and contact details, or explore all {graduands.length} graduates.
             </p>
           </div>
 
@@ -118,7 +140,7 @@ export default function GraduandsWall() {
             className="self-start md:self-auto inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-950 hover:bg-emerald-900 text-white text-xs sm:text-sm font-semibold shadow-sm transition-all"
           >
             <Users className="w-4 h-4 text-copper-400" />
-            <span>View All 154 Graduands</span>
+            <span>View All {graduands.length} Graduands</span>
             <ArrowRight className="w-4 h-4 text-copper-400" />
           </Link>
         </div>
@@ -142,6 +164,7 @@ export default function GraduandsWall() {
                     src={g.image}
                     alt={g.name}
                     loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-105"
                     onError={(e) => {
                       e.target.src = '/atbu_crest.png';
@@ -157,7 +180,7 @@ export default function GraduandsWall() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
                     <span className="text-[11px] text-white font-semibold flex items-center gap-1">
                       <User className="w-3.5 h-3.5 text-copper-400" />
-                      Inspect Contact Card
+                      Inspect Full Profile
                     </span>
                   </div>
                 </div>
@@ -167,7 +190,11 @@ export default function GraduandsWall() {
                     {g.name}
                   </h4>
                   <div className="text-[10px] text-copper-600 font-mono mt-0.5 truncate">
-                    {isValedictorian ? 'Valedictorian • EEE ’25' : `EEE ’25 • p.${g.source_page || 1}`}
+                    {isValedictorian
+                      ? 'Valedictorian • EEE ’25'
+                      : g.state_of_origin
+                      ? `${g.state_of_origin} • EEE ’25`
+                      : `EEE ’25 • p.${g.source_page || 1}`}
                   </div>
                 </div>
               </div>
@@ -184,10 +211,10 @@ export default function GraduandsWall() {
                 <Users className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div className="text-3xl sm:text-4xl font-serif font-black text-copper-300">
-                +143
+                +{graduands.length - spotlightGraduands.length}
               </div>
               <p className="text-xs sm:text-sm font-serif font-bold text-white mt-1.5 leading-snug">
-                Explore All 154 Graduating Engineers
+                Explore All {graduands.length} Graduating Engineers
               </p>
             </div>
 
@@ -203,14 +230,14 @@ export default function GraduandsWall() {
           </Link>
         </div>
 
-        {/* Lightbox Modal */}
+        {/* Rich Profile Lightbox Modal */}
         {activeGraduand && (
           <div
-            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4"
             onClick={() => setActiveGraduand(null)}
           >
             <div
-              className="relative w-full max-w-md bg-white rounded-2xl overflow-hidden shadow-2xl border border-stone-200"
+              className="relative w-full max-w-lg max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl border border-stone-200 flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -221,16 +248,18 @@ export default function GraduandsWall() {
                 <X className="w-4 h-4" />
               </button>
 
-              <div className="aspect-[4/4] w-full bg-stone-900 relative">
+              <div className="h-60 sm:h-64 w-full bg-stone-900 relative shrink-0">
                 <img
                   src={activeGraduand.image}
                   alt={activeGraduand.name}
-                  className="w-full h-full object-contain bg-stone-950"
+                  className={`w-full h-full ${
+                    activeGraduand.isCrest ? 'object-contain p-10 opacity-75 bg-stone-900' : 'object-contain bg-stone-950'
+                  }`}
                   onError={(e) => {
                     e.target.src = '/atbu_crest.png';
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                 <div className="absolute bottom-4 left-5 right-5 text-white">
                   <span className="text-[10px] font-mono tracking-widest uppercase text-copper-400 font-bold">
                     ATBU EEE CLASS OF 2025
@@ -238,10 +267,91 @@ export default function GraduandsWall() {
                   <h3 className="text-xl font-serif font-bold leading-tight mt-0.5">
                     {activeGraduand.name}
                   </h3>
+                  {activeGraduand.origin && (
+                    <p className="text-xs text-stone-200 flex items-center gap-1 mt-1">
+                      <MapPin className="w-3.5 h-3.5 text-copper-400 shrink-0" />
+                      <span>{activeGraduand.origin}</span>
+                    </p>
+                  )}
                 </div>
               </div>
 
-              <div className="p-5 space-y-3 font-sans bg-cream-50">
+              <div className="p-5 space-y-3 font-sans bg-cream-50 overflow-y-auto">
+                {activeGraduand.project && (
+                  <div className="bg-white p-3.5 rounded-xl border border-stone-200">
+                    <div className="text-[10px] font-bold text-copper-700 uppercase tracking-wider flex items-center gap-1.5 mb-1">
+                      <Cpu className="w-3.5 h-3.5" />
+                      Final-Year Project
+                    </div>
+                    <p className="text-xs font-semibold text-emerald-950 leading-relaxed">
+                      {activeGraduand.project}
+                    </p>
+                  </div>
+                )}
+
+                {activeGraduand.career_aspiration && (
+                  <div className="bg-white p-3.5 rounded-xl border border-stone-200">
+                    <div className="text-[10px] font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5 mb-1">
+                      <Briefcase className="w-3.5 h-3.5" />
+                      Career Aspiration
+                    </div>
+                    <p className="text-xs text-stone-700 leading-relaxed">
+                      {activeGraduand.career_aspiration}
+                    </p>
+                  </div>
+                )}
+
+                {(activeGraduand.favorite_lecturer || activeGraduand.best_friend) && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {activeGraduand.favorite_lecturer && (
+                      <div className="bg-white p-3 rounded-xl border border-stone-200">
+                        <div className="text-[10px] font-bold text-stone-400 uppercase flex items-center gap-1 mb-0.5">
+                          <GraduationCap className="w-3.5 h-3.5 text-copper-600" />
+                          Favorite Lecturer
+                        </div>
+                        <div className="text-xs font-semibold text-stone-800">
+                          {activeGraduand.favorite_lecturer}
+                        </div>
+                      </div>
+                    )}
+                    {activeGraduand.best_friend && (
+                      <div className="bg-white p-3 rounded-xl border border-stone-200">
+                        <div className="text-[10px] font-bold text-stone-400 uppercase flex items-center gap-1 mb-0.5">
+                          <Users className="w-3.5 h-3.5 text-emerald-700" />
+                          Best Friend
+                        </div>
+                        <div className="text-xs font-semibold text-stone-800">
+                          {activeGraduand.best_friend}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {activeGraduand.will_miss && (
+                  <div className="bg-white p-3.5 rounded-xl border border-stone-200">
+                    <div className="text-[10px] font-bold text-stone-400 uppercase flex items-center gap-1.5 mb-1">
+                      <Heart className="w-3.5 h-3.5 text-copper-600" />
+                      Will Miss Most About ATBU
+                    </div>
+                    <p className="text-xs text-stone-700 italic leading-relaxed">
+                      “{activeGraduand.will_miss}”
+                    </p>
+                  </div>
+                )}
+
+                {activeGraduand.social_media && (
+                  <div className="bg-white p-3 rounded-xl border border-stone-200 flex items-start gap-3">
+                    <Globe className="w-4 h-4 text-emerald-800 shrink-0 mt-0.5" />
+                    <div className="min-w-0">
+                      <div className="text-[10px] font-bold text-stone-400 uppercase">Social Media</div>
+                      <div className="text-xs font-medium text-stone-800 break-words">
+                        {activeGraduand.social_media}
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 <div className="bg-white p-3 rounded-xl border border-stone-200 flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <Phone className="w-4 h-4 text-emerald-800" />
