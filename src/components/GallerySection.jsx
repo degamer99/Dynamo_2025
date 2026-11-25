@@ -424,6 +424,55 @@ export default function GallerySection() {
       title: 'Celebrating with Award of Recognition Certificates at Dinner Night',
       meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
       category: 'SUG & Dinner Awards'
+    },
+    {
+      id: 'd_nascom_awd',
+      src: '/images/dinner/nascomsoft_award_presentation.jpg',
+      title: 'Nascomsoft Embedded Receiving Award of Special Recognition for Technical & Academic Support',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'SUG & Dinner Awards'
+    },
+    {
+      id: 'd_olabisi_awd',
+      src: '/images/dinner/chief_launcher_olabisi_award.jpg',
+      title: 'Chief Launcher Presenting Entrepreneur of the Year Award to Olabisi Faruk (Coded)',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'SUG & Dinner Awards'
+    },
+    {
+      id: 'd_launcher_1',
+      src: '/images/dinner/chief_launcher_keynote_smile.jpg',
+      title: 'Chief Launcher Engr. Abraham Itopa Addressing the Class of 2025',
+      meta: '43rd EEE Balewite Dynamo Magazine Launch & Dinner',
+      category: 'Studio & Dinner Gala'
+    },
+    {
+      id: 'd_launcher_2',
+      src: '/images/dinner/chief_launcher_podium_guests.jpg',
+      title: 'Chief Launcher & Distinguished Guests at the Magazine Launch Podium',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'Studio & Dinner Gala'
+    },
+    {
+      id: 'd_launcher_3',
+      src: '/images/dinner/chief_launcher_high_table.jpg',
+      title: 'Chief Launcher Seated at the High Table During the Gala',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'Studio & Dinner Gala'
+    },
+    {
+      id: 'd_nascom_candid',
+      src: '/images/dinner/nascomsoft_dinner_candid.jpg',
+      title: 'Nascomsoft Embedded Representative at the Dinner & Magazine Launch',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'Studio & Dinner Gala'
+    },
+    {
+      id: 'd_launcher_4',
+      src: '/images/dinner/chief_launcher_launch_remarks.jpg',
+      title: 'Magazine Launch Remarks by the Chief Launcher & Dignitaries',
+      meta: '43rd EEE Balewite Dynamo Dinner & Award Night',
+      category: 'Studio & Dinner Gala'
     }
   ];
 

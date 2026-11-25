@@ -81,8 +81,7 @@
       "recipient": "Nascomsoft Embedded",
       "subtitle": "Engineering & Innovation Partner",
       "type": "Technical Partner",
-      "image": "/atbu_crest.png",
-      "isCrest": true
+      "image": "/images/other_profiles/nascomsoft_embedded.jpg"
     },
     {
       "id": "fac_6",
@@ -90,8 +89,8 @@
       "recipient": "Haske Business Centre",
       "subtitle": "Campus Partner & Support Services",
       "type": "Institutional Partner",
-      "image": "/atbu_crest.png",
-      "isCrest": true
+      "image": "/images/other_profiles/haske_business_centre.jpg",
+      "fit": "logo"
     }
   ],
   "leadership_and_service": [
@@ -122,8 +121,7 @@
       "title": "Outstanding Assistant Class Rep Award",
       "recipient": "Ihemdilihu Calvin Cyprian",
       "type": "Class Representation",
-      "image": "/atbu_crest.png",
-      "isCrest": true
+      "image": "/images/other_profiles/calvin_cyprian.jpg"
     },
     {
       "id": "lead_11",

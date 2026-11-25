@@ -61,21 +61,39 @@ export default function SponsorSpotlight() {
             <div className="absolute -right-12 -top-12 w-64 h-64 bg-copper-500/15 rounded-full blur-2xl pointer-events-none" />
 
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
-              <div className="space-y-2.5 max-w-2xl">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-copper-500/20 border border-copper-400/40 text-copper-300 text-xs font-bold uppercase tracking-wider">
-                  <HeartHandshake className="w-3.5 h-3.5 text-copper-400" />
-                  <span>Distinguished Alumnus • Event Sponsor & Pillar of Support</span>
+              <div className="flex flex-col sm:flex-row items-center sm:items-start lg:items-center gap-6 max-w-3xl">
+                {/* Chief Launcher Portrait */}
+                <div className="w-32 sm:w-40 shrink-0 rounded-2xl overflow-hidden border-2 border-copper-400/70 shadow-xl bg-emerald-950 aspect-[4/5] relative group">
+                  <img
+                    src="/images/other_profiles/chief_launcher_abraham_itopa.jpg"
+                    alt="Engr. Abraham Itopa — Chief Launcher"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-emerald-950/90 via-emerald-950/40 to-transparent px-2.5 py-2 text-center">
+                    <span className="text-[9px] font-mono font-bold uppercase tracking-widest text-copper-300 block">
+                      Chief Launcher
+                    </span>
+                  </div>
                 </div>
 
-                <h2 className="text-2xl sm:text-4xl font-serif font-black tracking-tight text-white">
-                  ENGR. ABRAHAM <span className="copper-gradient-text">ITOPA</span>
-                </h2>
+                <div className="space-y-2.5 text-center sm:text-left">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-copper-500/20 border border-copper-400/40 text-copper-300 text-xs font-bold uppercase tracking-wider">
+                    <HeartHandshake className="w-3.5 h-3.5 text-copper-400" />
+                    <span>Distinguished Alumnus • Chief Launcher & Event Sponsor</span>
+                  </div>
 
-                <p className="text-stone-300 text-xs sm:text-sm font-sans leading-relaxed">
-                  Standout Abubakar Tafawa Balewa University (ATBU) engineering alumnus, MD/CEO of{' '}
-                  <strong className="text-white">Zetch Engineering Limited</strong>, and major supporter & sponsor of the{' '}
-                  <strong className="text-copper-300">43rd EEE Balewite Dynamo</strong> magazine and graduation celebration.
-                </p>
+                  <h2 className="text-2xl sm:text-4xl font-serif font-black tracking-tight text-white">
+                    ENGR. ABRAHAM <span className="copper-gradient-text">ITOPA</span>
+                  </h2>
+
+                  <p className="text-stone-300 text-xs sm:text-sm font-sans leading-relaxed">
+                    Standout Abubakar Tafawa Balewa University (ATBU) engineering alumnus, MD/CEO of{' '}
+                    <strong className="text-white">Zetch Engineering Limited</strong>, Chief Launcher, and major supporter & sponsor of the{' '}
+                    <strong className="text-copper-300">43rd EEE Balewite Dynamo</strong> magazine and graduation celebration.
+                  </p>
+                </div>
               </div>
 
               {/* Special Recognition Callout Box */}

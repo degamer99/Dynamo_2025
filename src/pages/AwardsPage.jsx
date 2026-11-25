@@ -63,7 +63,11 @@ export default function AwardsPage() {
       className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-md hover:border-copper-400 transition-all flex flex-col justify-between group"
     >
       <div className={`aspect-[4/5] overflow-hidden relative flex items-center justify-center ${
-        item.fit === 'contain' ? 'bg-stone-950' : 'bg-stone-100'
+        item.fit === 'contain'
+          ? 'bg-stone-950'
+          : item.fit === 'logo'
+          ? 'bg-white'
+          : 'bg-stone-100'
       }`}>
         <img
           src={item.image}
@@ -73,6 +77,8 @@ export default function AwardsPage() {
           className={`w-full h-full transform transition-transform duration-500 group-hover:scale-105 ${
             item.isCrest
               ? 'p-10 object-contain opacity-75 bg-gradient-to-b from-cream-50 to-cream-200'
+              : item.fit === 'logo'
+              ? 'p-4 object-contain bg-white'
               : item.fit === 'contain'
               ? 'object-contain'
               : 'object-cover object-top'
